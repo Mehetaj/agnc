@@ -41,7 +41,7 @@ Bashundhara R/A, Dhaka 1229</p>
             <hr />
             <div className='mt-5 flex justify-between items-center'>
                 <p>@ 2023, Bytezenith. All rights reserved.</p>
-                <Image className='mr-10' src={top_arrow} alt=''/>
+                <Image className='-mr-14 -mt-16' src={top_arrow} alt=''/>
             </div>
         </div>
     );

@@ -51,34 +51,46 @@ const Navbar = () => {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 text-[18px]  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-blue-900  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
-                    About
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    Home
                   </Link>
                 </li>
                 <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
-                    Blogs
+                  <Link href="/about" onClick={() => setNavbar(!navbar)}>
+                    About Us
                   </Link>
                 </li>
                 <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
+                  <Link href="" onClick={() => setNavbar(!navbar)}>
+                    Services
                   </Link>
                 </li>
                 <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Projects
+                  <Link href="" onClick={() => setNavbar(!navbar)}>
+                    Portfolio
                   </Link>
                 </li>
                 <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                  <Link href="" onClick={() => setNavbar(!navbar)}>
+                    Blog
+                  </Link>
+                </li>
+                <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
+                  <Link href="" onClick={() => setNavbar(!navbar)}>
+                    Careers
+                  </Link>
+                </li>
+                <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
+                  <Link href="" onClick={() => setNavbar(!navbar)}>
                   <button className='btn-outline lg:hidden'>Contact Us</button>
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <button className='btn-outline hidden lg:flex'>Contact Us</button>
+          <button className='btn-outline hidden lg:flex'>
+            <Link href="/contact">Contact Us</Link>
+          </button>
         </div>
       </nav>
     </div> 

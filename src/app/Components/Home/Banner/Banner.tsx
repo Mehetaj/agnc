@@ -4,7 +4,7 @@ import Button from '@/app/Shared/Button/Button';
 
 const Banner = () => {
     return (
-        <div className='flex justify-between items-center  mt-16'>
+        <div className='lg:flex justify-between items-center  mt-16'>
            <div>
             <h1 className='text-[60px] font-bold'>
             Stand Out in the <br /> Digital Crowd with <br /> Creative Solutions
