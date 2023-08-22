@@ -13,7 +13,7 @@ export default function Brand() {
                         We’ve collaborated with
                     </h1>
                 </div>
-                {/* create div with four column and three row as card */}
+                {/* create div with four column and three row as card */}git
                 <div className='grid grid-cols-4 grid-rows-2 gap-1'>
                     <div className='col-span-1 row-span-2'>
                         <button className='w-full h-ful font-bold'>
