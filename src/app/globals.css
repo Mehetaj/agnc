@@ -19,11 +19,25 @@
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-    color: blue
+    color: #226CE5
 }
 
 .btn-outline:hover{
     background-color:#226CE5;
     border: 1px solid blue;
     transition: all ease-in-out 0.2s;
+}
+
+
+.bg-img {
+    background-image: url('../asset/Background.png');
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img h1{
+    font-size: 60px;
+    font-weight: bold;
 }
