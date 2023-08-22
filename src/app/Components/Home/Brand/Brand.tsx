@@ -1,11 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
 import brand1 from '../../../../asset/brand/Brand-1.png'
+import brand2 from '../../../../asset/brand/Brand-2.png'
 import brand3 from '../../../../asset/brand/Brand-3.png'
+import brand4 from '../../../../asset/brand/Brand-4.png'
+import brand5 from '../../../../asset/brand/Brand-5.png'
+import brand6 from '../../../../asset/brand/Brand-6.png'
+import brand7 from '../../../../asset/brand/Brand-7.png'
+import brand8 from '../../../../asset/brand/Brand-8.png'
 
 export default function Brand() {
     return (
-        <div className='flex flex-col px-10'>
+        <div className='flex flex-col mt-20'>
 
             <div className='flex flex-col'>
                 <p className='text-[18px] text-blue-400 mb-0'>
