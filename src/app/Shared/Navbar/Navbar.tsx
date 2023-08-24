@@ -12,7 +12,7 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <div>
+        <div className='p-10 lg:p-0'>
             <div>
       <nav className="w-full lg:w-[1440px]">
         <div className="justify-between mx-auto  md:items-center md:flex">
@@ -76,13 +76,8 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="" onClick={() => setNavbar(!navbar)}>
-                    Careers
-                  </Link>
-                </li>
-                <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                  <Link href="" onClick={() => setNavbar(!navbar)}>
-                  <button className='btn-outline lg:hidden'>Contact Us</button>
+                  <Link className='flex justify-center items-center' href="/contact" onClick={() => setNavbar(!navbar)}>
+                  <button className='btn-outline flex lg:hidden'>Contact Us</button>
                   </Link>
                 </li>
               </ul>
