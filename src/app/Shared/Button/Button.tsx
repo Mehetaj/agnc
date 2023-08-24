@@ -8,9 +8,9 @@ type Props = {
 
 const Button = ({ children }: Props) => {
     return (
-        <button className="bg-[#226CE5] flex items-center gap-2 rounded-[8px] text-[20px] px-[40px] py-[16px] text-white">
+        <button className="bg-[#226CE5] flex items-center gap-2 rounded-[8px] text-[20px] px-[40px] py-[12px] mt-3 text-white">
             {children}
-            <Image alt='' src={arrow}/>
+            <Image alt='' src={arrow} />
         </button>
     );
 };
