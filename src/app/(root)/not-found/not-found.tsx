@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import notfound from '../../../asset/not-found.png'
 import Title from '@/app/Shared/Title/Title';
-import Button from '../Button/Button';
+import Button from '../../Shared/Button/Button';
 
 const PageNotFound = () => {
 
