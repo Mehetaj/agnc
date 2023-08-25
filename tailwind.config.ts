@@ -26,6 +26,7 @@ const config: Config = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'grey-blue': '#EBF2FF',
+      'background': '#EBF2FF',
 
     },
   },
