@@ -4,7 +4,7 @@ import Button from '@/app/Shared/Button/Button';
 
 const Banner = () => {
     return (
-        <div className=' p-10 lg:p-0 bg-[#F7FAFF] lg:flex justify-between items-center  mt-16'>
+        <div className=' p-10 lg:p-0  lg:flex justify-between items-center lg:mt-16'>
             <div>
                 {/* Heading of Banners */}
                 <h1 className='text-[40px] lg:text-[60px] font-bold'>
@@ -20,7 +20,7 @@ const Banner = () => {
 
             </div>
             {/* Banner image */}
-            <Image className='w-[584px] h-[584px]' src={banner} alt='' />
+            <Image className='' src={banner} alt='' />
         </div>
     );
 };

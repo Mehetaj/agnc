@@ -12,7 +12,7 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <div className='p-10 lg:p-0'>
+        <div className='p-6 lg:p-0'>
             <div>
       <nav className="w-full lg:w-[1440px]">
         <div className="justify-between mx-auto  md:items-center md:flex">
