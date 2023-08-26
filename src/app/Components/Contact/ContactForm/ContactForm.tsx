@@ -8,13 +8,15 @@ import Image from "next/image";
 
 
 const ContactForm = () => {
+
+
     return (
         <div className="mt-10 mb-40">
             <Title>Say Hi👋</Title>
             <h1 className="font-bold text-[48px]">Send us a Message</h1>
 
             <div className="mt-10 flex items-start gap-10">
-                <form className="bg-[#EBF2FF] w-[687px] p-12">
+                <form className="glass w-[687px] p-12">
                     <div className="mb-6">
                         <label className="block mb-5 text-sm font-medium text-gray-900 dark:text-white">Name*</label>
                         <input type="text" className="form-control h-[60px] input w-[567px] bg-[#D6E6FF]" required />
@@ -50,10 +52,10 @@ const ContactForm = () => {
                     <hr />
                     <h1 className="text-[24px] font-bold mt-8">Follow us</h1>
                     <div className="flex gap-9 mt-9">
-                        <Image src={icon1} alt=""/>
-                        <Image src={icon2} alt=""/>
-                        <Image src={icon3} alt=""/>
-                        <Image src={icon4} alt=""/>
+                        <Image src={icon1} alt="" />
+                        <Image src={icon2} alt="" />
+                        <Image src={icon3} alt="" />
+                        <Image src={icon4} alt="" />
                     </div>
                 </div>
             </div>

@@ -22,22 +22,50 @@
     color: #226CE5
 }
 
-.btn-outline:hover{
-    background-color:#226CE5;
+.btn-outline:hover {
+    background-color: #226CE5;
     border: 1px solid blue;
     transition: all ease-in-out 0.2s;
 }
 
 
 .bg-img {
-    background-image: url('../asset/Background.png');
-    height: 440px;
+    /* background-image: url('../asset/Background.png'); */
+    /* background-image: url('../asset/test.png'); */
+    background-color: rgba(88, 143, 239, 0.375);
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0 50% 50% / 0 0 2.75em 2.75em;
 }
 
-.bg-img h1{
+.bg-img h1 {
     font-size: 60px;
     font-weight: bold;
+}
+
+.box {
+    width: 30em;
+    height: 10em;
+
+    background: black;
+    position: relative;
+}
+
+.box1 {
+    background: white none repeat scroll 0 0;
+    border-radius: 50% / 0.75em;
+    bottom: -1px;
+    height: 2em;
+    position: absolute;
+    width: 30em;
+}
+
+
+.curvature {
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    background-color: #226CE5;
+    margin-top: -200px;
 }
