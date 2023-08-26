@@ -61,20 +61,3 @@
     position: absolute;
     width: 30em;
 }
-
-
-.curvature {
-    border-top-left-radius: 35%;
-    border-top-right-radius: 35%;
-    background-color: #226CE5;
-    margin-top: -200px;
-}
-
-#stickyNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-    background-color: rgba(242, 240, 240, 0.941);
-}
