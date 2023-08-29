@@ -24,11 +24,14 @@
 
 
 .bg-img {
-    background-image: url('../asset/Background.png');
-    height: 440px;
+    /* background-image: url('../asset/Background.png'); */
+    /* background-image: url('../asset/test.png'); */
+    background-color: rgba(88, 143, 239, 0.375);
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 0 50% 50% / 0 0 2.75em 2.75em;
 }
 
 .bg-img h1 {
