@@ -4,7 +4,7 @@ import Title from '@/app/Shared/Title/Title';
 
 const AboutHero = () => {
     return (
-        <div className='flex mt-16 justify-between items-center'>
+        <div className='px mx-auto flex mt-16 justify-between items-center'>
             <div>
                 <Title>WHO WE ARE</Title>
                 <h1 className='text-[48px] font-bold my-4'>We are design ninjas <br /> for your next project</h1>

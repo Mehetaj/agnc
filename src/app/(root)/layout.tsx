@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bytezenith",
-  description: "This is a multi-client services website",
+  description: "",
 };
 
 
@@ -19,7 +19,7 @@ type Props ={
 
 const RootLayout = ({ children }: Props) => {
   return (
-    <html className="w-full px-[] lg:w-[1440px] mx-auto" lang="en">
+    <html className="w-full lg:container px-10 mx-auto" lang="en">
       <body className={inter.className}>
         <Navbar />
         {children}

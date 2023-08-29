@@ -1,9 +1,9 @@
 import Title from "@/app/Shared/Title/Title";
 import background from "../../../../asset/Vector.png";
 import Image from "next/image";
-import icon1 from "../../../../asset/icon/Component1.png";
-import icon2 from "../../../../asset/icon/Component2.png";
-import icon3 from "../../../../asset/icon/Component3.png";
+import icon1 from "../../../../asset/icon/Component 1.png";
+import icon2 from "../../../../asset/icon/Component 2.png";
+import icon3 from "../../../../asset/icon/Component 3.png";
 
 const ChooseUs = () => {
 
@@ -14,7 +14,7 @@ const ChooseUs = () => {
     }
 
     return (
-        <div>
+        <div className="px mx-auto">
             <div>
                 <Title >WHY CHOOSE US</Title>
                 <h1 className="text-[48px] font-bold">

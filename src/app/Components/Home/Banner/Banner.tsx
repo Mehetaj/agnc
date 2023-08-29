@@ -4,7 +4,7 @@ import Button from '@/app/Shared/Button/Button';
 
 const Banner = () => {
     return (
-        <div className=' p-10 lg:p-0  lg:flex justify-between items-center lg:mt-16'>
+        <div className='px mx-auto p-10 lg:p-0  lg:flex justify-between items-center lg:mt-16'>
             <div>
                 {/* Heading of Banners */}
                 <h1 className='text-[40px] lg:text-[60px] font-bold'>

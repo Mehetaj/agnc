@@ -8,8 +8,8 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <div>
-            <div className="grid p-10 lg:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
+        <div className='cnt mx-auto px-10'>
+            <div className=" grid p-10 lg:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
                 <div>
                     {/* Company name */}
                     <h1 className="text-[48px] lg:text-[32px] font-bold mb-8">Bytezenith</h1>
