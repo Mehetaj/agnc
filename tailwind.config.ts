@@ -6,6 +6,10 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  //...
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -26,9 +30,11 @@ const config: Config = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'grey-blue': '#EBF2FF',
+      'background': '#EBF2FF',
 
     },
   },
+  //
   plugins: [require("daisyui")],
 }
 export default config
