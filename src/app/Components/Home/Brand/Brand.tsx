@@ -12,7 +12,7 @@ import Title from '@/app/Shared/Title/Title'
 
 export default function Brand() {
     return (
-        <div className='bg-[#EBF2FF] p-10 lg:p-20 mt-20'>
+        <div id='brand' className=' bg-[#EBF2FF] p-10 lg:px-[200px] lg:py-20 mt-20'>
 
             <div className='flex flex-col'>
                 <Title>Brands</Title>

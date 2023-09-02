@@ -1,5 +1,4 @@
 import React from 'react';
-import bg from '../../../asset/Background.png'
 import Banner from '@/app/Components/About/Banner/Banner';
 import AboutHero from '@/app/Components/About/AboutHero/AboutHero';
 import Contact from '@/app/Components/Home/Contact/Contact';

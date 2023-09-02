@@ -8,14 +8,14 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <div>
-            <div className="grid p-10 lg:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
-                <div>
+        <div className='cnt mx-auto px-2'>
+            <div className=" grid p-10 lg:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
+                <div className='foot'>
                     {/* Company name */}
                     <h1 className="text-[48px] lg:text-[32px] font-bold mb-8">Bytezenith</h1>
                     <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59]">World-class user experiences with <br /> pixel perfect user interface <br /> designs.</p>
                 </div>
-                <div>
+                <div className='foot'>
                     {/* Address */}
                     <h1 className="text-[24px] font-bold mb-8">Lets Connect</h1>
                     <p className=" text-[21px] lg:text-[16px] mb-6 text-[#2D3D59]">House 336,Road 02, Block-D <br />
