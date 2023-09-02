@@ -10,6 +10,7 @@ const config: Config = {
   daisyui: {
     themes: ["light", "dark", "cupcake"],
   },
+  darkMode: ["class"],
   theme: {
     extend: {
       backgroundImage: {

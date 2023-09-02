@@ -6,7 +6,7 @@ import Contact from "../Components/Home/Contact/Contact";
 
 const Home = () => {
   return (
-    <main>
+    <main className="">
       <Banner />
       <About />
       <Brand />

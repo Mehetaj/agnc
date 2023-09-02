@@ -14,7 +14,7 @@ const ChooseUs = () => {
     }
 
     return (
-        <div className="px mx-auto">
+        <div className="px-2 mx-auto">
             <div>
                 <Title >WHY CHOOSE US</Title>
                 <h1 className="text-[48px] font-bold">
@@ -22,8 +22,8 @@ const ChooseUs = () => {
                 </h1>
             </div>
             {/* create div with four column and three row as card */}
-            <div style={{ marginTop: '30px' }} className='grid grid-cols-3 gap-4'>
-                <div style={componentStyle} className='flex flex-col items-start'>
+            <div style={{ marginTop: '30px' }} className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
+                <div id="chooseUs1" className='flex bg-[#EBF2FF] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
 
                     <Image src={icon1} alt='' />
                     <h1 className='text-[26px] font-bold mt-3'>Fast Development</h1>
@@ -33,7 +33,7 @@ const ChooseUs = () => {
                         World-class user experiences with pixel perfect user interface designs for your digital products.
                     </p>
                 </div>
-                <div style={componentStyle} className='flex flex-col items-start'>
+                <div id="chooseUs2" className='flex bg-[#EBF2FF] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
 
                     <Image src={icon2} alt='' />
                     <h1 className='text-[26px] font-bold mt-3'>Full Flaxibility</h1>
@@ -43,7 +43,7 @@ const ChooseUs = () => {
                         World-class user experiences with pixel perfect user interface designs for your digital products.
                     </p>
                 </div>
-                <div style={componentStyle} className='flex flex-col items-start'>
+                <div id="chooseUs3" className='flex bg-[#EBF2FF] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
 
                     <Image src={icon3} alt='' />
                     <h1 className='text-[26px] font-bold mt-3'>Modern Design</h1>
