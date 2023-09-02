@@ -4,7 +4,7 @@ import hello_text from '../../../../asset/hello.png'
 
 const Contact = () => {
     return (
-        <div className="bg-[#226CE5] py-16 px-10 lg:p-10 my-16 h-full lg:h-[340px] items-center text-white lg:flex justify-between">
+        <div id='contact_component' className="bg-[#226CE5] lg:px-[80px] lg:py-20  py-16 px-10 lg:p-10 my-16 h-full lg:h-[340px] items-center text-white lg:flex justify-between">
             <div>
                     <Image className='mb-8' src={hello_text} alt=''/>
                 

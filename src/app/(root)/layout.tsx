@@ -1,15 +1,14 @@
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "../Shared/Navbar/Navbar";
 import Footer from "../Shared/Footer/Footer";
-import ThemeProvider from "@/provider/ThemeProvider";
+import Navbar from "../Shared/Navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bytezenith",
-  description: "This is a multi-client services website",
+  description: "",
 };
 
 type Props = {
@@ -18,13 +17,13 @@ type Props = {
 
 const RootLayout = ({ children }: Props) => {
   return (
-    <html className="w-full  lg:w-[1440px] mx-auto" lang="en">
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" enableSystem={false}>
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
+    <html id="body" className="" lang="en">
+      <body
+        className={`${inter.className} max-w-full lg:max-w-[1440px] mx-auto`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

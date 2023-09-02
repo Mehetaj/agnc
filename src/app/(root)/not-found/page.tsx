@@ -1,14 +1,10 @@
 import Image from 'next/image';
 import notfound from '../../../asset/not-found.png'
-import Title from '@/app/Shared/Title/Title';
 import Button from '../../Shared/Button/Button';
 
-const PageNotFound = () => {
+const NotFound = () => {
 
-    const imageStyle = {
-        height: '500px',
-        objectFit: 'contain'
-    }
+   
     return (
         <div style={{ marginTop: ' 100px', marginBottom: '100px' }} className='flex mt-16 justify-between items-center'>
             <div>
@@ -17,9 +13,9 @@ const PageNotFound = () => {
 
                 <Button>Go Back</Button>
             </div>
-            <Image style={imageStyle} src={notfound} alt='' />
+            <Image className='h-[500px] object-contain' src={notfound} alt='' />
         </div>
     );
 };
 
-export default PageNotFound;
+export default NotFound;

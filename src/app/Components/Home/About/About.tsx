@@ -6,14 +6,14 @@ import Button from "@/app/Shared/Button/Button";
 
 const About = () => {
   return (
-    <div className="mt-20 flex flex-col-reverse lg:flex-row p-10 lg:p-0 lg:justify-between items-center gap-10 lg:gap-60">
-      <Image src={img} alt="" />
+    <div className="px mx-auto mt-20 flex flex-col-reverse lg:flex-row p-10 lg:p-0 lg:justify-between items-center gap-10 lg:gap-60">
+      <Image className="w-full lg:w-[576px]" src={img} alt="" />
       <div>
         <Title>About</Title>
-        <h1 className="text-[60px] font-bold text-black dark:text-yellow-500">
+        <h1 className="text-[60px] font-bold">
           We are design ninjas for your next project
         </h1>
-        <p className=" text-[20px] my-10 dark:bg-red-500">
+        <p className=" text-[20px] my-10">
           We are driven by a passion for creativity and innovation. With a team
           of skilled professionals, we deliver exceptional solutions that exceed
           client expectations. With a deep understanding of your brand to create
