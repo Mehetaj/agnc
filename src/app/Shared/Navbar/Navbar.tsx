@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import close from "../../../asset/close.png";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 {/* LOGO */}
                 <Link href="/">
-                  <h2 className="text-[32px] text-blue-600 font-bold ">
+                  <h2 className="text-[32px] text-blue-600 font-bold dark:text-red-500 ">
                     Bytezenith
                   </h2>
                 </Link>
@@ -107,6 +108,7 @@ const Navbar = () => {
                   </label>
                 </li> */}
                   <DarkModeToggle />
+                  <ThemeSwitcher />
                 </ul>
               </div>
             </div>
