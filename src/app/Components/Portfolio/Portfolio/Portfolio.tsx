@@ -22,7 +22,7 @@ const Portfolio = (props: Props) => {
             </div>
 
             {/* portfolio section */}
-            <div className='grid grid-cols-6 gap-4'>
+            <div className='grid grid-cols-6 gap-4 w-full'>
                 {/* portfolio item first row */}
                 <div className='col-span-2 p-5 portfolio-item'>
                     {/* Banner image */}
