@@ -7,7 +7,7 @@ type Props = {
 
 const Title = ({ children }: Props) => {
     return (
-        <p className="text-[#226CE5] text-[20px] ">
+        <p className="text-[#226CE5] uppercase text-[20px] ">
             {children}
         </p>
     );
