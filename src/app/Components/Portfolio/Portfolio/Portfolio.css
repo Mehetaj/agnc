@@ -4,6 +4,7 @@
 }
 
 .tabContaner {
+    background-color: #D6E6FF;
     border-radius: 40px;
-    height: 70px;
+    padding: 25px 40px 25px 40px;
 }

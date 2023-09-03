@@ -1,16 +1,16 @@
 // tsx page component
 
 import PortfolioBanner from '@/app/Components/Portfolio/PortfolioBanner/PortfolioBanner';
-import Tab from '@/app/Components/Portfolio/Tab/Tab';
 import React from 'react'
+import Portfolio from '@/app/Components/Portfolio/Portfolio/Portfolio';
 
 
 
 const page = () => {
     return (
-        <div >
+        <div className='flex flex-col justify-center items-center'>
             <PortfolioBanner />
-            <Tab />
+            <Portfolio />
         </div>
     )
 }
