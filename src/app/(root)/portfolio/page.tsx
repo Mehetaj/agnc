@@ -10,11 +10,9 @@ import Contact from '@/app/Components/Home/Contact/Contact';
 
 const page = () => {
     return (
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center w-full'>
             <PortfolioBanner />
             <Portfolio />
-            <Contact />
-            <ChooseUs />
         </div>
     )
 }
