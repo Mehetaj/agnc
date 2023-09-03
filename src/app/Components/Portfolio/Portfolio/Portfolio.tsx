@@ -23,14 +23,42 @@ const Portfolio = (props: Props) => {
 
             {/* portfolio section */}
             <div className='grid grid-cols-6 gap-4'>
-                <div className='col-span-2 p-5'>
+                {/* portfolio item first row */}
+                <div className='col-span-2 p-5 portfolio-item'>
                     {/* Banner image */}
                     <Image className='' src={cover1} alt='' />
-                    <div>
+
+                    {/* portfolio description */}
+                    <div className='py-4'>
                         <p className='font-light'>Landing Page</p>
                         <p className='font-bold text-2xl'>Dentistry Website</p>
                     </div>
                 </div>
+                <div className='col-span-2 p-5 portfolio-item'>
+                    {/* Banner image */}
+                    <Image className='' src={cover2} alt='' />
+
+                    {/* portfolio description */}
+                    <div className='py-4'>
+                        <p className='font-light'>App Development</p>
+                        <p className='font-bold text-2xl'>Vegmart app Case Study</p>
+                    </div>
+                </div>
+                <div className='col-span-2 p-5 portfolio-item'>
+                    {/* Banner image */}
+                    <Image className='' src={cover1} alt='' />
+
+                    {/* portfolio description */}
+                    <div className='py-4'>
+                        <p className='font-light'>App Development</p>
+                        <p className='font-bold text-2xl'>Music Event app Case Study</p>
+                    </div>
+                </div>
+
+                {/* portfolio item second row */}
+
+
+                {/* portfolio item third row */}
 
 
             </div>
