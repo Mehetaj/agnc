@@ -5,10 +5,11 @@ import icons3 from '../../../asset/social/Icon 3.png'
 import icons4 from '../../../asset/social/Icon 4.png'
 import top_arrow from '../../../asset/top_arrow.png'
 import Link from 'next/link';
+import Component from '../Component/Component';
 
 const Footer = () => {
     return (
-        <div className='cnt mx-auto px-2'>
+        <Component>
             <div className=" grid p-10 lg:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
                 <div className='foot'>
                     {/* Company name */}
@@ -54,7 +55,7 @@ Bashundhara R/A, Dhaka 1229</p>
 
             <Link className='text-gray-500' href="/privacy_policy">Privacy & Policy</Link>
             </div>
-        </div>
+            </Component>
     );
 };
 
