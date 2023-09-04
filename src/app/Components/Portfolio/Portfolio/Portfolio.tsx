@@ -130,7 +130,7 @@ const Portfolio = (props: Props) => {
 
 
 
-            {/* pagination here ---------------------to do */}
+            {/*--------  pagination section here ---------------------to do */}
             <div className="w-full">
 
             </div>
