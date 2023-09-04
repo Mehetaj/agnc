@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
+import ThemeProvider from "@/provider/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,15 +17,16 @@ type Props = {
 };
 
 const RootLayout = ({ children }: Props) => {
-
   return (
     <html id="body" className="" lang="en">
       <body
         className={`${inter.className} max-w-full lg:max-w-[1440px] mx-auto`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" enableSystem={false}>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
