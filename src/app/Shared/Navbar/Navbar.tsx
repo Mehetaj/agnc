@@ -5,14 +5,18 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import close from "../../../asset/close.png";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+
+import Component from "../Component/Component";
+
 import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
+
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
 
   return (
     <div id="navbar" className="mx-auto lg:p-0">
-      <div className="">
+      <Component>
         <nav className="w-full lg:max-w-[1400px]">
           <div className="justify-between mx-auto  md:items-center md:flex">
             <div>
@@ -116,7 +120,7 @@ const Navbar = () => {
             </button>
           </div>
         </nav>
-      </div>
+      </Component>
     </div>
   );
 };
