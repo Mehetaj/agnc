@@ -9,7 +9,7 @@ import Review from "./Review";
 const Reviews = () => {
     const data = reviews_data;
   return (
-    <div>
+    <div className="my-[140px]">
       <Component>
         <Title>Testimonials</Title>
         <h1 className="text-5xl">What people says about us</h1>

@@ -1,20 +1,23 @@
 // tsx page component
 
-import PortfolioBanner from '@/app/Components/Portfolio/PortfolioBanner/PortfolioBanner';
-import React from 'react'
-import Portfolio from '@/app/Components/Portfolio/Portfolio/Portfolio';
-import ChooseUs from '@/app/Components/About/ChooseUs/ChooseUs';
-import Contact from '@/app/Components/Home/Contact/Contact';
-
-
+import PortfolioBanner from "@/app/Components/Portfolio/PortfolioBanner/PortfolioBanner";
+import React from "react";
+import Contact from "@/app/Components/Home/Contact/Contact";
+import Component from "@/app/Shared/Component/Component";
+import Portfolio from "@/app/Components/Home/Portfolio/Portfolio";
 
 const page = () => {
-    return (
-        <div className='flex flex-col justify-center items-center w-full'>
-            <PortfolioBanner />
-            <Portfolio />
+  return (
+    <div>
+      <Component>
+        <PortfolioBanner />
+        <div className="">
+          <Portfolio />
         </div>
-    )
-}
+      </Component>
+      <Contact />
+    </div>
+  );
+};
 
 export default page;
