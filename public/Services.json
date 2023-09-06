@@ -1,0 +1,17 @@
+[
+    {
+        "img": "../asset/service_img/Icon app.png",
+        "title": "Website Development",
+        "description": "Custom Development solutions for crafting the perfect website for your business."
+    },
+    {
+        "img": "../asset/service_img/Icon Design.png",
+        "title": "Website Development",
+        "description": "Custom Development solutions for crafting the perfect website for your business."
+    },
+    {
+        "img": "../asset/service_img/Icon Dev.png",
+        "title": "Website Development",
+        "description": "Custom Development solutions for crafting the perfect website for your business."
+    }
+]
