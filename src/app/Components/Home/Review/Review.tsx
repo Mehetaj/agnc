@@ -19,10 +19,10 @@ const Review = (Props: Items) => {
       {data.map((d, i) => {
         return (
           <div key={i} className="w-[379px] h-[256px]">
-            <div className="bg-[#EBF2FF] p-8 rounded-lg">
+            <div className="bg-[#EBF2FF] border border-gray-200 p-8 rounded-lg">
               <p className="text-[20px]">{d.review}</p>
               <div className="divider"></div>
-
+              {/* TODO */}
               {/* <ReactStars count={5} value={5} size={24} color2={"#226CE5"} /> */}
               {/* <div className="rating">
                 <input
@@ -52,6 +52,14 @@ const Review = (Props: Items) => {
                   className="mask mask-star"
                 />
               </div> */}
+            </div>
+
+            <div className="mt-8 flex gap-8 items-center">
+            <img src={d.reviewer_img} className="w-[60px] h-[60px] rounded-full" alt="" />
+            <div>
+                <h1>{d.reviewer_name}</h1>
+                <p>{d.reviewer_type}</p>
+            </div>
             </div>
           </div>
         );

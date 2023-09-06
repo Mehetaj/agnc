@@ -25,6 +25,7 @@ const About = () => {
         </div>
       </div>
     </Component>
+  )};
 
 
 

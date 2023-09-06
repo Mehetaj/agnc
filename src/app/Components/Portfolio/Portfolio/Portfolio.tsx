@@ -137,10 +137,10 @@ const Portfolio = (props: Props) => {
 
 
 
-            {/* contact us banner here ---------------done */}
+            {/* contact us banner here ---------------done
             <div className="w-full">
                 <Contact />
-            </div>
+            </div> */}
 
         </>
     )
