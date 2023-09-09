@@ -18,19 +18,4 @@ export const portfolio_data = [
         name: "Music Event app case study",
         category: "App Design"
     },
-    {
-        img: "https://i.ibb.co/kK4R233/img1.png",
-        name: "Dentistry website",
-        category: "Landing page"
-    },
-    {
-        img: "https://i.ibb.co/L6LdYCt/img2.png",
-        name: "Vegmart app case study",
-        category: "App Design"
-    },
-    {
-        img: "https://i.ibb.co/X42g6Vy/img3.png",
-        name: "Music Event app case study",
-        category: "App Design"
-    }
 ]

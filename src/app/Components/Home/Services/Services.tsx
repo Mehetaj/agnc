@@ -8,7 +8,7 @@ import Component from "@/app/Shared/Component/Component";
 const Services = () => {
   const data = servicesData;
   return (
-    <div className="my-[200px]">
+    <div className="my-10 dark:my-[200px]">
       <Component>
         <Title>Service</Title>
         <h1 className="text-[48px] font-bold">We offer creative solutions</h1>
