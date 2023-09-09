@@ -19,5 +19,3 @@ export const portfolio_data = [
         category: "App Design"
     },
 ]
-
-// use https://jsonkeeper.com/b/1D8F for portfolio datas
