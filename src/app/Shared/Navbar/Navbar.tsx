@@ -22,7 +22,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 {/* LOGO */}
                 <Link href="/">
-                  <h2 className="text-[32px] text-blue-600 font-bold dark:text-yellow-500 ">
+                  <h2 className="text-[32px] text-blue-600 font-bold ">
                     Bytezenith
                   </h2>
                 </Link>

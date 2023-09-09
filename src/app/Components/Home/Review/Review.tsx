@@ -15,43 +15,14 @@ type Items = {
 const Review = (Props: Items) => {
   const data = Props.data;
   return (
-    <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       {data.map((d, i) => {
         return (
-          <div key={i} className="w-[379px] h-[256px]">
-            <div className="bg-[#EBF2FF] border border-gray-200 p-8 rounded-lg">
+          <div key={i} className="w-full lg:w-[379px]  lg:h-[256px]">
+            <div className="bg-[#EBF2FF] dark:bg-[#0A1A33] dark:border-[#3A4559] border border-gray-200 p-8 rounded-lg">
               <p className="text-[20px]">{d.review}</p>
-              <div className="divider"></div>
-              {/* TODO */}
-              {/* <ReactStars count={5} value={5} size={24} color2={"#226CE5"} /> */}
-              {/* <div className="rating">
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                  checked
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-                <input
-                  type="radio"
-                  name="rating-1"
-                  className="mask mask-star"
-                />
-              </div> */}
+              <div className="w-full h-[0.1px] divider dark:border my-6"></div>
+              
             </div>
 
             <div className="mt-8 flex gap-8 items-center">
