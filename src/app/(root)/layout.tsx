@@ -20,14 +20,16 @@ type Props = {
 
 const RootLayout = ({ children }: Props) => {
   return (
-    <html id="body" className="" lang="en">
+    <html id="body"  lang="en">
       <body
         className={`${inter.className}`}
       >
         <ThemeProvider attribute="class" enableSystem={false}>
-          <Navbar />
-          {children}
-          <Footer />
+          <div className="dark:bg-[#061126] dark:text-white">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -2,13 +2,13 @@ export const jobs_data = [
     {
         id: 1,
         name: "UI/UX Designer (Intern)",
-        type: "Full time",
-        deadline: "Aug 10, 2023"
+        type: "Over time",
+        deadline: "Sep 10, 2023"
     },
     {
-        id: 1,
-        name: "UI/UX Designer (Intern)",
+        id: 2,
+        name: "Web Designer",
         type: "Full time",
-        deadline: "Aug 10, 2023"
+        deadline: "Set 17, 2023"
     },
 ]

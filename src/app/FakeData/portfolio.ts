@@ -17,5 +17,5 @@ export const portfolio_data = [
         img: "https://i.ibb.co/X42g6Vy/img3.png",
         name: "Music Event app case study",
         category: "App Design"
-    }
+    },
 ]

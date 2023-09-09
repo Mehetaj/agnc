@@ -1,4 +1,9 @@
+"use client"
 import React from 'react';
+
+import { useTheme } from 'next-themes';
+
+console.log(useTheme)
 
 const Banner = () => {
     return (

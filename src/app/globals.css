@@ -94,3 +94,19 @@
         width: 100%;
     }
 }
+
+.paginate {
+    background-image: url('../asset/Active.png');
+    display: hidden;
+}
+
+/* #bg-behind-choose-us {
+    background-image: url('../asset/bg-behind-why-chooseus.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+} */
+
+
