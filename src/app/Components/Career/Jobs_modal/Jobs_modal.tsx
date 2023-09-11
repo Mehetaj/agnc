@@ -64,7 +64,7 @@ export default function Jobs_modal({ isOpen, setIsOpen, data }: any) {
                   >
                     {/* Part of job brief */}
 
-                    JOB of {data.name}
+                    {/* JOB of {data.name} */}
                     {/* Job brief contents */}
 
 
