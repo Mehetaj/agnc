@@ -12,6 +12,7 @@ type Props = {}
 
 const Portfolio = (props: Props) => {
     const data = portfolio_data;
+    const graphics = data.filter((item) => item.category === 'Graphics')
     return (
         <>
             {/* tab section of portfolio */}
@@ -25,11 +26,11 @@ const Portfolio = (props: Props) => {
                 </div>
             </div>
 
+
             {/* portfolio section */}
             <div className='grid grid-cols-6 gap-4 w-full'>
                 <SingleItem data={data} />
             </div>
-
 
 
             {/*--------  pagination section here ---------------------to do */}
