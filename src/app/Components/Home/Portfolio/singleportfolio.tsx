@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import React, { useEffect, useState } from "react";
-import ReactPaginate from 'react-paginate'
+
 type Items = {
   data: {
     img: string;
@@ -12,29 +11,6 @@ type Items = {
 
 const Single_portfolio = (Props: Items) => {
   const data = Props.data;
-  // const [currentItems, setCurrentItems] = useState<any>([]);
-  // const [pageCount, setPageCount] = useState(0);
-  // // 
-  // // here use item offsets ; we could also page offsets
-  // // following the api or data working with
-
-  // const [itemOffSet, setItemOffSet] = useState(0)
-  // const itemsPerPage = 3
-
-  // useEffect(() => {
-  //   // fetch items from other resourses
-  //   const endOffSet = itemOffSet + itemsPerPage;
-  //   setCurrentItems(data.slice(itemOffSet, endOffSet));
-  //   setPageCount(Math.ceil(data.length / itemsPerPage))
-  // }, [itemOffSet, itemsPerPage, data]);
-
-  // const handlePageClick = (e: any) => {
-  //   const newOffSet = (e.selected * itemsPerPage) % data.length
-  //   setItemOffSet(newOffSet)
-  // }
-
-
-
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">

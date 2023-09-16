@@ -4,7 +4,7 @@
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Single_portfolio from "./singleportfolio";
 
 const Portfolio = () => {
