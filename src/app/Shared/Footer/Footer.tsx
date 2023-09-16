@@ -65,13 +65,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr />
+      {/* <hr className=" w-11/12 mx-auto"/> */}
+      <div className=" w-11/12 h-[0.06px] bg-[#CED3D9] mx-auto rounded-lg"></div>
       <div className="p-10 lg:p-0">
         <div className="my-5 flex justify-between items-center">
           {/* P=privacy and policy route */}
           <p>@ 2023, Bytezenith. All rights reserved.</p>
           <Image
-            className="lg:-mr-14 -mr-8 -mt-36 lg:-mt-16"
+            className="lg:-mr-0 -mr-8 -mt-36 lg:-mt-16"
             src={top_arrow}
             alt=""
           />

@@ -11,9 +11,14 @@ const page = () => {
     <div>
       <Component>
         <PortfolioBanner />
+<<<<<<< HEAD
         <div className="">
+=======
+        <Portfolio_tabs />
+        {/* <div className="">
+>>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
           <Portfolio />
-        </div>
+        </div> */}
       </Component>
       <Contact />
     </div>
