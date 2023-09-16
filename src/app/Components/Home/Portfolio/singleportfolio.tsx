@@ -1,11 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"
-<<<<<<< HEAD
-
-=======
-import React, { useEffect, useState } from "react";
-// import ReactPaginate from 'react-paginate'
->>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
 type Items = {
     data: any;
     id: number;
@@ -17,33 +10,6 @@ type Items = {
 
 const Single_portfolio = (Props: Items) => {
   const data = Props.data;
-<<<<<<< HEAD
-=======
-  // console.log(data)
-  // const [currentItems, setCurrentItems] = useState<any>([]);
-  // const [pageCount, setPageCount] = useState(0);
-  // // 
-  // // here use item offsets ; we could also page offsets
-  // // following the api or data working with
-
-  // const [itemOffSet, setItemOffSet] = useState(0)
-  // const itemsPerPage = 3
-
-  // useEffect(() => {
-  //   // fetch items from other recourses
-  //   const endOffSet = itemOffSet + itemsPerPage;
-  //   setCurrentItems(data.slice(itemOffSet, endOffSet));
-  //   setPageCount(Math.ceil(data.length / itemsPerPage))
-  // }, [itemOffSet, itemsPerPage, data]);
-
-  // const handlePageClick = (e: any) => {
-  //   const newOffSet = (e.selected * itemsPerPage) % data.length
-  //   setItemOffSet(newOffSet)
-  // }
-
-
-
->>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
   return (
     <>
       <div className="">
