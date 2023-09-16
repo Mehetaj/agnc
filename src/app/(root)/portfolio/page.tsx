@@ -13,9 +13,9 @@ const page = () => {
       <Component>
         <PortfolioBanner />
         <Portfolio_tabs />
-        <div className="">
+        {/* <div className="">
           <Portfolio />
-        </div>
+        </div> */}
       </Component>
       <Contact />
     </div>
