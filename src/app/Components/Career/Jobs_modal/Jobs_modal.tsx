@@ -1,5 +1,5 @@
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment } from "react";
+
+
 import close from '../../../../asset/close.png'
 import Image from "next/image";
 
@@ -22,7 +22,12 @@ export default function Jobs_modal({ isOpen, setIsOpen, data }: any) {
         </button>
       </div>
       {/* Use headless ui for modal */}
-      <Transition appear show={isOpen} as={Fragment}>
+      
+    </>
+  );
+}
+
+{/* <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
@@ -55,32 +60,29 @@ export default function Jobs_modal({ isOpen, setIsOpen, data }: any) {
                       onClick={closeModal}
                     >
                       {/* Close Button */}
-                      <Image className="w-7 h-7" src={close} alt="" />
-                    </button>
-                  </div>
-                  <Dialog.Title
-                    as="h3"
-                    className="text-3xl font-medium leading-6 text-gray-900"
-                  >
-                    {/* Part of job brief */}
+                  //     <Image className="w-7 h-7" src={close} alt="" />
+                  //   </button>
+                  // </div>
+                  // <Dialog.Title
+                  //   as="h3"
+                  //   className="text-3xl font-medium leading-6 text-gray-900"
+                  // >
+                  //   {/* Part of job brief */}
 
-                    JOB of {data.name}
-                    {/* Job brief contents */}
+                  //   {/* JOB of {data.name} */}
+                  //   {/* Job brief contents */}
 
 
-                  </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
-                  </div>
-                </Dialog.Panel>
-              </Transition.Child>
-            </div>
-          </div>
-        </Dialog>
-      </Transition>
-    </>
-  );
-}
+                  // </Dialog.Title>
+                  // <div className="mt-2">
+                  //   <p className="text-sm text-gray-500">
+                  //     Your payment has been successfully submitted. We’ve sent
+                  //     you an email with all of the details of your order.
+                  //   {/* </p> */}
+                  // </div>
+                // </Dialog.Panel>
+              // </Transition.Child>
+            // </div>
+          // </div>
+        // </Dialog>
+      // </Transition> */}

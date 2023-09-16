@@ -1,5 +1,7 @@
 "use client";
 
+import './globals.css'
+
 export default function GlobalError({
   error,
   reset,
@@ -9,7 +11,7 @@ export default function GlobalError({
 }) {
   return (
     <html>
-      <body>
+      <body className=''>
         <h2>Something went wrong! global error</h2>
         <button onClick={() => reset()}>Try again</button>
       </body>
