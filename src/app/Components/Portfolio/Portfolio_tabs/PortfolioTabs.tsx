@@ -1,5 +1,4 @@
 "use client"
-import { Tab } from '@headlessui/react'
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Single_portfolio from '../../Home/Portfolio/singleportfolio';
 function classNames(...classes : any | string[] | string | object) {
@@ -24,7 +23,7 @@ export default function Portfolio_tabs() {
 
   return (
     <div className="w-full  mx-auto px-2 py-16 sm:px-0">
-      <Tab.Group>
+      {/* <Tab.Group>
         <Tab.List className="flex max-w-[932px] py-4 mx-auto space-x-1 rounded-r-full text-[20px] rounded-l-full bg-[#D6E6FF] p-1">
           {Object.keys(categories).map((category) => (
             <Tab
@@ -60,7 +59,7 @@ export default function Portfolio_tabs() {
             </Tab.Panel>
           ))}
         </Tab.Panels>
-      </Tab.Group>
+      </Tab.Group> */}
     </div>
   )
 }

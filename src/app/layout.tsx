@@ -1,3 +1,4 @@
+"use client"
 import "./globals.css";
 type Props = {
   children: string | JSX.Element | JSX.Element[];

@@ -4,8 +4,13 @@
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
+<<<<<<< HEAD
+import React from "react";
+import Single_portfolio from "./singleportfolio";
+=======
 import React, { useEffect, useState } from "react";
 
+>>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
 
 const Portfolio = () => {
   const data = portfolio_data;

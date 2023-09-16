@@ -1,7 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
+<<<<<<< HEAD
+
+=======
 import React, { useEffect, useState } from "react";
 // import ReactPaginate from 'react-paginate'
+>>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
 type Items = {
     data: any;
     id: number;
@@ -13,6 +17,8 @@ type Items = {
 
 const Single_portfolio = (Props: Items) => {
   const data = Props.data;
+<<<<<<< HEAD
+=======
   // console.log(data)
   // const [currentItems, setCurrentItems] = useState<any>([]);
   // const [pageCount, setPageCount] = useState(0);
@@ -37,6 +43,7 @@ const Single_portfolio = (Props: Items) => {
 
 
 
+>>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
   return (
     <>
       <div className="">

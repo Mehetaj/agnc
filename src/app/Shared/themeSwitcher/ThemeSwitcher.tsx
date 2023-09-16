@@ -16,7 +16,7 @@ const ThemeSwitcher = () => {
 
   return (
     <button
-      className={`w-fit absolute right-5 top-2 mt-3 p-2 rounded-md hover:scale-110 active:scale-100 dark:bg-black`}
+      className={`w-fit  right-5 top-2 mt-3 p-2 rounded-md hover:scale-110 active:scale-100 dark:bg-black`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "light" ? (
