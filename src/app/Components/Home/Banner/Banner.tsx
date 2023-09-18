@@ -21,7 +21,7 @@ const Banner = () => {
           <Button>View our work</Button>
         </div>
         {/* Banner image */}
-        <Image className="" src={banner} alt="" />
+        <Image className="max-w-full" src={banner} alt="" />
       </div>
       </Component>
   );
