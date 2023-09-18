@@ -9,7 +9,7 @@ export default function Cursor() {
       outerSize={18}
       color='76, 127, 252'
       outerAlpha={0.2}
-      innerScale={0.7}
+      innerScale={1}
       outerScale={5}
       clickables={[
         'a',
@@ -25,7 +25,7 @@ export default function Cursor() {
         '.link',
         {
           target: '.custom',
-          options: {
+          options:  {
             innerSize: 12,
             outerSize: 12,
             color: '255, 255, 255',

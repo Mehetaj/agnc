@@ -1,10 +1,5 @@
 import React from 'react'
 import './Portfolio.css'
-import cover1 from '../../../../asset/portfolio/cover1.png'
-import cover2 from '../../../../asset/portfolio/cover2.png'
-import cover3 from '../../../../asset/portfolio/cover3.png'
-import Image from 'next/image'
-import Contact from '../../Home/Contact/Contact'
 import { portfolio_data } from '@/app/FakeData/portfolio'
 import SingleItem from './SingleItem'
 
@@ -27,7 +22,7 @@ const Portfolio = (props: Props) => {
 
             {/* portfolio section */}
             <div className='grid grid-cols-6 gap-4 w-full'>
-                <SingleItem data={data} />
+                
             </div>
 
 
