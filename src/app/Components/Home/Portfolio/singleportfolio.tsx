@@ -1,25 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-<<<<<<< HEAD
-
-=======
 import React, { useEffect, useState } from "react";
-// import ReactPaginate from 'react-paginate'
->>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
-type Items = {
-    data: any;
-    id: number;
-    img: string;
-    category: string;
-    name: string;
+import ReactPaginate from 'react-paginate'
+// type Items = {
+//   data: {
+//     img: string;
+//     category: string;
+//     name: string;
+//   }[];
+// };
 
-};
-
-const Single_portfolio = (Props: Items) => {
+const Single_portfolio = (Props: any) => {
   const data = Props.data;
-<<<<<<< HEAD
-=======
-  // console.log(data)
+  console.log(data)
   // const [currentItems, setCurrentItems] = useState<any>([]);
   // const [pageCount, setPageCount] = useState(0);
   // // 
@@ -30,7 +23,7 @@ const Single_portfolio = (Props: Items) => {
   // const itemsPerPage = 3
 
   // useEffect(() => {
-  //   // fetch items from other recourses
+  //   // fetch items from other resourses
   //   const endOffSet = itemOffSet + itemsPerPage;
   //   setCurrentItems(data.slice(itemOffSet, endOffSet));
   //   setPageCount(Math.ceil(data.length / itemsPerPage))
@@ -43,16 +36,21 @@ const Single_portfolio = (Props: Items) => {
 
 
 
->>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
   return (
     <>
-      <div className="">
-        <img src={data.img} alt="" />
-        <p className="text-[18px] my-4">{data.category}</p>
-        <h1 className="text-[24px] font-bold">{data.name}</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
+        {data.map((d: any, i: number) => 
+            <div
+              key={i}
+              className=""
+            >
+              <img src={d.img} alt="" />
+              <p className="text-[18px] my-4">{d.category}</p>
+              <h1 className="text-[24px] font-bold">{d.name}</h1>
+            </div>
+
+        )}
       </div>
-       
-      
       {/* <ReactPaginate
         breakLabel="..."
         nextLabel="next >"

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navLinks = NavLink.map((d, i) => {
     return (
-      <div>
+      <div key={i}>
         <li className="pb-6 text-[18px]  py-2 lg:px-6 text-center border-b-2 lg:border-b-0  hover:text-blue-900  border-blue-900   lg:hover:bg-transparent">
           <Link href={d.path} onClick={() => setNavbar(!navbar)}>
             {d.name}
