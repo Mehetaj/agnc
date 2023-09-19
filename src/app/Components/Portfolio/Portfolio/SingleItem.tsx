@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
+import { paginate } from '../Pagination/paginate';
 // type Items = {
 //     data: {
 //         img: string;
@@ -9,13 +10,17 @@ import React from 'react'
 // };
 
 
-const SingleItem = (props: any) => {
-    const datas = props.data;
-    console.log(datas)
+const SingleItem = ({data, currentPage, pageSize}:any) => {
+    // const datas = props.data;
+    console.log(data)
+
+    const paginatePosts = paginate(data, currentPage, pageSize);
+
+    console.log(paginatePosts)
     return (
         <>
             {
-                datas.slice(0,6).map((data : any, i : number) => {
+                paginatePosts.map((data : any, i : number) => {
                     return (
                         <div className=' portfolio-item'
                         >

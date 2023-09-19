@@ -1,15 +1,18 @@
 "use client"
 "use client"
-import React from 'react'
+import React, { useState } from "react";
 import './Portfolio.css'
 import { portfolio_data } from '@/app/FakeData/portfolio'
 import SingleItem from './SingleItem'
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
+import Pagination from '../Pagination/Pagination'
+import { paginate } from "../Pagination/paginate";
 
 type Props = {}
 
 const Portfolio = (props: Props) => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const pageSize = 5;
 
     const categorizedData: any = {
         "View all": [...portfolio_data], // Create a "View all" category with a copy of all data
@@ -26,6 +29,10 @@ const Portfolio = (props: Props) => {
     let categories = categorizedData;
     //  console.log(categorizedData)
 
+    const handlePageChange = (page: any) =>{
+        setCurrentPage(page)
+    }
+    // const paginatePosts = paginate(posts, currentPage, pageSize);
     return (
         <>
             {/* tab section of portfolio */}
@@ -43,12 +50,16 @@ const Portfolio = (props: Props) => {
 
                 {Object.values(categories).map((data: any, idx) => (
                     <TabPanel key={idx}>
-                        <div className=" grid grid-cols-3 gap-6">
-                            <SingleItem data={data} ></SingleItem>
+                        <div className=" grid grid-cols-3 gap-6 ">
+                            <SingleItem data={data} currentPage={currentPage} pageSize={pageSize} ></SingleItem>
                         </div>
+                        <div className="flex justify-center">
+                            <Pagination item={data.length} currentPage={currentPage} pageSize={pageSize} onPageChange={handlePageChange} />
+                        </div>
+                    
                     </TabPanel>
                 ))}
-
+                
             </Tabs>
 
             {/*--------  pagination section here ---------------------to do */}
