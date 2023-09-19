@@ -1,29 +1,30 @@
 import Image from 'next/image';
 import React from 'react'
-type Items = {
-    data: {
-        img: string;
-        category: string;
-        name: string;
-    }[];
-};
+// type Items = {
+//     data: {
+//         img: string;
+//         category: string;
+//         name: string;
+//     }[];
+// };
 
 
-const SingleItem = (props: Items) => {
+const SingleItem = (props: any) => {
     const datas = props.data;
+    console.log(datas)
     return (
         <>
             {
-                datas.map((data, i) => {
+                datas.slice(0,6).map((data : any, i : number) => {
                     return (
-                        <div className='col-span-2 p-4 portfolio-item' key={i}
+                        <div className=' portfolio-item'
                         >
                             {/* ------------ Banner image */}
-                            <Image className='' src={data.img} alt='' />
+                            <img className='' src={data.img} alt='' />
                             {/* ----------- portfolio description */}
                             <div className='py-3'>
                                 <p className='font-light'>{data.category}</p>
-                                <p className='font-bold text-2xl'>{data.name}</p>
+                                <p className='font-bold text-2xl'>{data.title}</p>
                             </div>
                         </div>
                     )
