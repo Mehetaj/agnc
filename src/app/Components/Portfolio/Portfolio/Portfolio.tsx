@@ -1,4 +1,5 @@
 "use client"
+"use client"
 import React from 'react'
 import './Portfolio.css'
 import { portfolio_data } from '@/app/FakeData/portfolio'

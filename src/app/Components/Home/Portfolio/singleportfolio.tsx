@@ -12,7 +12,7 @@ import ReactPaginate from 'react-paginate'
 
 const Single_portfolio = (Props: any) => {
   const data = Props.data;
-  console.log(data)
+ 
   // const [currentItems, setCurrentItems] = useState<any>([]);
   // const [pageCount, setPageCount] = useState(0);
   // // 
