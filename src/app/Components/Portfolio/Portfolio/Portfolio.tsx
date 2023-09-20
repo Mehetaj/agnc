@@ -6,13 +6,12 @@ import { portfolio_data } from '@/app/FakeData/portfolio'
 import SingleItem from './SingleItem'
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Pagination from '../Pagination/Pagination'
-import { paginate } from "../Pagination/paginate";
 
 type Props = {}
 
 const Portfolio = (props: Props) => {
     const [currentPage, setCurrentPage] = useState(1);
-    const pageSize = 5;
+    const pageSize = 6;
 
     const categorizedData: any = {
         "View all": [...portfolio_data], // Create a "View all" category with a copy of all data

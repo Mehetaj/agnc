@@ -11,12 +11,9 @@ import { paginate } from '../Pagination/paginate';
 
 
 const SingleItem = ({data, currentPage, pageSize}:any) => {
-    // const datas = props.data;
-    console.log(data)
 
     const paginatePosts = paginate(data, currentPage, pageSize);
 
-    console.log(paginatePosts)
     return (
         <>
             {

@@ -1,24 +1,28 @@
 import "./../Portfolio/Portfolio.css"
+import left from "../../../../asset/chevron-left.svg"
+import right from "../../../../asset/chevron-right.svg"
+import Image from "next/image";
 
 const Pagination =({item , pageSize, currentPage, onPageChange}:any)=>{
 
     const pageCount = item/ pageSize;
-    if(Math.ceil(pageCount)===1) return null;
-    const pages = range(1, pageCount + 1);
 
+    if(Math.ceil(pageCount)===1) return null;
+
+    const pages = range(1, pageCount + 1);
     
     return(
-        <div className="join">
+        <div className="join mt-5">
+            
+            <button className="p-btn " disabled={currentPage===1} onClick={()=> onPageChange(currentPage-1)} ><Image src={left} alt="arrow" /> </button>
+            
             {
                 pages.map((page) =>(
                         <button onClick={()=> onPageChange(page)}  className={page === currentPage ? " p-btn p-btn-active": " p-btn " } key={page}>{page}</button>
                 ))
             }
 
-
-            {/* <button className="join-item btn btn-active">2</button>
-            <button className="join-item btn">3</button>
-            <button className="join-item btn">4</button> */}
+            <button className="p-btn" onClick={()=> onPageChange(currentPage+1)} disabled={currentPage===pages.length} ><Image src={right} alt="arrow" /> </button>
         </div>
     )
 }
