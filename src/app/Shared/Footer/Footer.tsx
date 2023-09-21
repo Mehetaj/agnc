@@ -10,7 +10,7 @@ import Component from "../Component/Component";
 const Footer = () => {
   return (
     <Component>
-      <div className=" grid p-10 lg:p-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
         <div className="foot">
           {/* Company name */}
           <h1 className="text-[48px] lg:text-[32px] font-bold mb-8">
@@ -38,19 +38,34 @@ const Footer = () => {
         <div>
           {/* Links */}
           <h1 className="text-[24px] font-bold mb-8">Links</h1>
-          <Link href="/about" className="text-[16px] block my-3 mb-6 text-[#2D3D59]">
+          <Link
+            href="/about"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+          >
             About Us
           </Link>
-          <Link href="/services" className="text-[16px] block my-3 mb-6 text-[#2D3D59]">
+          <Link
+            href="/services"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+          >
             Services
           </Link>
-          <Link href="/portfolio" className="text-[16px] block my-3 mb-6 text-[#2D3D59]">
+          <Link
+            href="/portfolio"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+          >
             Portfolio
           </Link>
-          <Link href="/blog" className="text-[16px] block my-3 mb-6 text-[#2D3D59]">
+          <Link
+            href="/blog"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+          >
             Blog
           </Link>
-          <Link href="/career" className="text-[16px] block my-3 mb-6 text-[#2D3D59]">
+          <Link
+            href="/career"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+          >
             Career
           </Link>
         </div>
@@ -65,17 +80,19 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <hr className=" w-11/12 mx-auto"/> */}
+      <div className="">
+        <div className="divider"></div>
+        <Image
+          className=""
+          src={top_arrow}
+          alt=""
+        />
+      </div>
       <div className=" w-11/12 h-[0.06px] bg-[#CED3D9] mx-auto rounded-lg"></div>
       <div className="p-10 lg:p-0">
         <div className="my-5 flex justify-between items-center">
           {/* P=privacy and policy route */}
           <p>@ 2023, Bytezenith. All rights reserved.</p>
-          <Image
-            className="lg:-mr-0 -mr-8 -mt-36 lg:-mt-16"
-            src={top_arrow}
-            alt=""
-          />
         </div>
 
         <Link className="text-gray-500" href="/privacy_policy">
