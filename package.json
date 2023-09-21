@@ -16,6 +16,7 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "lodash": "^4.17.21",
     "next": "13.4.19",
     "next-themes": "^0.2.1",
     "postcss": "8.4.28",
@@ -24,11 +25,13 @@
     "react-dom": "18.2.0",
     "react-paginate": "^8.2.0",
     "react-stars": "^2.2.5",
+    "react-tabs": "^6.0.2",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6",
     "vercel": "^32.2.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.198",
     "daisyui": "^3.6.3"
   }
 }
