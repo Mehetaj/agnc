@@ -1,4 +1,4 @@
-import Banner from '@/app/Components/Privacy/Banner/Banner';
+import Banner from "@/app/Shared/Banner/Banner"
 import Info_we_collect from '@/app/Components/Privacy/Info_we_collect/Info_we_collect';
 import Privacy_intro from '@/app/Components/Privacy/Intro/Privacy_intro';
 import Table_of_content from '@/app/Components/Privacy/Table_of_Content/Table_of_content';
@@ -11,7 +11,7 @@ import React from 'react';
 const privacy_policy = () => {
     return (
         <div>
-            <Banner />
+            <Banner title="Privacy Policy"/>
             <div className='flex gap-20 mt-20 cnt mx-auto px-10'>
                 <div className='text-[#2D3D59] w-[789px] text-[20px]'>
                     <Privacy_intro />

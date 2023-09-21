@@ -1,4 +1,4 @@
-import Banner from "@/app/Components/Career/Banner/Banner";
+import Banner from "@/app/Shared/Banner/Banner"
 import Career_intro from "@/app/Components/Career/Career_intro/Career_intro";
 import Jobs from "@/app/Components/Career/Jobs/Jobs";
 import Component from "@/app/Shared/Component/Component";
@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <Component>
-        <Banner />
+        <Banner title="Career"/>
         <Career_intro />
         <Jobs />
       </Component>
