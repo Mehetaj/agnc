@@ -1,10 +1,14 @@
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
 
-export default function Jobs_modal({ isOpen, setIsOpen }: any) {
+
+import close from '../../../../asset/close.png'
+import Image from "next/image";
+
+export default function Jobs_modal({ isOpen, setIsOpen, data }: any) {
   function closeModal() {
     setIsOpen(false);
   }
+
+  console.log(data)
 
   function openModal() {
     setIsOpen(true);
@@ -17,8 +21,12 @@ export default function Jobs_modal({ isOpen, setIsOpen }: any) {
           Job Details
         </button>
       </div>
+      
+    </>
+  );
+}
 
-      <Transition appear show={isOpen} as={Fragment}>
+{/* <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
@@ -50,27 +58,30 @@ export default function Jobs_modal({ isOpen, setIsOpen }: any) {
                       className="text-2xl w-10 h-10 font-bold"
                       onClick={closeModal}
                     >
-                      X
-                    </button>
-                  </div>
-                  <Dialog.Title
-                    as="h3"
-                    className="text-3xl font-medium leading-6 text-gray-900"
-                  >
-                    Job brief
-                  </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
-                  </div>
-                </Dialog.Panel>
-              </Transition.Child>
-            </div>
-          </div>
-        </Dialog>
-      </Transition>
-    </>
-  );
-}
+                      {/* Close Button */}
+                  //     <Image className="w-7 h-7" src={close} alt="" />
+                  //   </button>
+                  // </div>
+                  // <Dialog.Title
+                  //   as="h3"
+                  //   className="text-3xl font-medium leading-6 text-gray-900"
+                  // >
+                  //   {/* Part of job brief */}
+
+                  //   {/* JOB of {data.name} */}
+                  //   {/* Job brief contents */}
+
+
+                  // </Dialog.Title>
+                  // <div className="mt-2">
+                  //   <p className="text-sm text-gray-500">
+                  //     Your payment has been successfully submitted. We’ve sent
+                  //     you an email with all of the details of your order.
+                  //   {/* </p> */}
+                  // </div>
+                // </Dialog.Panel>
+              // </Transition.Child>
+            // </div>
+          // </div>
+        // </Dialog>
+      // </Transition> */}

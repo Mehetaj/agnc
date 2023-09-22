@@ -1,29 +1,32 @@
 import Image from 'next/image';
 import React from 'react'
-type Items = {
-    data: {
-        img: string;
-        category: string;
-        name: string;
-    }[];
-};
+import { paginate } from '../Pagination/paginate';
+// type Items = {
+//     data: {
+//         img: string;
+//         category: string;
+//         name: string;
+//     }[];
+// };
 
 
-const SingleItem = (props: Items) => {
-    const datas = props.data;
+const SingleItem = ({data, currentPage, pageSize}:any) => {
+
+    const paginatePosts = paginate(data, currentPage, pageSize);
+
     return (
         <>
             {
-                datas.map((data, i) => {
+                paginatePosts.map((data : any, i : number) => {
                     return (
-                        <div className='col-span-2 p-4 portfolio-item' key={i}
+                        <div className=' portfolio-item'
                         >
                             {/* ------------ Banner image */}
-                            <Image className='' src={data.img} alt='' />
+                            <img className='' src={data.img} alt='' />
                             {/* ----------- portfolio description */}
                             <div className='py-3'>
                                 <p className='font-light'>{data.category}</p>
-                                <p className='font-bold text-2xl'>{data.name}</p>
+                                <p className='font-bold text-2xl'>{data.title}</p>
                             </div>
                         </div>
                     )

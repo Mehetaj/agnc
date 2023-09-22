@@ -8,7 +8,7 @@ import Services from "../Components/Home/Services/Services";
 
 const Home = () => {
   return (
-    <main className="">
+    <main className=" ">
       <Banner />
       <Services />
       <About />

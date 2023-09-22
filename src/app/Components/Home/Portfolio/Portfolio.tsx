@@ -1,12 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
+
+"use client"
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Single_portfolio from "./singleportfolio";
 
 const Portfolio = () => {
   const data = portfolio_data;
+  // const [data, setData] = useState([])
+  // useEffect(() => {
+  //   fetch("https://api.jsonbin.io/v3/qs/64fbfdc68d92e126ae693a51")
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       setData(data.record)
+  //     })
+  // }, [])
+
   return (
     <div className="my-16">
       <Component>
