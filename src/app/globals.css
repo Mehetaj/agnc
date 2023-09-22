@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    scroll-behavior: smooth;
+}
 .btn-outline {
     padding: 12px 32px 12px 32px;
     border-radius: 8px;

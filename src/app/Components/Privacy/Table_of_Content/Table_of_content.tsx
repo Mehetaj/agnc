@@ -2,85 +2,76 @@
 
 import Link from "next/link";
 
-const element = () => [
+const element = [
     {
         text: "Information We Collect",
-        path: ""
+        path: "#1"
     },
     {
         text: "Use of Information",
-        path: ""
+        path: "#2"
     },
     {
         text: "Information Sharing",
-        path: ""
+        path: "#3"
     },
     {
         text: "Security",
-        path: ""
+        path: "#4"
     },
     {
         text: "Cookies and Tracking Technologies",
-        path: ""
+        path: "#5"
     },
     {
         text: "Your Choices",
-        path: ""
+        path: "#6"
     },
     {
         text: "Children’s Privacy",
-        path: ""
+        path: "#7"
     },
     {
         text: "Changes to this Privacy Policy",
-        path: ""
+        path: "#8"
     },
     {
         text: "What are Cookies?",
-        path: ""
+        path: "#9"
     },
     {
         text: "Types of Cookies We Use",
-        path: ""
+        path: "#10"
     },
     {
         text: "Managing Cookies",
-        path: ""
+        path: "#11"
     },
     {
         text: "Third-Party Websites and Services",
-        path: ""
+        path: "#12"
     },
     {
         text: "Changes to this Cookie Policy",
-        path: ""
+        path: "#13"
     },
     {
         text: "Contact Us",
-        path: ""
+        path: "#14"
     },
 ]
 
 const Table_of_content = () => {
     return (
-        <div className="w-[379px]">
+        <div className="w-[379px] bg-[#EBF2FF] p-8 rounded-md">
             <h1 className="text-[32px] font-bold">Table of content</h1>
             <div>
                 {/* Quick Links of privacy policy contents */}
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Information We Collect</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Use of Information</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Information Sharing</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Security</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Cookies and Tracking Technologies</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Your Choices</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Children’s Privacy</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Changes to this Privacy Policy</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">What are Cookies?</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Types of Cookies We Use</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Managing Cookies</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Third-Party Websites and Services</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Changes to this Cookie Policy</Link>
-                   <Link className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href="">Contact Us</Link>
+                {
+                    element.map((item: any,idx:number)=>(
+                        <Link key={idx} className="mt-[10px] block font-bold text-[#2D3D59] text-[16px]" href={item.path}>{item.text}</Link>
+                    ))
+                }
             </div>
         </div>
     );
