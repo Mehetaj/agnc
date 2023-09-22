@@ -12,9 +12,9 @@ const page = () => {
         <div>
           <Banner />
           <AboutHero />
-          <ChooseUs />
         </div>
       </Component>
+          <ChooseUs />
       <Contact />
     </div>
   );

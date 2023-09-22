@@ -13,7 +13,7 @@ import Component from "@/app/Shared/Component/Component";
 
 export default function Brand() {
   return (
-    <div id="brand" className=" bg-[#EBF2FF] p-10  lg:py-20 mt-20">
+    <div id="brand" className=" bg-[#EBF2FF] dark:bg-[#10223F] p-10  lg:py-20 mt-20">
       <Component>
         <div className="flex flex-col">
           <Title>Brands</Title>
@@ -21,7 +21,7 @@ export default function Brand() {
         </div>
         {/* create div with four column and three row as card */}
         {/* Brands static img from assets folder */}
-        <div className="flex flex-col  justify-center items-center lg:grid  mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <Image className="w-[335px] lg:w-[276px]" src={brand1} alt="" />
           <Image className="w-[335px] lg:w-[276px]" src={brand2} alt="" />
           <Image className="w-[335px] lg:w-[276px]" src={brand3} alt="" />

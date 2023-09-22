@@ -4,7 +4,7 @@ import Component from "@/app/Shared/Component/Component";
 
 const Contact = () => {
   return (
-    <div className="bg-[#226CE5]">
+    <div className="bg-[#226CE5] dark:bg-[#10223F]">
       <div
         id="contact_component"
         
