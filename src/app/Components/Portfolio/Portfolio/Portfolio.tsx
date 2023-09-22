@@ -29,7 +29,7 @@ const Portfolio = (props: Props) => {
     let categories = categorizedData;
     //  console.log(categorizedData)
 
-    const handlePageChange = (page: any) =>{
+    const handlePageChange = (page: any) => {
         setCurrentPage(page)
     }
     // const paginatePosts = paginate(posts, currentPage, pageSize);
@@ -52,10 +52,10 @@ const Portfolio = (props: Props) => {
                 </TabList>
 
 
-            {/* portfolio section */}
-            <div className='grid grid-cols-6 gap-4 w-full'>
-                <SingleItem data={data} />
-            </div>
+                {/* portfolio section */}
+                <div className='grid grid-cols-6 gap-4 w-full'>
+                    <SingleItem data={data} />
+                </div>
 
 
                 {/* portfolio section */}
@@ -68,10 +68,10 @@ const Portfolio = (props: Props) => {
                         <div className="flex justify-center">
                             <Pagination item={data.length} currentPage={currentPage} pageSize={pageSize} onPageChange={handlePageChange} />
                         </div>
-                    
+
                     </TabPanel>
                 ))}
-                
+
             </Tabs>
 
             {/*--------  pagination section here ---------------------to do */}

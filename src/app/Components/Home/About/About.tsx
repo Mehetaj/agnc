@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../asset/team checklist-amico 1.png";
+import img from "../../../../asset/team.png";
 import Title from "@/app/Shared/Title/Title";
 import Button from "@/app/Shared/Button/Button";
 import Component from "@/app/Shared/Component/Component";

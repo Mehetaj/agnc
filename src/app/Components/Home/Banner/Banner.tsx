@@ -23,7 +23,7 @@ const Banner = () => {
         {/* Banner image */}
         <Image className="max-w-full" src={banner} alt="" />
       </div>
-      </Component>
+    </Component>
   );
 };
 
