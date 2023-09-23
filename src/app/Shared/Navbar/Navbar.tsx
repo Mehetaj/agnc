@@ -25,7 +25,7 @@ const Navbar = () => {
   })
 
   return (
-    <div id="navbar" className="mx-auto md:p-0 dark:bg-[#030C1A] ">
+    <div id="" className="mx-auto md:p-0 dark:bg-[#030C1A] ">
       <Component>
         <nav className="w-full md:max-w-[1400px]">
           <div className="justify-between mx-auto  md:items-center md:flex">
@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
             <div className="">
               <div
-                className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "p-12 md:p-0 block" : "hidden"
+                className={`flex-1 justify-self-center pb-3  md:block md:pb-0 md:mt-0 ${navbar ? "p-12 md:p-0 block" : "hidden"
                   }`}
               >
                 <ul className="h-screen md:h-auto items-center dark:text-white justify-center md:flex ">

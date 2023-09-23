@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-/// This file not needed but if you want i can use it (MH-Fahim11)
+
 "use client"
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Single_portfolio from "./singleportfolio";
 // import { portfolio_data } from "@/app/FakeData/portfolio";
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
         <Title>portfolio</Title>
         <h1 className="text-[48px] font-bold">Some of our work</h1>
 
-        {/* <Single_portfolio data={data} ></Single_portfolio> */}
+        {/* <Single_portfolio data={data}></Single_portfolio> */}
       </Component>
     </div>
   );

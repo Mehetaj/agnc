@@ -1,43 +1,70 @@
-import React from 'react'
+"use client"
+"use client"
+import React, { useState } from "react";
 import './Portfolio.css'
 import { portfolio_data } from '@/app/FakeData/portfolio'
 import SingleItem from './SingleItem'
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Pagination from '../Pagination/Pagination'
 
 type Props = {}
 
 const Portfolio = (props: Props) => {
-    const data = portfolio_data;
+    const [currentPage, setCurrentPage] = useState(1);
+    const pageSize = 6;
+
+    const categorizedData: any = {
+        "View all": [...portfolio_data], // Create a "View all" category with a copy of all data
+    };
+
+    portfolio_data.forEach(item => {
+        const { category, ...rest } = item;
+        if (!categorizedData[category]) {
+            categorizedData[category] = [];
+        }
+        categorizedData[category].push(rest);
+    });
+
+    let categories = categorizedData;
+    //  console.log(categorizedData)
+
+    const handlePageChange = (page: any) =>{
+        setCurrentPage(page)
+    }
+    // const paginatePosts = paginate(posts, currentPage, pageSize);
     return (
         <>
             {/* tab section of portfolio */}
-            <div className=' w-3/4	'>
-                <div className="flex justify-around item-center flex-1  tabContaner">
-                    <button className='px-12 font-bold'>View All</button>
-                    <button className='px-12'>Graphics</button>
-                    <button className='px-12'>UI/UX</button>
-                    <button className='px-12'>Wordpress</button>
-                    <button className='px-12'>Web Development</button>
-                </div>
-            </div>
 
-            {/* portfolio section */}
-            <div className='grid grid-cols-6 gap-4 w-full'>
+            <Tabs className="w-3/4 mx-auto">
+                <TabList className="flex justify-around item-center flex-1  tabContaner">
+                    {Object.keys(categories).map((category, idx) => (
+                        <Tab key={idx} >
+                            {category}
+                        </Tab>
+                    ))}
+                </TabList>
+
+                {/* portfolio section */}
+
+                {Object.values(categories).map((data: any, idx) => (
+                    <TabPanel key={idx}>
+                        <div className=" grid grid-cols-3 gap-6 ">
+                            <SingleItem data={data} currentPage={currentPage} pageSize={pageSize} ></SingleItem>
+                        </div>
+                        <div className="flex justify-center">
+                            <Pagination item={data.length} currentPage={currentPage} pageSize={pageSize} onPageChange={handlePageChange} />
+                        </div>
+                    
+                    </TabPanel>
+                ))}
                 
-            </div>
-
-
+            </Tabs>
 
             {/*--------  pagination section here ---------------------to do */}
             <div className="w-full">
 
             </div>
-
-
-
-            {/* contact us banner here ---------------done
-            <div className="w-full">
-                <Contact />
-            </div> */}
 
         </>
     )

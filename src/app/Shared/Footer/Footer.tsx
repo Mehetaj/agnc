@@ -16,7 +16,7 @@ const Footer = () => {
           <h1 className="text-[48px] lg:text-[32px] font-bold mb-8">
             Bytezenith
           </h1>
-          <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59]">
+          <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59] dark:text-white">
             World-class user experiences with <br /> pixel perfect user
             interface <br /> designs.
           </p>
@@ -24,14 +24,14 @@ const Footer = () => {
         <div className="foot">
           {/* Address */}
           <h1 className="text-[24px] font-bold mb-8">Lets Connect</h1>
-          <p className=" text-[21px] lg:text-[16px] mb-6 text-[#2D3D59]">
+          <p className=" text-[21px] lg:text-[16px] mb-6 text-[#2D3D59] dark:text-white">
             House 336,Road 02, Block-D <br />
             Bashundhara R/A, Dhaka 1229
           </p>
-          <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59]">
+          <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59] dark:text-white">
             hello@Bytezenith.com
           </p>
-          <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59]">
+          <p className="text-[21px] lg:text-[16px] mb-6 text-[#2D3D59] dark:text-white">
             019999999999
           </p>
         </div>
@@ -40,31 +40,31 @@ const Footer = () => {
           <h1 className="text-[24px] font-bold mb-8">Links</h1>
           <Link
             href="/about"
-            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59] dark:text-white"
           >
             About Us
           </Link>
           <Link
             href="/services"
-            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59] dark:text-white"
           >
             Services
           </Link>
           <Link
             href="/portfolio"
-            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59] dark:text-white"
           >
             Portfolio
           </Link>
           <Link
             href="/blog"
-            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59] dark:text-white"
           >
             Blog
           </Link>
           <Link
             href="/career"
-            className="text-[16px] block my-3 mb-6 text-[#2D3D59]"
+            className="text-[16px] block my-3 mb-6 text-[#2D3D59] dark:text-white"
           >
             Career
           </Link>

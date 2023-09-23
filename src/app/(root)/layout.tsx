@@ -22,7 +22,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   
   return (
-    <html id="body" lang="en">
+    <html lang="en">
       <body
         className={`${inter.className}`}
       >
