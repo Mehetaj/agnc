@@ -6,10 +6,10 @@ import Component from "@/app/Shared/Component/Component";
 const Banner = () => {
   return (
     <Component>
-      <div className="px mx-auto p-10 lg:p-0  lg:flex justify-between items-center lg:mt-16">
+      <div className=" mx-auto lg:flex justify-between items-center">
         <div>
           {/* Heading of Banners */}
-          <h1 className="text-[40px] lg:text-[60px] font-bold">
+          <h1 className="text-[45px] lg:text-[60px] font-bold">
             Stand Out in the <br className="lg:flex hidden" /> Digital Crowd
             with <br className="lg:flex hidden" /> Creative Solutions
           </h1>
@@ -21,7 +21,7 @@ const Banner = () => {
           <Button>View our work</Button>
         </div>
         {/* Banner image */}
-        <Image className="max-w-full" src={banner} alt="" />
+        <Image className="max-w-full mt-4 lg:mt-0" src={banner} alt="" />
       </div>
     </Component>
   );

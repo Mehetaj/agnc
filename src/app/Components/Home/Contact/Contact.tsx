@@ -10,7 +10,7 @@ const Contact = () => {
         
       >
         <Component>
-          <div className=" lg:py-20  py-16 lg:px-10  my-16 h-full lg:h-[340px] items-center text-white lg:flex justify-between">
+          <div className=" my-16 h-full items-center text-white lg:flex justify-between">
             <div>
               <Image className="mb-8" src={hello_text} alt="" />
 
