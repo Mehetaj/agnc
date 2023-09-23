@@ -25,7 +25,6 @@ const Portfolio = () => {
       <Component>
         <Title>portfolio</Title>
         <h1 className="text-[48px] font-bold">Some of our work</h1>
-
         {/* <Single_portfolio data={data}></Single_portfolio> */}
       </Component>
     </div>

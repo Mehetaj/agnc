@@ -23,7 +23,7 @@ const Banner = () => {
         {/* Banner image */}
         <Image className="max-w-full mt-4 lg:mt-0" src={banner} alt="" />
       </div>
-      </Component>
+    </Component>
   );
 };
 
