@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bytezenith",
-  description: "Software Agency",
+  description: "This is bytezenith a software agency",
 };
 
 type Props = {
