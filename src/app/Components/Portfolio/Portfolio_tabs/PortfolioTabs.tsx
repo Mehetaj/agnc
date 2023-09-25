@@ -1,6 +1,5 @@
 "use client"
 import { portfolio_data } from "@/app/FakeData/portfolio";
-import Single_portfolio from '../../Home/Portfolio/singleportfolio';
 function classNames(...classes : any | string[] | string | object) {
   return classes.filter(Boolean).join(' ')
 }
