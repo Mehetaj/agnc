@@ -1,5 +1,4 @@
 "use client"
-"use client"
 import React, { useState } from "react";
 import './Portfolio.css'
 import { portfolio_data } from '@/app/FakeData/portfolio'
@@ -60,12 +59,6 @@ const Portfolio = (props: Props) => {
                 ))}
                 
             </Tabs>
-
-            {/*--------  pagination section here ---------------------to do */}
-            <div className="w-full">
-
-            </div>
-
         </>
     )
 }
