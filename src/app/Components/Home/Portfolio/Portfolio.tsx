@@ -1,31 +1,42 @@
 /* eslint-disable @next/next/no-img-element */
 
-"use client"
+"use client";
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
-import React, { useEffect, useState } from "react";
-import Single_portfolio from "./singleportfolio";
 // import { portfolio_data } from "@/app/FakeData/portfolio";
 
 const Portfolio = () => {
-  // console.log(portfolio_data);
-  // const data = portfolio_data;
-  // const [data, setData] = useState([])
-  // useEffect(() => {
-  //   fetch("https://api.jsonbin.io/v3/qs/64fbfdc68d92e126ae693a51")
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       setData(data.record)
-  //     })
-  // }, [])
+
+  type portfolio_data_type = {
+    img: string;
+    category: string;
+    title: string;
+    description: string;
+    company: string;
+    portfolio: string;
+    type: string;
+  }
+  
+
+  const data: portfolio_data_type[] = portfolio_data;
 
   return (
     <div className="my-16">
       <Component>
         <Title>portfolio</Title>
         <h1 className="text-[48px] font-bold">Some of our work</h1>
-        {/* <Single_portfolio data={data}></Single_portfolio> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-7">
+          {
+            data?.slice(0,3)?.map((d: portfolio_data_type, i: number) => (
+              <div> 
+                  <img className="w-[379px] h-[280px]" src={d?.img} alt="" />
+                  <p className="text-[18px] my-4">{d.type}</p>
+                  <h1 className="text-[24px] font-bold">{d.title}</h1>
+              </div>
+            ))
+          }
+          </div>
       </Component>
     </div>
   );
