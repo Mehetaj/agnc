@@ -7,104 +7,86 @@ html {
     scroll-behavior: smooth;
 }
 .btn-outline {
-    padding: 12px 32px 12px 32px;
-    border-radius: 8px;
-    gap: 8px;
-    border: 1px solid #226CE5;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #226CE5
+  padding: 12px 32px 12px 32px;
+  border-radius: 8px;
+  gap: 8px;
+  border: 1px solid #226ce5;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #226ce5;
 }
 
 .btn-outline:hover {
-    background-color: #226CE5;
-    border: 1px solid blue;
-    transition: all ease-in-out 0.2s;
+  background-color: #226ce5;
+  border: 1px solid blue;
+  transition: all ease-in-out 0.2s;
 }
 
-
 .bg-img {
-    /* background-image: url('../asset/Background.png'); */
-    /* background-image: url('../asset/test.png'); */
-    background-image: url('../asset/Background.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 50% 50% / 0 0 2.75em 2.75em;
+  background-image: url("../asset/Background.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 0 0 50% 50% / 0 0 2.75em 2.75em; */
 }
 
 .bg-img h1 {
-    font-size: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .bg-img-dark {
-    background-image: url('../asset//dark_bg_.png');
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 50% 50% / 0 0 2.75em 2.75em;
+  background-image: url("../asset//dark_bg_.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 0 0 50% 50% / 0 0 2.75em 2.75em;
 }
 
 .bg-img-dark h1 {
-    font-size: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-
-
-
 .error {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F7FAFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7faff;
 }
 
 .error div h1 {
-    font-size: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .error div p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2D3D59;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d3d59;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 
-.dark_navbar {
-    background-color: #061126;
-    color: white;
-}
-
-.body_dark {
-    background-color: #061126;
-    color: white;
-}
 
 @media screen and (max-width: 600px) {
-    .btn {
-        width: 100%;
-    }
+  .btn {
+    width: 100%;
+  }
 }
 
 .paginate {
-    background-image: url('../asset/Active.png');
-    display: hidden;
+  background-image: url("../asset/Active.png");
+  display: hidden;
 }
 
 /* #bg-behind-choose-us {
@@ -115,5 +97,3 @@ html {
     align-items: center;
     width: 1400px;
 } */
-
-

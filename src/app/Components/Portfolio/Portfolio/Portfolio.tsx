@@ -9,6 +9,7 @@ import Pagination from '../Pagination/Pagination'
 type Props = {}
 
 const Portfolio = (props: Props) => {
+
     const [currentPage, setCurrentPage] = useState(1);
     const pageSize = 6;
 
@@ -27,13 +28,18 @@ const Portfolio = (props: Props) => {
     let categories = categorizedData;
     //  console.log(categorizedData)
 
-    const handlePageChange = (page: any) =>{
+    const handlePageChange = (page: any) => {
         setCurrentPage(page)
     }
     // const paginatePosts = paginate(posts, currentPage, pageSize);
+
+    const data = portfolio_data;
+    const graphics = data.filter((item) => item.category === 'Graphics')
+
     return (
         <>
             {/* tab section of portfolio */}
+
 
             <Tabs className="w-3/4 mx-auto">
                 <TabList className="flex justify-around item-center flex-1  tabContaner">
@@ -43,6 +49,13 @@ const Portfolio = (props: Props) => {
                         </Tab>
                     ))}
                 </TabList>
+
+
+                {/* portfolio section */}
+                <div className='grid grid-cols-6 gap-4 w-full'>
+                    <SingleItem data={data} />
+                </div>
+
 
                 {/* portfolio section */}
 
@@ -54,10 +67,10 @@ const Portfolio = (props: Props) => {
                         <div className="flex justify-center">
                             <Pagination item={data.length} currentPage={currentPage} pageSize={pageSize} onPageChange={handlePageChange} />
                         </div>
-                    
+
                     </TabPanel>
                 ))}
-                
+
             </Tabs>
         </>
     )

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../asset/team checklist-amico 1.png";
+import img from "../../../../asset/team.png";
 import Title from "@/app/Shared/Title/Title";
 import Button from "@/app/Shared/Button/Button";
 import Component from "@/app/Shared/Component/Component";
@@ -9,11 +9,11 @@ const About = () => {
   return (
     <div className="dark:bg-[#030C1A] pt-10 pb-16">
       <Component>
-        <div className=" px mx-auto mt-20 flex flex-col-reverse lg:flex-row p-10 lg:p-0 lg:justify-between items-center gap-10 md:gap-20 lg:gap-60">
-          <Image className="h-[584px] w-[584px]" src={img} alt="" />
+        <div className=" px mx-auto mt-20 flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center gap-10 md:gap-20 lg:gap-60">
+          <Image className="lg:h-[584px] lg:w-[584px]" src={img} alt="" />
           <div>
             <Title>About</Title>
-            <h1 className=" lg:text-[60px] font-bold">
+            <h1 className=" text-[60px] font-bold">
               We are design ninjas for your next project
             </h1>
             <p className=" text-[20px] my-10">

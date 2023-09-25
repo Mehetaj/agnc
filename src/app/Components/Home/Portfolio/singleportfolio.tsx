@@ -10,8 +10,8 @@ import ReactPaginate from 'react-paginate'
 //   }[];
 // };
 
-const Single_portfolio = (Props: any) => {
-  const data = Props.data;
+const Single_portfolio = () => {
+  // const data = Props.data;
  
   // const [currentItems, setCurrentItems] = useState<any>([]);
   // const [pageCount, setPageCount] = useState(0);
@@ -38,7 +38,7 @@ const Single_portfolio = (Props: any) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
         {data.slice(0,3).map((d: any, i: number) => 
             <div
               key={i}
@@ -50,7 +50,7 @@ const Single_portfolio = (Props: any) => {
             </div>
 
         )}
-      </div>
+      </div> */}
       {/* <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
