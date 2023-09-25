@@ -15,17 +15,17 @@ const BlogSection = () => {
         {/* Mapped blog section data on home page */}
         <div className="grid grid-cols-3 mt-10">
           {data.slice(0, 3).map((d, i) => (
-            <div className="h-[600px] w-[379px] p-6 bg-[#EBF2FF]">
+            <div key={i} className="h-[600px] w-[379px] p-6 bg-[#EBF2FF]">
               <img
                 className="h-[276px] w-[338px] rounded-lg"
-                src={d.image}
+                src={d?.image}
                 alt=""
               />
               <p className="my-4 ">{d.publiched}</p>
               <h1 className="text-[24px] font-bold h-[70px]">
-                {d.title.slice(0, 45)}..
+                {d?.title.slice(0, 45)}..
               </h1>
-              <p className="my-4">{d.content.slice(0, 107)}...</p>
+              <p className="my-4">{d?.content.slice(0, 107)}...</p>
 
               <div>
                 <button>Read more</button>

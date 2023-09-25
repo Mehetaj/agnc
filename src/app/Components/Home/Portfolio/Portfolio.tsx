@@ -29,7 +29,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-7">
           {
             data?.slice(0,3)?.map((d: portfolio_data_type, i: number) => (
-              <div> 
+              <div key={i}> 
                   <img className="w-[379px] h-[280px]" src={d?.img} alt="" />
                   <p className="text-[18px] my-4">{d.type}</p>
                   <h1 className="text-[24px] font-bold">{d.title}</h1>
