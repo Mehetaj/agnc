@@ -19,7 +19,7 @@ const SingleItem = ({data, currentPage, pageSize}:any) => {
             {
                 paginatePosts.map((data : any, i : number) => {
                     return (
-                        <div className=' portfolio-item'
+                        <div key={i} className=' portfolio-item'
                         >
                             {/* ------------ Banner image */}
                             <img className='' src={data.img} alt='' />
