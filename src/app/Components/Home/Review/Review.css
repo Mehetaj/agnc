@@ -1,0 +1,13 @@
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #f1c40f;
+    text-shadow: 0 0 1px #666;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: star;
+}

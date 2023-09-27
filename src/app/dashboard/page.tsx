@@ -8,11 +8,11 @@ import DashLogin from "@/app/Components/Dashboard/DashLogin/DashLogin";
 
 const page = () => {
     return (
-        <div>
+        <>
             <Component>
                 <DashLogin></DashLogin>
             </Component>
-        </div>
+        </>
     );
 };
 
