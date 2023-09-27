@@ -26,5 +26,4 @@ const DashboardLayout = ({ children }: Props) => {
       </body>
     </html>
   );
-};
-export default DashboardLayout;
+

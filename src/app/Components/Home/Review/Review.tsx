@@ -46,7 +46,6 @@ const Review = (Props: Items) => {
               <div>
                 <h1>{d.reviewer_name}</h1>
                 <p>{d.reviewer_type}</p>
-               
               </div>
             </div>
 

@@ -1,4 +1,3 @@
-// tsx page component
 import React from "react";
 import DashLogin from "@/app/Components/Dashboard/DashLogin/DashLogin";
 
@@ -8,6 +7,5 @@ const page = () => {
         <DashLogin></DashLogin>
     </>
   );
-};
 
 export default page;
