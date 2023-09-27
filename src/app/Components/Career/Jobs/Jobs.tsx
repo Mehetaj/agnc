@@ -6,15 +6,12 @@ import Jobs_modal from "../Jobs_modal/Jobs_modal";
 
 const Jobs = () => {
   const data = jobs_data;
-
-  let [isOpen, setIsOpen] = useState(false);
-
-  const [item, setItem] = useState<string | string[] | object>()
+  const [item, setItem] = useState({});
 
   const handleDynamicModal = (item: string[] | string | object) => {
-    console.log(item)
-    setItem(item)
-  }
+    // console.log(item);
+    setItem(item);
+  };
 
   return (
     <div className="grid grid-cols-1 gap-8 mt-10 mb-36 md:grid-cols-2">
@@ -30,12 +27,7 @@ const Jobs = () => {
             <p className="text-[20px] my-4">Deadline: {d.deadline}</p>
             {/* Details Modal for every job */}
             <div onClick={() => handleDynamicModal(d)}>
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="bg-[#226CE5] px-6 text-white rounded-lg py-3"
-              >
-                <Jobs_modal data={item} isOpen={isOpen} setIsOpen={setIsOpen} />
-              </button>
+              <Jobs_modal item={item}/>
             </div>
           </div>
         );
