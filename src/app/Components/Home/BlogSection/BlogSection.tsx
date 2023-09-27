@@ -2,7 +2,7 @@ import { BlogData } from "@/app/FakeData/blog";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
 import React from "react";
-import arrow from '../../../../asset/trending_flat.png'
+import arrow from '../../../../asset/icon/blue-arroe.png'
 import Image from "next/image";
 
 const BlogSection = () => {
@@ -27,9 +27,9 @@ const BlogSection = () => {
               </h1>
               <p className="my-4">{d?.content.slice(0, 107)}...</p>
 
-              <div>
+              <div className="text-blue-600 flex gap-2 items-center">
                 <button>Read more</button>
-                <Image className="text-blue-500" src={arrow} alt="" />
+                <Image className="" src={arrow} alt="" />
               </div>
             </div>
           ))}
