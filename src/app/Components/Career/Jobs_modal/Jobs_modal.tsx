@@ -21,7 +21,6 @@ export default function Jobs_modal({ isOpen, setIsOpen, data }: any) {
           Job Details
         </button>
       </div>
-      {/* Use headless ui for modal */}
       
     </>
   );
