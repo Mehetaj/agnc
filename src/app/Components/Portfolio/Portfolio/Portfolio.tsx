@@ -50,13 +50,6 @@ const Portfolio = (props: Props) => {
                     ))}
                 </TabList>
 
-
-                {/* portfolio section */}
-                <div className='grid grid-cols-6 gap-4 w-full'>
-                    <SingleItem data={data} />
-                </div>
-
-
                 {/* portfolio section */}
 
                 {Object.values(categories).map((data: any, idx) => (
@@ -76,4 +69,4 @@ const Portfolio = (props: Props) => {
     )
 }
 
-export default Portfolio
+export default Portfolio;

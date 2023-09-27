@@ -1,6 +1,6 @@
-import { Project } from '../types/types';
+import { Blogs } from '../types/types';
 
-export const blogdata: Project[] = [
+export const blogdata: Blogs[] = [
     {
       "id": 1,
       "title": "Top 5 creative Designers around the world",

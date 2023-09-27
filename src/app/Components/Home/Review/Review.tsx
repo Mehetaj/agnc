@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from 'react'
-import { Rating } from 'react-simple-star-rating'
 import './Review.css'
 
 type Items = {
@@ -47,9 +46,6 @@ const Review = (Props: Items) => {
               <div>
                 <h1>{d.reviewer_name}</h1>
                 <p>{d.reviewer_type}</p>
-                <Rating
-                  allowFraction
-                />
               </div>
             </div>
 

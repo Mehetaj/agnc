@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const Single_Post=({post}: any)=>{
     return(
-        <div className="card w-[400px] bg-[#EBF2FF] h-[580px]">
+        <div className="card md:w-[400px] bg-[#EBF2FF] h-[580px]">
                 <figure className="px-5 pt-5">
-                    <img src={post.image} alt="Shoes" className="rounded-xl h-[280px] w-[380px] "/>
+                    <img src={post.image} alt="Shoes" className="rounded-xl h-[270px] w-[340px] "/>
                 </figure>
                 <div className="card-body -mt-4 text-left">
                     <p className=" text-[#2D3D59] text-[18px] font-normal">{post.publiched}</p>
