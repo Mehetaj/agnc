@@ -1,3 +1,4 @@
+
 "use client";
 import bgImage from "../../../../asset/dashborad/login/Containers.png";
 import Image from "next/image";
@@ -67,6 +68,11 @@ export default function DashLogin() {
                     Welcome to ByteZenith! 👋
                   </h1>
                   <p>Please sign in to your account and start adventure</p>
+        <div>
+            {/* a login system with 1/1 grid. one side with image and other with form */}
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="">
+                    <Image className="max-w-full " src={bgImage} alt="" />
                 </div>
                 <form
                   onSubmit={handleSubmit(onSubmit)}
@@ -98,4 +104,3 @@ export default function DashLogin() {
       </Component>
     </div>
   );
-}
