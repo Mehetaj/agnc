@@ -1,5 +1,5 @@
 // tsx page component
-import PortfolioBanner from "@/app/Components/Portfolio/PortfolioBanner/PortfolioBanner";
+import Banner from "@/app/Shared/Banner/Banner"
 import React from "react";
 import Contact from "@/app/Components/Home/Contact/Contact";
 import Component from "@/app/Shared/Component/Component";
@@ -9,7 +9,7 @@ const page = () => {
   return (
     <div>
       <Component>
-        <PortfolioBanner />
+        <Banner title="Portfolio" />
         <Portfolio/>
       </Component>
       <Contact />
