@@ -1,4 +1,4 @@
-import { Blogs } from '../../../types/types';
+"use client"
 import {blogdata} from "../../../FakeData/blogdata"
 
 

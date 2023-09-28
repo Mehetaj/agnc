@@ -2,7 +2,7 @@ import { BlogData } from "@/app/FakeData/blog";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
 import React from "react";
-import arrow from '../../../../asset/trending_flat.png'
+import arrow from '../../../../asset/icon/blue-arroe.png'
 import Image from "next/image";
 
 const BlogSection = () => {
@@ -15,7 +15,7 @@ const BlogSection = () => {
         {/* Mapped blog section data on home page */}
         <div className="grid grid-cols-3 mt-10">
           {data.slice(0, 3).map((d, i) => (
-            <div key={i} className="h-[600px] w-[379px] p-6 bg-[#EBF2FF]">
+            <div key={i} className="h-[600px] w-[379px] p-6 bg-[#EBF2FF] rounded-md dark:bg-[#0A1A33]">
               <img
                 className="h-[276px] w-[338px] rounded-lg"
                 src={d?.image}
@@ -27,9 +27,9 @@ const BlogSection = () => {
               </h1>
               <p className="my-4">{d?.content.slice(0, 107)}...</p>
 
-              <div>
+              <div className="text-blue-600 flex gap-2 items-center">
                 <button>Read more</button>
-                <Image className="text-blue-500" src={arrow} alt="" />
+                <Image className="" src={arrow} alt="" />
               </div>
             </div>
           ))}
