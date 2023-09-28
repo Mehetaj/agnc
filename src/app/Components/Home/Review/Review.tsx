@@ -32,7 +32,7 @@ const Review = (Props: Items) => {
   return (
     <div>
       <Swiper
-        slidesPerView={1}
+        slidesPerView={3}
         spaceBetween={30}
         freeMode={true}
         pagination={{

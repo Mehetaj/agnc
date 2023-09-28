@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import ThemeProvider from "@/provider/ThemeProvider";
-import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
+// import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
 
 const inter = Inter({ subsets: ["greek"] });
 
@@ -25,7 +25,7 @@ const RootLayout = ({ children }: Props) => {
           <div className="dark:bg-[#061126] dark:text-white">
             <Navbar />
             {children}
-            <Cursor />
+            {/* <Cursor /> */}
             <Footer />
           </div>
         </ThemeProvider>
