@@ -42,7 +42,7 @@ const Review = (Props: Items) => {
         className="mySwiper"
       >
         {data.map((d: object | string | string[] | any, i) => (
-          <SwiperSlide>
+          <SwiperSlide key={i}>
             <div>
               <div className=" w-full lg:w-[379px] bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
                 <p>{d.review}</p>

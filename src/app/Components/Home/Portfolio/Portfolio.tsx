@@ -46,8 +46,8 @@ const Portfolio = () => {
             className="mySwiper"
           >
             {data?.map((d: portfolio_data_type, i: number) => (
-                  <SwiperSlide>
-              <div key={i} className="mt-7 mb-10">
+                  <SwiperSlide key={i}>
+              <div className="mt-7 mb-10">
                   <img className="w-[379px] h-[280px]" src={d?.img} alt="" />
                   <p className="text-[18px] my-4">{d.type}</p>
                   <h1 className="text-[24px] font-bold">{d.title}</h1>
