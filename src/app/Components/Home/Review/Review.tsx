@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import "./Review.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
