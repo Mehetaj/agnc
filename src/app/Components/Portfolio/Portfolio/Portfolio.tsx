@@ -1,5 +1,4 @@
 "use client"
-"use client"
 import React, { useState } from "react";
 import './Portfolio.css'
 import { portfolio_data } from '@/app/FakeData/portfolio'
@@ -51,13 +50,6 @@ const Portfolio = (props: Props) => {
                     ))}
                 </TabList>
 
-
-                {/* portfolio section */}
-                <div className='grid grid-cols-6 gap-4 w-full'>
-                    <SingleItem data={data} />
-                </div>
-
-
                 {/* portfolio section */}
 
                 {Object.values(categories).map((data: any, idx) => (
@@ -73,14 +65,8 @@ const Portfolio = (props: Props) => {
                 ))}
 
             </Tabs>
-
-            {/*--------  pagination section here ---------------------to do */}
-            <div className="w-full">
-
-            </div>
-
         </>
     )
 }
 
-export default Portfolio
+export default Portfolio;
