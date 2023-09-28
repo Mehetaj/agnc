@@ -10,7 +10,7 @@ const Contact = () => {
         
       >
         <Component>
-          <div className=" my-16 h-full items-center text-white lg:flex justify-between">
+          <div className="py-20 my-16 h-full items-center text-white lg:flex justify-between">
             <div>
               <Image className="mb-8" src={hello_text} alt="" />
 
@@ -28,7 +28,7 @@ const Contact = () => {
                 identity by crafting top-notch UI/UX.
               </p>
 
-              <button className="bg-white px-6 py-3 w-full lg:w-[150px] text-[#226CE5] font-bold  border border-blue-600 rounded-md">
+              <button className="bg-white dark:bg-[#10223F] dark:text-white px-6 py-3 w-full lg:w-[150px] text-[#226CE5] font-bold  border border-blue-600 rounded-md">
                 Contact us
               </button>
             </div>

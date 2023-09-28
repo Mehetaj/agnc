@@ -1,18 +1,17 @@
-
 "use client";
 import bgImage from "../../../../asset/dashborad/login/Containers.png";
 import Image from "next/image";
 import Component from "@/app/Shared/Component/Component";
 import DashboardBtn from "@/app/Shared/DashboardButton/DashboardButton";
 import { useForm, SubmitHandler } from "react-hook-form";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Inputs = {
   email: string;
   password: string;
 };
 
-export default function DashLogin() {
+function DashLogin() {
   const users = [
     {
       email: "admin@user.com",
@@ -31,6 +30,8 @@ export default function DashLogin() {
     },
   ];
 
+  const router = useRouter();
+
   // login  form data
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
@@ -43,11 +44,13 @@ export default function DashLogin() {
     // get user role and navigate
 
     if (filtered?.role == "user") {
-      document.getElementById("navigate")?.setAttribute("href", "/dashboard/user")
+      router.push("/dashboard/user")
       alert("You are user");
     } else if (filtered?.role == "moderator") {
+      router.push("/dashboard/moderator")
       alert("You are moderator");
     } else if (filtered?.role == "admin") {
+      router.push("/dashboard/admin")
       alert("You are admin");
     } else {
       alert("Invalid User type");
@@ -57,8 +60,8 @@ export default function DashLogin() {
   return (
     <div>
       {/* a login system with 1/1 grid. one side with image and other with form */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
       <Component>
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <Image className="max-w-full " src={bgImage} alt="" />
           <div className="w-full">
             <div className="flex flex-col justify-center items-center h-full">
@@ -68,39 +71,36 @@ export default function DashLogin() {
                     Welcome to ByteZenith! 👋
                   </h1>
                   <p>Please sign in to your account and start adventure</p>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="">
-                    <Image className="max-w-full " src={bgImage} alt="" />
+                  <div className=""></div>
+                  <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className="flex flex-col justify-center items-start"
+                  >
+                    {/* input with label */}
+                    <label htmlFor="username">Email or Username</label>
+                    <input
+                      {...register("email")}
+                      type="text"
+                      placeholder="Username"
+                      className="w-96 h-12 border rounded-md px-2 my-2"
+                    />
+                    <label htmlFor="password">Password</label>
+                    <input
+                      {...register("password")}
+                      type="password"
+                      placeholder="Password"
+                      className="w-96 h-12 border  rounded-md px-2 my-2"
+                    />
+                    <DashboardBtn>Sign In</DashboardBtn>
+                  </form>
                 </div>
-                <form
-                  onSubmit={handleSubmit(onSubmit)}
-                  className="flex flex-col justify-center items-start"
-                >
-                  {/* input with label */}
-                  <label htmlFor="username">Email or Username</label>
-                  <input
-                    {...register("email")}
-                    type="text"
-                    placeholder="Username"
-                    className="w-96 h-12 border rounded-md px-2 my-2"
-                  />
-                  <label htmlFor="password">Password</label>
-                  <input
-                    {...register("password")}
-                    type="password"
-                    placeholder="Password"
-                    className="w-96 h-12 border  rounded-md px-2 my-2"
-                  />
-                  <DashboardBtn>
-                    <Link id="navigate" href="">Sign In</Link>
-                  </DashboardBtn>
-                </form>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </Component>
     </div>
-    </div>
-  )};
+  );
+}
+
+export default DashLogin;

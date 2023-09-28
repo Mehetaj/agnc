@@ -15,7 +15,7 @@ const BlogSection = () => {
         {/* Mapped blog section data on home page */}
         <div className="grid grid-cols-3 mt-10">
           {data.slice(0, 3).map((d, i) => (
-            <div key={i} className="h-[600px] w-[379px] p-6 bg-[#EBF2FF]">
+            <div key={i} className="h-[600px] w-[379px] p-6 bg-[#EBF2FF] rounded-md dark:bg-[#0A1A33]">
               <img
                 className="h-[276px] w-[338px] rounded-lg"
                 src={d?.image}

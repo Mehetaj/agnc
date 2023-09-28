@@ -42,7 +42,7 @@ const Portfolio = (props: Props) => {
 
 
             <Tabs className="w-3/4 mx-auto">
-                <TabList className="flex justify-around item-center flex-1  tabContaner">
+                <TabList className="flex justify-around item-center flex-1  tabContaner dark:bg-[#10223F]">
                     {Object.keys(categories).map((category, idx) => (
                         <Tab key={idx} >
                             {category}

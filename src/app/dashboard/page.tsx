@@ -1,11 +1,11 @@
-import React from "react";
+"use client"
 import DashLogin from "@/app/Components/Dashboard/DashLogin/DashLogin";
 
-const page = () => {
+const DashboardPage = () => {
   return (
-    <>
+    <div>
         <DashLogin></DashLogin>
-    </>
-  );
+    </div>
+  )};
 
-export default page;
+export default DashboardPage;
