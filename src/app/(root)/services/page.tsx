@@ -4,7 +4,7 @@ import ServiceBanner from "@/app/Components/Home/Services/serviceBanner";
 import Component from "@/app/Shared/Component/Component";
 import React from "react";
 
-const Page = () => {
+const ServicePage = () => {
   return (
     <div>
       <Component>
@@ -17,4 +17,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ServicePage;
