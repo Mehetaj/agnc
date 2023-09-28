@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className=" mx-auto md:p-0 dark:bg-[#030C1A] ">
       <Component>
-        <nav className="w-full md:max-w-[1400px]">
+        <div className="w-full md:max-w-[1400px]">
           <div className="justify-between mx-auto  md:items-center md:flex">
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -93,7 +93,7 @@ const Navbar = () => {
               <Link href="/contact">Contact Us</Link>
             </button>
           </div>
-        </nav>
+        </div>
       </Component>
     </div>
   );

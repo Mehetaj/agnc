@@ -14,9 +14,9 @@ const Jobs = () => {
   };
 
   return (
-    <div className={`${data.length == 0 ? '' : '"grid grid-cols-1 gap-8 mt-10 mb-36 md:grid-cols-2"'}`}>
+    <div className={`grid grid-cols-1  mt-10 mb-36 md:grid-cols-2 px-10`}>
       {
-        data.length == 0 ? <h1 className="text-center my-20 text-3xl font-semibold">There is no position available</h1> : data.map((d, i) => {
+        data.map((d, i) => {
           return (
             <div
               key={i}
