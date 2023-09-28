@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Component from "@/app/Shared/Component/Component";
 import Banner from "@/app/Shared/Banner/Banner";
 import Recent_Post from "@/app/Components/Blog/Recent_Post/Recent_Post";
@@ -8,8 +8,8 @@ import { blogdata } from "../../FakeData/blogdata"
 import Single_Post from '@/app/Components/Blog/Single_Post/Single_post';
 
 const page = () => {
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [selectedTag, setSelectedTag] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>();
+    const [selectedTag, setSelectedTag] = useState<string | null>();
 
     const filteredPosts: Blogs[] = blogdata.filter((post) => {
         const matchesCategory = selectedCategory ? post.category === selectedCategory : true;

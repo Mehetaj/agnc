@@ -11,6 +11,7 @@ const Page = () => {
         <ServiceBanner />
         <Services />
         <Portfolio />
+        
       </Component>
     </div>
   );

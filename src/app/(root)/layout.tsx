@@ -6,7 +6,7 @@ import Navbar from "../Shared/Navbar/Navbar";
 import ThemeProvider from "@/provider/ThemeProvider";
 import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["greek"] });
 
 export const metadata: Metadata = {
   title: "Bytezenith",

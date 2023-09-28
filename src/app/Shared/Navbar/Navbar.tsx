@@ -25,7 +25,7 @@ const Navbar = () => {
   })
 
   return (
-    <div id="" className="mx-auto md:p-0 dark:bg-[#030C1A] ">
+    <div className=" mx-auto md:p-0 dark:bg-[#030C1A] ">
       <Component>
         <nav className="w-full md:max-w-[1400px]">
           <div className="justify-between mx-auto  md:items-center md:flex">
