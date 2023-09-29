@@ -2,6 +2,7 @@ import Image from "next/image";
 import banner from "../../../../asset/Coworking-amico 1.png";
 import Button from "@/app/Shared/Button/Button";
 import Component from "@/app/Shared/Component/Component";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -18,7 +19,11 @@ const Banner = () => {
             and help your brand thrive in the digital world.
           </p>
           {/* Linked to portfolio page btn */}
-          <Button>View our work</Button>
+          <Button>
+            <Link href="/portfolio">
+            View our work
+            </Link>
+          </Button>
         </div>
         {/* Banner image */}
         <Image className="max-w-full mt-4 lg:mt-0" src={banner} alt="" />

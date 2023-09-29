@@ -28,7 +28,7 @@ const BlogPage = () => {
   );
 
   return (
-    <div className="py-10 bg-[#F7FAFF] dark:bg-[#061126] dark:text-white">
+    <div className="pb-12 bg-[#F7FAFF] dark:bg-[#061126] dark:text-white">
       <Banner title="Blog" />
       <Component>
         <div className=" md:flex md:gap-20 mt-5 mx-auto ">

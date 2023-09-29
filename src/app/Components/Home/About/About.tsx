@@ -4,6 +4,7 @@ import img from "../../../../asset/team.png";
 import Title from "@/app/Shared/Title/Title";
 import Button from "@/app/Shared/Button/Button";
 import Component from "@/app/Shared/Component/Component";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -22,7 +23,9 @@ const About = () => {
               exceed client expectations. With a deep understanding of your brand
               to create strategies that yield remarkable results.
             </p>
-            <Button>More About Us</Button>
+            <Button>
+              <Link href="/about">More About Us</Link>
+            </Button>
           </div>
         </div>
       </Component>
