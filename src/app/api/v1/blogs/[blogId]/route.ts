@@ -27,7 +27,6 @@ export const PATCH = async (req: NextRequest, { params }: Params) => {
   connectDB();
 
   const { updateBlogData } = await req.json();
-  console.log("updateBlogData-----------", updateBlogData);
   const { blogId } = params;
 
   try {
@@ -36,7 +35,6 @@ export const PATCH = async (req: NextRequest, { params }: Params) => {
     if (!existingPost) {
       return new Response("blog not found", { status: 404 });
     }
-
     existingPost.title = updateBlogData.title;
     existingPost.category = updateBlogData.category;
     existingPost.tag = updateBlogData.tag;
@@ -44,7 +42,6 @@ export const PATCH = async (req: NextRequest, { params }: Params) => {
     existingPost.image = updateBlogData.image;
     existingPost.author = updateBlogData.author;
     existingPost.content = updateBlogData.content;
-
     await existingPost.save();
     return NextResponse.json({ message: "Blog Update successfully" }, { status: 200 });
   } catch (error: any) {
