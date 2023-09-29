@@ -1,7 +1,5 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
-import "./Review.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -9,7 +7,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import star from "../../../../asset/icon/Review.png";
-
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 import Image from "next/image";
@@ -27,8 +24,6 @@ type Items = {
 const Review = (Props: Items) => {
   const data = Props.data;
 
-  const [rating, setRating] = useState("");
-
   return (
     <div>
       <Swiper
@@ -38,8 +33,23 @@ const Review = (Props: Items) => {
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 2,
+          },
+        }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
       >
         {data.map((d: object | string | string[] | any, i) => (
           <SwiperSlide key={i}>
@@ -50,13 +60,16 @@ const Review = (Props: Items) => {
                 <Image src={star} alt="" />
               </div>
               <div className="p-2 flex gap-2 mb-7 items-center">
-                <img
+                {/* <img
                   src={d.reviewer_img}
                   alt=""
                   width={50}
                   height={50}
                   className="rounded-full"
-                />
+                /> */}
+                <div className="w-[50px] h-[50px] rounded-full bg-[#161623]">
+
+                </div>
                 <div>
                   <h1 className="text-xl font-semibold">{d.reviewer_name}</h1>
                   <h1>{d.reviewer_type}</h1>

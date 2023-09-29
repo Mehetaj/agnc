@@ -2,7 +2,7 @@ import React from 'react';
 
 const DashBanner = () => {
     return (
-        <div id='bg-image' className='bg-img'>
+        <div  className=''>
             <h1>Dashboard Login</h1>
         </div>
     );

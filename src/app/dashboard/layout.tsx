@@ -2,7 +2,7 @@ import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ThemeProvider from "@/provider/ThemeProvider";
-import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
+// import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,6 @@ const DashboardLayout = ({ children }: Props) => {
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" enableSystem={false}>
             {children}
-            <Cursor />
         </ThemeProvider>
       </body>
     </html>

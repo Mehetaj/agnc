@@ -18,7 +18,7 @@ import YourChoice from "@/app/Components/Privacy/you_choice/yourChoice";
 import Component from "@/app/Shared/Component/Component";
 import React from "react";
 
-const privacy_policy = () => {
+const Privacy_policy = () => {
   //className="text-[32px] font-bold my-6"
 
   return (
@@ -54,4 +54,4 @@ const privacy_policy = () => {
   );
 };
 
-export default privacy_policy;
+export default Privacy_policy;
