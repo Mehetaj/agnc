@@ -36,17 +36,34 @@ const Portfolio = () => {
         <h1 className="text-[48px] font-bold">Some of our work</h1>
         <div className="">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={30}
             freeMode={true}
             pagination={{
               clickable: true,
             }}
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                width: 640,
+                slidesPerView: 1,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 2,
+              },
+            }}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}
             modules={[FreeMode, Pagination]}
-            className="mySwiper"
           >
             {data?.map((d: portfolio_data_type, i: number) => (
-                  <SwiperSlide key={i}>
+                  <SwiperSlide
+                  
+                  key={i}>
               <div className="mt-7 mb-10">
                   <img className="w-[379px] h-[280px]" src={d?.img} alt="" />
                   <p className="text-[18px] my-4">{d.type}</p>

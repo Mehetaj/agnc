@@ -8,8 +8,8 @@ import Portfolio from "@/app/Components/Portfolio/Portfolio/Portfolio";
 const PortfolioPage = () => {
   return (
     <div>
-      <Component>
         <Banner title="Portfolio" />
+      <Component>
         <Portfolio/>
       </Component>
       <Contact />
