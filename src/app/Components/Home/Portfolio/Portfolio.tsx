@@ -1,35 +1,61 @@
 /* eslint-disable @next/next/no-img-element */
-/// This file not needed but if you want i can use it (MH-Fahim11)
-"use client"
+
+"use client";
 import { portfolio_data } from "@/app/FakeData/portfolio";
 import Component from "@/app/Shared/Component/Component";
 import Title from "@/app/Shared/Title/Title";
-<<<<<<< HEAD
-import React from "react";
-import Single_portfolio from "./singleportfolio";
-=======
-import React, { useEffect, useState } from "react";
+// import { portfolio_data } from "@/app/FakeData/portfolio";
+import { Swiper, SwiperSlide } from "swiper/react";
 
->>>>>>> 947ac79e882378857c4f401c8654a899cf6459b4
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const Portfolio = () => {
-  const data = portfolio_data;
-  // const [data, setData] = useState([])
-  // useEffect(() => {
-  //   fetch("https://api.jsonbin.io/v3/qs/64fbfdc68d92e126ae693a51")
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       setData(data.record)
-  //     })
-  // }, [])
+  type portfolio_data_type = {
+    img: string;
+    category: string;
+    title: string;
+    description: string;
+    company: string;
+    portfolio: string;
+    type: string;
+  };
+
+  const data: portfolio_data_type[] = portfolio_data;
 
   return (
     <div className="my-16">
       <Component>
-        {/* <Title>portfolio</Title>
-        <h1 className="text-[48px] font-bold">Some of our work</h1> */}
-
-        {/* <Single_portfolio data={data} ></Single_portfolio> */}
+        <Title>portfolio</Title>
+        <h1 className="text-[48px] font-bold">Some of our work</h1>
+        <div className="">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[FreeMode, Pagination]}
+            className="mySwiper"
+          >
+            {data?.map((d: portfolio_data_type, i: number) => (
+                  <SwiperSlide key={i}>
+              <div className="mt-7 mb-10">
+                  <img className="w-[379px] h-[280px]" src={d?.img} alt="" />
+                  <p className="text-[18px] my-4">{d.type}</p>
+                  <h1 className="text-[24px] font-bold">{d.title}</h1>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </Component>
     </div>
   );

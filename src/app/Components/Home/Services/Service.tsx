@@ -18,7 +18,7 @@ const Service = (props: Items) => {
         return (
           <div
             key={i}
-            className="w-full  lg:w-[379px] rounded-[8px] border border-grey-blue h-[348px] bg-[#EBF2FF] dark:bg-[#0A1A33] dark:border-[#3A4559] dark:text-white p-[32px]"
+            className="w-full  lg:w-[379px] rounded-[8px] border border-grey-blue lg:h-[348px] bg-[#EBF2FF] dark:bg-[#0A1A33] dark:border-[#3A4559] dark:text-white p-[32px]"
           >
             <img src={d.img} alt="" />
             <h1 className="text-[24px] font-bold my-6">{d.title}</h1>

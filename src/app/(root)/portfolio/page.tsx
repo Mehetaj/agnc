@@ -1,18 +1,20 @@
-// tsx page component
-import PortfolioBanner from "@/app/Components/Portfolio/PortfolioBanner/PortfolioBanner";
+// tsx PortfolioPage component
+import Banner from "@/app/Shared/Banner/Banner"
 import React from "react";
 import Contact from "@/app/Components/Home/Contact/Contact";
 import Component from "@/app/Shared/Component/Component";
+import Portfolio from "@/app/Components/Portfolio/Portfolio/Portfolio";
 
-const page = () => {
+const PortfolioPage = () => {
   return (
     <div>
       <Component>
-        <PortfolioBanner />
+        <Banner title="Portfolio" />
+        <Portfolio/>
       </Component>
       <Contact />
     </div>
   );
 };
 
-export default page;
+export default PortfolioPage;
