@@ -5,12 +5,12 @@ import Contact from "@/app/Components/Home/Contact/Contact";
 import ChooseUs from "@/app/Components/About/ChooseUs/ChooseUs";
 import Component from "@/app/Shared/Component/Component";
 
-const page = () => {
+const AboutPage = () => {
   return (
     <div>
+          <Banner title="About Us" />
       <Component>
         <div>
-          <Banner title="About Us" />
           <AboutHero />
         </div>
       </Component>
@@ -20,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;

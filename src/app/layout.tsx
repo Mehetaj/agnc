@@ -12,9 +12,9 @@ type Props = {
 const GlobalLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} dark:bg-[#061126] dark:text-white`}>
         <ThemeProvider attribute="class" enableSystem={false}>
-          <div className="dark:bg-[#061126] dark:text-white">{children}</div>
+          {children}
         </ThemeProvider>
       </body>
     </html>

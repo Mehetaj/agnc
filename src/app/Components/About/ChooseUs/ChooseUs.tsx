@@ -8,50 +8,49 @@ import Component from "@/app/Shared/Component/Component";
 
 
 const ChooseUs = () => {
-
-    
-
     return (
-        <div id="bg-behind-choose-us" className="px-2 mx-auto dark:bg-[#030C1A] dark:py-16">
+        <div className="px-2 mx-auto dark:bg-[#030C1A] my-10 dark:py-16">
             <Component >
-                <div >
-                    <div>
-                        <Title >WHY CHOOSE US</Title>
-                        <h1 className="text-[48px] font-bold">
-                            we provide best quality services
-                        </h1>
-                    </div>
-                    {/* create div with four column and three row as card */}
-                    <div style={{ marginTop: '30px' }} className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
-                        <div id="chooseUs1" className='flex bg-[#EBF2FF] dark:bg-[#10223F] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
-
-                            <Image src={icon1} alt='' />
-                            <h1 className='text-[26px] font-bold mt-3'>Fast Development</h1>
-                            <p
-                                style={{ width: '95%', alignContent: 'justify', fontSize: '17px', marginTop: '30px' }}
-                            >
-                                World-class user experiences with pixel perfect user interface designs for your digital products.
-                            </p>
+                <div>
+                    <div >
+                        <div>
+                            <Title >WHY CHOOSE US</Title>
+                            <h1 className="text-[48px] font-bold">
+                                we provide best quality services
+                            </h1>
                         </div>
-                        <div id="chooseUs2" className='flex bg-[#EBF2FF] dark:bg-[#10223F] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
+                        {/* create div with four column and three row as card */}
+                        <div style={{ marginTop: '30px' }} className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
+                            <div id="chooseUs1" className='flex bg-[#EBF2FF] dark:bg-[#10223F] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
 
-                            <Image src={icon2} alt='' />
-                            <h1 className='text-[26px] font-bold mt-3'>Full Flaxibility</h1>
-                            <p
-                                style={{ width: '95%', alignContent: 'justify', fontSize: '17px', marginTop: '30px' }}
-                            >
-                                World-class user experiences with pixel perfect user interface designs for your digital products.
-                            </p>
-                        </div>
-                        <div id="chooseUs3" className='flex bg-[#EBF2FF] dark:bg-[#10223F] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
+                                <Image src={icon1} alt='' />
+                                <h1 className='text-[26px] font-bold mt-3'>Fast Development</h1>
+                                <p
+                                    style={{ width: '95%', alignContent: 'justify', fontSize: '17px', marginTop: '30px' }}
+                                >
+                                    World-class user experiences with pixel perfect user interface designs for your digital products.
+                                </p>
+                            </div>
+                            <div id="chooseUs2" className='flex bg-[#EBF2FF] dark:bg-[#10223F] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
 
-                            <Image src={icon3} alt='' />
-                            <h1 className='text-[26px] font-bold mt-3'>Modern Design</h1>
-                            <p
-                                style={{ width: '95%', alignContent: 'justify', fontSize: '17px', marginTop: '30px' }}
-                            >
-                                World-class user experiences with pixel perfect user interface designs for your digital products.
-                            </p>
+                                <Image src={icon2} alt='' />
+                                <h1 className='text-[26px] font-bold mt-3'>Full Flaxibility</h1>
+                                <p
+                                    style={{ width: '95%', alignContent: 'justify', fontSize: '17px', marginTop: '30px' }}
+                                >
+                                    World-class user experiences with pixel perfect user interface designs for your digital products.
+                                </p>
+                            </div>
+                            <div id="chooseUs3" className='flex bg-[#EBF2FF] dark:bg-[#10223F] p-6 lg:p-[40px] rounded-[5px] flex-col items-start'>
+
+                                <Image src={icon3} alt='' />
+                                <h1 className='text-[26px] font-bold mt-3'>Modern Design</h1>
+                                <p
+                                    style={{ width: '95%', alignContent: 'justify', fontSize: '17px', marginTop: '30px' }}
+                                >
+                                    World-class user experiences with pixel perfect user interface designs for your digital products.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

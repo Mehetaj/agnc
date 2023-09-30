@@ -81,12 +81,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="">
-        <div className="divider"></div>
+        <hr />
+        <Link href="/">
         <Image
-          className=""
+          className="float-right -mt-10 cursor-pointer"
           src={top_arrow}
           alt=""
-        />
+        /></Link>
       </div>
       <div className=" w-11/12 h-[0.06px] bg-[#CED3D9] mx-auto rounded-lg"></div>
       <div className="p-10 lg:p-0">

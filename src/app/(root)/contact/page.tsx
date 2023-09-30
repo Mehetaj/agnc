@@ -6,8 +6,8 @@ import React from "react";
 const Contact_Us = () => {
   return (
     <div>
-      <Component>
         <Banner title="Contact Us"/>
+      <Component>
         <ContactForm />
       </Component>
     </div>
