@@ -2,11 +2,7 @@
 
 const Single_Post=({post}: any)=>{
     return(
-<<<<<<< HEAD
-        <div className="card md:w-[400px] bg-[#EBF2FF] h-[580px] dark:">
-=======
         <div className="card md:w-[400px] bg-[#EBF2FF] dark:bg-[#0A1A33] h-[580px]">
->>>>>>> 33d5c8be2b8643e19a9b7c4a6459d445635a624d
                 <figure className="px-5 pt-5">
                     <img src={post.image} alt="Shoes" className="rounded-xl h-[270px] w-[340px] "/>
                 </figure>

@@ -3,7 +3,7 @@ import { blogdata } from "../../../FakeData/blogdata";
 
 const Recent_Post = () => {
   return (
-    <div className=" mb-10 bg-[#EBF2FF] dark:bg-[#0A1A33] p-5 rounded-lg">
+    <div className=" mb-5 bg-[#EBF2FF] dark:bg-[#0A1A33] p-5 rounded-lg">
       <h1 className=" text-[#202C4] text-[20px] font-semibold mb-2">
         Recent Post
       </h1>
