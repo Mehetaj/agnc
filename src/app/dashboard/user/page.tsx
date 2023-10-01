@@ -1,4 +1,4 @@
-import SideBar from '@/app/Components/Dashboard/Menus/SideBar';
+import SideBar from '@/app/Components/Dashboard/User/SideBar';
 import React from 'react';
 
 const UserPage = () => {
