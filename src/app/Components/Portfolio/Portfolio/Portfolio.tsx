@@ -39,7 +39,7 @@ const Portfolio = (props: Props) => {
 
 
             <Tabs className="w-3/4 mx-auto">
-                <TabList className="flex justify-around item-center flex-1  tabContaner dark:bg-[#10223F]">
+                <TabList className="grid md:grid-cols-5 grid-cols-1 tabContaner dark:bg-[#10223F]">
                     {Object.keys(categories).map((category, idx) => (
                         <Tab key={idx} >
                             {category}
@@ -51,7 +51,7 @@ const Portfolio = (props: Props) => {
 
                 {Object.values(categories).map((data: any, idx) => (
                     <TabPanel key={idx}>
-                        <div className=" grid grid-cols-3 gap-6 ">
+                        <div className=" grid md:grid-cols-3 grid-cols-1 gap-6 ">
                             <SingleItem data={data} currentPage={currentPage} pageSize={pageSize} ></SingleItem>
                         </div>
                         <div className="flex justify-center">

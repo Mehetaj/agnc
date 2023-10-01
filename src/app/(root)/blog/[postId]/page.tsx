@@ -1,4 +1,4 @@
-import Banner from "@/app/Shared/Banner/Banner";
+import BlogBanner from "@/app/Components/Blog/BlogBanner/BlogBanner";
 import { blogdata } from "../../../FakeData/blogdata";
 import { Blogs } from "../../../types/types";
 import Recent_Post from "@/app/Components/Blog/Recent_Post/Recent_Post";
@@ -20,31 +20,31 @@ const SingleBlogPost=({params}:any)=>{
 
     return(
         <div className="">
-            <Banner title={filteredPost[0].title}/>
+            <BlogBanner title={filteredPost[0].title}/>
             <Component>
-                <div className="flex mt-10 w-full">
-                    <div className=" w-3/4 ">
+                <div className="md:flex mt-10 w-full">
+                    <div className=" md:w-3/4 ">
                         {filteredPost.map((post) => (
-                        <div key={post.id} className="px-20">
-                            <img src={post.image} alt={`${post.title} img`} className=" h-[400px] w-full border-[#0A1A33] border-8" />  
+                        <div key={post.id} className="lg:px-20 px-4">
+                            <img src={post.image} alt={`${post.title} img`} className=" md:h-[400px] h-[260px] w-full border-[#0A1A33] border-8" />  
                             <div className=" flex gap-2 font-normal text-base text-[#202C40] pt-3 pb-3">
                                 <h6 className=" border-[#226CE5] border-[1px] p-1 rounded">{post.category}</h6>
                                 <h6 className="p-1">{post.publiched}</h6>
                             </div>
-                            <h1 className="text-[#202C40] font-bold text-[32px]">{post.title}</h1>
+                            <h1 className="text-[#202C40] font-bold md:text-[32px] text-[24px]">{post.title}</h1>
                             <p>{post.content}</p>
 
                             <div className=" w-full h-[2px] bg-[#397BE5] mt-5 rounded"/>
 
-                            <div className="flex justify-between mt-5">
-                                <div className=" flex gap-2 items-center font-normal text-base text-[#202C40] ">
+                            <div className="md:flex justify-between mt-5 ">
+                                <div className=" flex gap-2 items-center justify-center font-normal text-base text-[#202C40] mb-2">
                                     {
                                         post.tag.map((tag:any) =>(
                                             <h6 key={tag} className=" border-[#226CE5] border-[1px] px-2 rounded">{tag}</h6>
                                         ))
                                     }
                                 </div>
-                                <div className="flex gap-4">
+                                <div className="flex gap-4 justify-center">
                                     <Image src={icons1} alt="fb icons" />
                                     <Image src={icons2} alt="fb icons" />
                                     <Image src={icons3} alt="fb icons" />
@@ -57,7 +57,7 @@ const SingleBlogPost=({params}:any)=>{
                         </div>
                         ))}
                     </div>
-                    <div className=" w-1/4 ">
+                    <div className=" md:w-1/4 mt-10 md:mt-0">
                         <Recent_Post/>
                     </div>
                 </div>
