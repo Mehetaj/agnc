@@ -6,6 +6,9 @@ import Recent_Post from "@/app/Components/Blog/Recent_Post/Recent_Post";
 import { Blogs } from "../../types/types";
 import { blogdata } from "../../FakeData/blogdata";
 import Single_Post from "@/app/Components/Blog/Single_Post/Single_post";
+import Pagination from "@/app/Components/Portfolio/Pagination/Pagination";
+import { paginate } from "@/app/Components/Portfolio/Pagination/paginate";
+import Contact from "@/app/Components/Home/Contact/Contact";
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -26,8 +29,22 @@ const BlogPage = () => {
   const tags: string[] = Array.from(
     new Set(blogdata.flatMap((post) => post.tag))
   );
+  //  
+  
+
+  // Pagination
+  
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 4;
+  const paginatePosts = paginate(filteredPosts, currentPage, pageSize);
+  const handlePageChange = (page: any) => {
+    setCurrentPage(page)
+  }
+
 
   return (
+    
+
     <div className="pb-12 bg-[#F7FAFF] dark:bg-[#061126] dark:text-white">
       <Banner title="Blog" />
       <Component>
@@ -82,12 +99,17 @@ const BlogPage = () => {
 
           {/* blog */}
           <div className="md:w-3/4 grid md:grid-cols-2 grid-cols-1 gap-5">
-            {filteredPosts.map((post) => (
-              <Single_Post key={post.id} post={post} />
+            {paginatePosts.map((post) => (
+              <Single_Post key={post.id} post={post}/>
             ))}
           </div>
+          
+        </div>
+        <div className="flex justify-center">
+                <Pagination item={filteredPosts.length} currentPage={currentPage} pageSize={pageSize} onPageChange={handlePageChange} />
         </div>
       </Component>
+      <Contact/>
     </div>
   );
 };

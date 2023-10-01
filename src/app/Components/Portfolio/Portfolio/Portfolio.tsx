@@ -31,10 +31,7 @@ const Portfolio = (props: Props) => {
     const handlePageChange = (page: any) => {
         setCurrentPage(page)
     }
-    // const paginatePosts = paginate(posts, currentPage, pageSize);
-
-    const data = portfolio_data;
-    const graphics = data.filter((item) => item.category === 'Graphics')
+  
 
     return (
         <>

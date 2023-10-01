@@ -53,9 +53,3 @@ function range(start: number, end: number, step: number = 1): number[] {
     return result;
   }
   
-  // Usage examples:
-  const numbers1 = range(0, 5); // [0, 1, 2, 3, 4]
-  const numbers2 = range(1, 6); // [1, 2, 3, 4, 5]
-  const numbers3 = range(0, 10, 2); // [0, 2, 4, 6, 8]
-  const numbers4 = range(10, 0, -1); // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-  
