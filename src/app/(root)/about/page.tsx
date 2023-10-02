@@ -9,13 +9,10 @@ const AboutPage = () => {
   return (
     <div>
           <Banner title="About Us" />
-      <Component>
         <div>
           <AboutHero />
         </div>
-      </Component>
           <ChooseUs />
-      <Contact />
     </div>
   );
 };

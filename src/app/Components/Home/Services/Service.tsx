@@ -19,33 +19,46 @@ const Service = (props : any) => {
   return (
     <div className=" ">
       <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
+        slidesPerView={3}
+        spaceBetween={3}
         freeMode={true}
         pagination={{
           clickable: true,
         }}
+        modules={[FreeMode, Pagination]}
         breakpoints={{
           // when window width is >= 640px
-          640: {
-            width: 640,
+          320: {
+            width: 320,
             slidesPerView: 1,
+            spaceBetween: 100
+          },
+          480: {
+            width: 480,
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
+          768: {
+            width: 770,
+            slidesPerView: 2,
+            spaceBetween: 10
           },
           // when window width is >= 768px
-          768: {
-            width: 768,
+          1024: {
+            width: 1024,
             slidesPerView: 2,
+            spaceBetween: 2
+          },
+          1440: {
+            width: 1440,
+            slidesPerView: 3,
+            spaceBetween: 5
           },
         }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }}
-        modules={[FreeMode, Pagination]}
       >
         {data.map((d: object | string | string[] | any | Service, i : number) => (
           <SwiperSlide key={i}>
-            <div className="bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white mt-3 p-8 mb-10 w-[379px] h-[348px] rounded-lg">
+            <div className="bg-[#EBF2FF] service-slides dark:bg-[#0A1A33] dark:text-white mt-3 p-8 mb-10 h-[380px] lg:h-[348px] rounded-lg">
               <img src={d?.logo} alt="" />
               <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
               <p>{d?.description}</p>
