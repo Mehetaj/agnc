@@ -1,9 +1,10 @@
+import SideBar from '@/app/Components/Dashboard/User/SideBar';
 import React from 'react';
 
 const UserPage = () => {
     return (
         <div>
-            Hello User boy
+            <SideBar/>
         </div>
     );
 };
