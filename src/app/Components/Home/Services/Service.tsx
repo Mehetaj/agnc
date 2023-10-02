@@ -52,7 +52,7 @@ const Service = (props : any) => {
           1440: {
             width: 1440,
             slidesPerView: 3,
-            spaceBetween: 5
+            spaceBetween: 50
           },
         }}
       >

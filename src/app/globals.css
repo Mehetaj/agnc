@@ -83,7 +83,7 @@
 
 @media only screen and (max-width: 321px) and (min-width: 0px) {
   .service-slides {
-    width: 300px;
+    width: 280px;
   }
 
   .portfolio-slides {
@@ -172,7 +172,7 @@
 /* Only for 1024 width devices */
 @media only screen and (max-width: 1025px) and (min-width: 770px) {
   .service-slides {
-    width: 420px;
+    width: 379px;
     margin-left: 6px;
   }
 

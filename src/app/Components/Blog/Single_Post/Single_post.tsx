@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Single_Post=({post}: any)=>{
@@ -14,7 +15,11 @@ const Single_Post=({post}: any)=>{
                     <p className=" text-[#2D3D59] dark:text-white text-[18px] font-normal">{post.publiched}</p>
                     <h2 className=" text-xl font-semibold">{post.title}</h2>
                     <p>{post.content.slice(0,120)}</p>
-                    <button onClick={()=>handleClick(post.id)} className=" text-left text-[#226CE5]">Read more &rarr;</button>
+                    <button className=" text-left text-[#226CE5]">
+                        <Link href={`/blog/${post.id}`}>
+                        Read more &rarr;
+                        </Link>
+                    </button>
                     
                 </div>
         </div>
