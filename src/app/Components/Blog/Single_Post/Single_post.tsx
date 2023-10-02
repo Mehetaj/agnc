@@ -1,7 +1,4 @@
-"use client"
 import { useRouter } from "next/navigation";
-// eslint-disable-next-line react-hooks/rules-of-hooks
-
 
 const Single_Post=({post}: any)=>{
     const router =useRouter();

@@ -29,11 +29,17 @@ const BlogPage = () => {
   const tags: string[] = Array.from(
     new Set(blogdata.flatMap((post) => post.tag))
   );
-  //  
-  
+
+  const setCategory = (event: any) => {
+    if (event.target.value === "All"){
+      setSelectedCategory(null);
+    }else{
+      setSelectedCategory(event.target.value);
+    }
+    
+  }
 
   // Pagination
-  
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 4;
   const paginatePosts = paginate(filteredPosts, currentPage, pageSize);
@@ -49,6 +55,8 @@ const BlogPage = () => {
       <Banner title="Blog" />
       <Component>
         <div className=" md:flex md:gap-5 mt-5 mx-auto ">
+          {/* for big screen  */}
+          {/* left side */}
           <div className=" w-1/4 h-min sticky top-6 md:block hidden ">
             <div className=" ">
               {/* category */}
@@ -96,7 +104,21 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-
+          {/* mobile device */}
+          <div >
+          <div className=" mb-5 text-center dark:bg-[#0A1A33] lg:p-5 rounded-lg md:hidden block">
+                <select className="select select-accent w-full max-w-xs" onChange={setCategory}>
+                  <option value="All">
+                    Select Categories 
+                  </option>
+                  {categories.slice(0, 5).map((category) => (
+                    <option className="mt-2" key={category}>
+                        {category}
+                    </option>
+                  ))}
+                </select>
+              </div>
+          </div>
           {/* blog */}
           <div className="md:w-3/4 grid md:grid-cols-2 grid-cols-1 gap-5">
             {paginatePosts.map((post) => (

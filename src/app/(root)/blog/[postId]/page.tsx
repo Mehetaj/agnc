@@ -26,7 +26,7 @@ const SingleBlogPost=({params}:any)=>{
                     <div className=" md:w-3/4 ">
                         {filteredPost.map((post) => (
                         <div key={post.id} className="lg:px-20 px-4">
-                            <img src={post.image} alt={`${post.title} img`} className=" md:h-[400px] h-[260px] w-full border-[#0A1A33] border-8" />  
+                            <img src={post.image} alt={`${post.title} img`} className=" md:h-[480px] h-[260px] w-full border-[#0A1A33] border-8" />  
                             <div className=" flex gap-2 font-normal text-base text-[#202C40] pt-3 pb-3">
                                 <h6 className=" border-[#226CE5] border-[1px] p-1 rounded">{post.category}</h6>
                                 <h6 className="p-1">{post.publiched}</h6>
