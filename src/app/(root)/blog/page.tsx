@@ -6,6 +6,9 @@ import Recent_Post from "@/app/Components/Blog/Recent_Post/Recent_Post";
 import { Blogs } from "../../types/types";
 import { blogdata } from "../../FakeData/blogdata";
 import Single_Post from "@/app/Components/Blog/Single_Post/Single_post";
+import Pagination from "@/app/Components/Portfolio/Pagination/Pagination";
+import { paginate } from "@/app/Components/Portfolio/Pagination/paginate";
+import Contact from "@/app/Components/Home/Contact/Contact";
 
 const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -27,15 +30,37 @@ const BlogPage = () => {
     new Set(blogdata.flatMap((post) => post.tag))
   );
 
+  const setCategory = (event: any) => {
+    if (event.target.value === "All"){
+      setSelectedCategory(null);
+    }else{
+      setSelectedCategory(event.target.value);
+    }
+    
+  }
+
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 4;
+  const paginatePosts = paginate(filteredPosts, currentPage, pageSize);
+  const handlePageChange = (page: any) => {
+    setCurrentPage(page)
+  }
+
+
   return (
+    
+
     <div className="pb-12 bg-[#F7FAFF] dark:bg-[#061126] dark:text-white">
       <Banner title="Blog" />
       <Component>
-        <div className=" md:flex md:gap-20 mt-5 mx-auto ">
+        <div className=" md:flex md:gap-5 mt-5 mx-auto ">
+          {/* for big screen  */}
+          {/* left side */}
           <div className=" w-1/4 h-min sticky top-6 md:block hidden ">
             <div className=" ">
               {/* category */}
-              <div className=" mb-10 bg-[#EBF2FF] dark:bg-[#0A1A33] lg:p-5 rounded-lg">
+              <div className=" mb-5 bg-[#EBF2FF] dark:bg-[#0A1A33] lg:p-5 rounded-lg">
                 <h1 className=" text-[#202C4] text-[20px] font-semibold mb-2">
                   Categories
                 </h1>
@@ -57,7 +82,7 @@ const BlogPage = () => {
               {/* // recent post */}
               <Recent_Post />
               {/* Tags */}
-              <div className=" mb-10 bg-[#EBF2FF] dark:bg-[#0A1A33] lg:p-5 rounded-lg">
+              <div className="  bg-[#EBF2FF] dark:bg-[#0A1A33] lg:p-5 rounded-lg">
                 <h2 className="text-[#202C4] text-[20px] font-semibold mb-2">
                   Tags
                 </h2>
@@ -79,15 +104,34 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-
+          {/* mobile device */}
+          <div >
+          <div className=" mb-5 text-center dark:bg-[#0A1A33] lg:p-5 rounded-lg md:hidden block">
+                <select className="select select-accent w-full max-w-xs" onChange={setCategory}>
+                  <option value="All">
+                    Select Categories 
+                  </option>
+                  {categories.slice(0, 5).map((category) => (
+                    <option className="mt-2" key={category}>
+                        {category}
+                    </option>
+                  ))}
+                </select>
+              </div>
+          </div>
           {/* blog */}
           <div className="md:w-3/4 grid md:grid-cols-2 grid-cols-1 gap-5">
-            {filteredPosts.map((post) => (
-              <Single_Post key={post.id} post={post} />
+            {paginatePosts.map((post) => (
+              <Single_Post key={post.id} post={post}/>
             ))}
           </div>
+          
+        </div>
+        <div className="flex justify-center">
+                <Pagination item={filteredPosts.length} currentPage={currentPage} pageSize={pageSize} onPageChange={handlePageChange} />
         </div>
       </Component>
+      <Contact/>
     </div>
   );
 };
