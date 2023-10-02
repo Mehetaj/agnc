@@ -35,8 +35,7 @@ const BlogPage = () => {
       setSelectedCategory(null);
     }else{
       setSelectedCategory(event.target.value);
-    }
-    
+    } 
   }
 
   // Pagination
