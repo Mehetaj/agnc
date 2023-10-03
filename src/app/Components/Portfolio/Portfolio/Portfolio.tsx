@@ -41,7 +41,7 @@ const Portfolio = (props: Props) => {
             <Tabs className="w-3/4 mx-auto">
                 <TabList className="flex flex-col md:flex-row sm:justify-center md:justify-between items-center tabContaner dark:bg-[#10223F] ">
                     {Object.keys(categories).map((category, idx) => (
-                        <Tab key={idx} className="text-sm">
+                        <Tab className="cursor-pointer text-sm " key={idx} >
                             {category}
                         </Tab>
                     ))}

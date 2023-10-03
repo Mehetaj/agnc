@@ -30,44 +30,58 @@ const Portfolio = () => {
   const data: portfolio_data_type[] = portfolio_data;
 
   return (
-    <div className="my-16">
+    <div className="my-16 res-sub-container">
       <Component>
         <Title>portfolio</Title>
-        <h1 className="text-[48px] font-bold">Some of our work</h1>
+        <h1 className="text-[48px] text-center lg:text-left font-bold">Some of our work</h1>
         <div className="">
           <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             spaceBetween={30}
             freeMode={true}
             pagination={{
               clickable: true,
             }}
+            modules={[FreeMode, Pagination]}
             breakpoints={{
               // when window width is >= 640px
-              640: {
-                width: 640,
+              320: {
+                width: 320,
                 slidesPerView: 1,
+                spaceBetween: 40
+              },
+              375: {
+                width: 375,
+                slidesPerView: 1,
+                spaceBetween: 20
+              },
+              425: {
+                width: 425,
+                slidesPerView: 1,
+                spaceBetween: 20
+              },
+              768: {
+                width: 770,
+                slidesPerView: 2,
+                spaceBetween: 0
               },
               // when window width is >= 768px
-              768: {
-                width: 768,
+              1024: {
+                width: 1024,
                 slidesPerView: 2,
               },
             }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            }}
-            modules={[FreeMode, Pagination]}
+
           >
             {data?.map((d: portfolio_data_type, i: number) => (
-                  <SwiperSlide
-                  
-                  key={i}>
-              <div className="mt-7 mb-10">
-                  <img className="w-[379px] h-[280px]" src={d?.img} alt="" />
-                  <p className="text-[18px] my-4">{d.type}</p>
-                  <h1 className="text-[24px] font-bold">{d.title}</h1>
+              <SwiperSlide
+                key={i}>
+                <div>
+                  <div className="mt-7 portfolio-slides portfolio-content w-full lg:w-[379px] mb-10">
+                    <img className="w-full h-[280px]" src={d?.img} alt="" />
+                    <p className="text-[18px] my-4">{d.type}</p>
+                    <h1 className="text-[24px] font-bold">{d.title}</h1>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

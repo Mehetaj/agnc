@@ -18,7 +18,7 @@ const Recent_Post = () => {
           className="mt-3 flex items-center bg-[#D6E6FF] dark:bg-[#0A1A33] dark:shadow-lg rounded-md p-2 h-[110px] cursor-pointer"
           onClick={()=>handleClick(post.id)}
         >
-          <div className=" ">
+          <div className="w-[100px] h-[100px] ">
             <img
               className="w-[100px] h-[80px] rounded-md sm:block md:hidden lg:block "
               src={post.image}

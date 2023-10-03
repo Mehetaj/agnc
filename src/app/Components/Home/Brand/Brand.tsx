@@ -13,11 +13,11 @@ import Component from "@/app/Shared/Component/Component";
 
 export default function Brand() {
   return (
-    <div id="brand" className=" bg-[#EBF2FF] dark:bg-[#10223F] lg:p-10  lg:py-20 mt-20">
+    <div id="brand" className=" bg-[#EBF2FF] dark:bg-[#10223F] p-10  lg:py-20 mt-20">
       <Component>
         <div className="flex flex-col">
           <Title>Brands</Title>
-          <h1 className="text-[48px] font-bold">We’ve collaborated with</h1>
+          <h1 className="text-2xl md:text-[48px] text-center lg:text-left font-bold">We’ve collaborated with</h1>
         </div>
         {/* create div with four column and three row as card */}
         {/* Brands static img from assets folder */}

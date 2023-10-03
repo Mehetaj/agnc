@@ -20,7 +20,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body className={`${inter.className} main`}>
+      <body data-theme="light" className={`${inter.className} main`}>
         <ThemeProvider attribute="class" enableSystem={false}>
           <div className="gradient"></div>
           <div className="dark:bg-[#061126] dark:text-white">
