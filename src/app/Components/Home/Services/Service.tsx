@@ -14,7 +14,7 @@ import Image from "next/image";
 import { Service } from "@/app/types/types";
 
 const Service = (props : any) => {
-  console.log(props);
+  // console.log(props);
   const data = props.data;
   return (
     <div className=" ">
@@ -31,7 +31,7 @@ const Service = (props : any) => {
           320: {
             width: 320,
             slidesPerView: 1,
-            spaceBetween: 100
+            spaceBetween: 10
           },
           480: {
             width: 480,

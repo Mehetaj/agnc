@@ -6,8 +6,6 @@ import arrow from '../../../../asset/icon/blue-arroe.png'
 import Link from 'next/link';
 const ServicesSection = () => {
     const data = servicesData;
-    // console.log(data[0].service_strategy[0].title);
-    // console.log(data);
 
     return (
         <div className='bg-[#F7FAFF] dark:bg-[#061126] p-10 my-10'>
@@ -20,7 +18,7 @@ const ServicesSection = () => {
                                 <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
                                 <p>{d?.description}</p>
                                 <Link href={`/services/${d?.id}`}>
-                                <Image className=" mt-6" src={arrow} alt="Details button" />
+                                    <Image className=" mt-6" src={arrow} alt="Details button" />
                                 </Link>
                             </div>
                         ))

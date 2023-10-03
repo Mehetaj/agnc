@@ -79,11 +79,15 @@
   }
 }
 
+.text-primary {
+  color: #226ce5;
+}
+
 /* Only for 320 width devices */
 
 @media only screen and (max-width: 321px) and (min-width: 0px) {
   .service-slides {
-    width: 280px;
+    width: 300px;
   }
 
   .portfolio-slides {
@@ -172,7 +176,7 @@
 /* Only for 1024 width devices */
 @media only screen and (max-width: 1025px) and (min-width: 770px) {
   .service-slides {
-    width: 379px;
+    width: 420px;
     margin-left: 6px;
   }
 

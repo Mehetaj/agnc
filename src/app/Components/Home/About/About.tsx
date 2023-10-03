@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../../../asset/team.png";
+import img from "../../../../asset/about-us-home-.png";
 import Title from "@/app/Shared/Title/Title";
 import Button from "@/app/Shared/Button/Button";
 import Component from "@/app/Shared/Component/Component";
@@ -11,7 +11,9 @@ const About = () => {
     <div className="dark:bg-[#030C1A] pt-10 pb-16">
       <Component>
         <div className="about-content px mx-auto mt-20 flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center md:gap-20 gap-80">
-          <Image className="about-png" src={img} alt="" />
+          <div className="">
+          <Image className="w-[1500px] h-[600px]" src={img} alt="" />
+          </div>
           <div>
             <Title>About</Title>
             <h1 className=" text-[60px] text-center lg:text-left font-bold">

@@ -48,6 +48,7 @@ const Portfolio = () => {
               320: {
                 width: 320,
                 slidesPerView: 1,
+                spaceBetween: 40
               },
               375: {
                 width: 375,

@@ -40,7 +40,7 @@ const Review = (Props: Items) => {
           320: {
             width: 320,
             slidesPerView: 1,
-            spaceBetween: 200
+            spaceBetween: 130,
           },
           375: {
             width: 385,
@@ -68,21 +68,13 @@ const Review = (Props: Items) => {
         {data.map((d: object | string | string[] | any, i) => (
           <SwiperSlide key={i}>
             <div>
-              <div className="review-slides w-full bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
+              <div className="review-slides  bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
                 <p>{d.review}</p>
                 <hr className="my-4" />
                 <Image src={star} alt="" />
               </div>
               <div className="p-2 flex gap-2 mb-7 items-center">
-                {/* <img
-                  src={d.reviewer_img}
-                  alt=""
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                /> */}
                 <div className="w-[50px] h-[50px] rounded-full bg-[#161623]">
-
                 </div>
                 <div>
                   <h1 className="text-xl font-semibold">{d.reviewer_name}</h1>
