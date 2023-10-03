@@ -25,8 +25,8 @@ const SingleBlogPost=({params}:any)=>{
                 <div className="md:flex mt-10 w-full">
                     <div className=" md:w-3/4 ">
                         {filteredPost.map((post) => (
-                        <div key={post.id} className="lg:px-20 px-4">
-                            <img src={post.image} alt={`${post.title} img`} className=" md:h-[480px] h-[260px] w-full border-[#0A1A33] border-8" />  
+                        <div key={post.id} className="lg:px-20 px-4 ">
+                            <img src={post.image} alt={`${post.title} img`} className=" md:h-[420px] h-[300px] w-11/12 md:w-full border-[#0A1A33] border-8 mx-auto" />  
                             <div className=" flex gap-2 font-normal text-base text-[#202C40] pt-3 pb-3">
                                 <h6 className=" border-[#226CE5] border-[1px] p-1 rounded">{post.category}</h6>
                                 <h6 className="p-1">{post.publiched}</h6>
@@ -61,6 +61,7 @@ const SingleBlogPost=({params}:any)=>{
                         <Recent_Post/>
                     </div>
                 </div>
+                
             </Component>
             <Contact/>
         </div>
