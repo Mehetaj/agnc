@@ -2,13 +2,14 @@
 
 export const servicesData = [
   {
+    id: 1,
     logo: "https://i.ibb.co/48Vb5rt/Icon-Dev.png",
     category: "Mobile App Development",
     description:
       "From concept to deployment, we specialize in crafting innovative and feature-rich mobile applications for iOS and Android platforms.",
     banner_description:
       "Our mobile app development service is driven by a passion for creating cutting-edge applications that provide real value to users. Whether you have an app idea or need to enhance an existing one, we have the expertise to bring your vision to life.",
-    banner_image: "https://i.ibb.co/48Vb5rt/Icon-Dev.png",
+    banner_image: "https://i.ibb.co/0c7DWMC/image-4.png",
     service_strategy: [
       {
         title: "iOS App Development",
@@ -60,6 +61,7 @@ export const servicesData = [
     ],
   },
   {
+    id: 2,
     logo: "https://i.ibb.co/Z2fwQ8R/Icon-Design.png",
     category: "SEO and Digital Marketing",
     description:
@@ -67,7 +69,7 @@ export const servicesData = [
     banner_description:
       "Our SEO and digital marketing service is dedicated to helping businesses thrive in the digital landscape. We understand the importance of visibility and engagement in the online world, and we have the expertise to elevate your brand's online presence.",
     banner_image:
-      "https://i.ibb.co/Ld6b9MT/Icon-app.png",
+      "https://i.ibb.co/0c7DWMC/image-4.png",
     service_strategy: [
       {
         title: "Search Engine Optimization (SEO)",
@@ -119,13 +121,14 @@ export const servicesData = [
     ],
   },
   {
+    id: 3,
     logo: "https://i.ibb.co/Ld6b9MT/Icon-app.png",
     category: "E-commerce Solutions",
     description:
       "Boost your online sales with our e-commerce solutions. We develop and optimize e-commerce platforms for maximum profitability.",
     banner_description:
       "Our e-commerce solutions are designed to help businesses thrive in the online marketplace. We understand the unique challenges and opportunities of e-commerce, and we have the expertise to build and optimize online stores that drive sales and enhance customer experiences.",
-    banner_image: "https://www.example.com/service-e-commerce-solutions.jpg",
+    banner_image: "https://i.ibb.co/0c7DWMC/image-4.png",
     service_strategy: [
       {
         title: "E-commerce Website Development",
@@ -177,13 +180,14 @@ export const servicesData = [
     ],
   },
   {
+    id: 4,
     logo: "https://i.ibb.co/Ld6b9MT/Icon-app.png",
     category: "Content Writing",
     description:
       "Our expert writers create engaging and SEO-friendly content for your website, blog, and marketing campaigns.",
     banner_description:
       "Our content writing service is dedicated to delivering high-quality, engaging, and SEO-friendly content that resonates with your target audience. We understand the importance of content in digital marketing and strive to provide well-crafted, informative, and persuasive content that drives results.",
-    banner_image: "https://www.example.com/service-content-writing.jpg",
+    banner_image: "https://i.ibb.co/0c7DWMC/image-4.png",
     service_strategy: [
       {
         title: "Website Content",
@@ -235,13 +239,14 @@ export const servicesData = [
     ],
   },
   {
+    id: 5,
     logo: "https://i.ibb.co/Z2fwQ8R/Icon-Design.png",
     category: "IT Consulting",
     description:
       "We offer strategic IT consulting services to help businesses streamline operations, improve efficiency, and reduce costs.",
     banner_description:
       "Our IT consulting service is all about leveraging technology to drive business success. We understand that technology is a critical component of modern businesses, and we provide strategic guidance and solutions to help you make the most of it.",
-    banner_image: "https://www.example.com/service-it-consulting.jpg",
+    banner_image: "https://i.ibb.co/0c7DWMC/image-4.png",
     service_strategy: [
       {
         title: "IT Strategy Development",
@@ -293,13 +298,14 @@ export const servicesData = [
     ],
   },
   {
+    id: 6,
     logo: "https://i.ibb.co/Z2fwQ8R/Icon-Design.png",
     category: "Ai Development",
     description:
       "We offer strategic IT consulting services to help businesses streamline operations, improve efficiency, and reduce costs.",
     banner_description:
       "Our IT consulting service is all about leveraging technology to drive business success. We understand that technology is a critical component of modern businesses, and we provide strategic guidance and solutions to help you make the most of it.",
-    banner_image: "https://www.example.com/service-it-consulting.jpg",
+    banner_image: "https://i.ibb.co/0c7DWMC/image-4.png",
     service_strategy: [
       {
         title: "IT Strategy Development",

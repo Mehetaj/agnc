@@ -10,13 +10,13 @@ import Component from "../Component/Component";
 import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
 
 const Navbar = () => {
-  const [navbar, setNavbar] = useState<boolean>(false);
+  const [Toggle, setToggle] = useState<boolean>(true);
 
   const navLinks = NavLink.map((d, i) => {
     return (
       <div key={i}>
-        <li className="pb-6 text-[18px]  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:text-blue-900  border-blue-900   md:hover:bg-transparent">
-          <Link href={d.path} onClick={() => setNavbar(!navbar)}>
+        <li className="pb-6 text-[18px] list-none nav-bar-links  py-2 px-6 text-center border-b-2 lg:border-b-0  hover:text-blue-900  border-blue-900   lg:hover:bg-transparent">
+          <Link href={d.path}>
             {d.name}
           </Link>
         </li>
@@ -25,73 +25,40 @@ const Navbar = () => {
   })
 
   return (
-    <div className=" mx-auto md:p-0 dark:bg-[#030C1A] ">
+    <div>
       <Component>
-        <div className="w-full md:max-w-[1400px]">
-          <div className="justify-between mx-auto  md:items-center md:flex">
-            <div>
-              <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                {/* LOGO */}
-                <Link href="/">
-                  <h2 className="text-[32px] text-blue-600 font-bold ">
-                    Bytezenith
-                  </h2>
-                </Link>
-                {/* HAMBURGER BUTTON FOR MOBILE */}
-                <div className="md:hidden">
-                  <button
-                    className="p-2 rounded-md outline-none"
-                    onClick={() => setNavbar(!navbar)}
-                  >
-                    {navbar ? (
-                      <Image src={close} width={20} height={20} alt="logo" />
-                    ) : (
-                      <Image
-                        src={menu}
-                        width={20}
-                        height={20}
-                        alt="logo"
-                        className=""
-                      />
-                    )}
-                  </button>
-                </div>
-              </div>
+        <div className="">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[24px] lg:text-[32px] text-primary font-bold ">Bytezenith</h1>
+            <div className="hidden lg:flex">
+              {navLinks}
+              <button className="text-blue-600 flex lg:hidden border px-4 lg:px-[32px] py-[12px] lg:text-[18px] rounded-lg font-semibold border-blue-600">
+                Contact us
+              </button>
             </div>
             <div className="">
-              <div
-                className={`flex-1 justify-self-center pb-3  md:block md:pb-0 md:mt-0 ${navbar ? "p-12 md:p-0 block" : "hidden"
-                  }`}
-              >
-                <ul className="h-screen md:h-auto items-center dark:text-white justify-center md:flex ">
-                  {/* Nav link form LINKS component (on shared folder) */}
-                  {
-                    navLinks
-                  }
+              <button className="text-blue-600 hidden lg:flex border px-4 lg:px-[32px] py-[12px] lg:text-[18px] rounded-lg font-semibold border-blue-600">
+                Contact us
+              </button>
+              {/* Toggle navbar */}
+              <div className="grid lg:hidden">
+                {
+                  Toggle
+                    ?
+                    <Image onClick={() => setToggle(!Toggle)} src={menu} className="w-[20px] h-[20px]" alt="" />
+                    :
+                    <Image onClick={() => setToggle(!Toggle)} className="w-[20px] h-[20px]" alt="" src={close} />
+                }
 
-                  {/* contact link hidden on large device */}
-                  <li className="pb-6 text-[18px]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-600  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                    <Link href="" onClick={() => setNavbar(!navbar)}>
-                      <button className="btn-outline md:hidden">
-                        Contact Us
-                      </button>
-                    </Link>
-                  </li>
-
-                  {/* Toggle dark mode */}
-
-                  
-                  <li className="pb-6 text-[18px]  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:text-blue-900  border-blue-900  md:hover:text-blue-600 md:hover:bg-transparent">
-                    <Link href="" onClick={() => setNavbar(!navbar)}>
-                      <ThemeSwitcher />
-                    </Link>
-                  </li>
-                </ul>
+                {
+                  !Toggle
+                    ?
+                    <div className="absolute top-10 right-7 mb-20">
+                      {navLinks}
+                    </div> : ""
+                }
               </div>
             </div>
-            <button className="btn-outline hidden md:flex">
-              <Link href="/contact">Contact Us</Link>
-            </button>
           </div>
         </div>
       </Component>

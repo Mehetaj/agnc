@@ -41,7 +41,7 @@ const Portfolio = (props: Props) => {
             <Tabs className="w-3/4 mx-auto">
                 <TabList className="grid md:grid-cols-5 grid-cols-1 tabContaner dark:bg-[#10223F]">
                     {Object.keys(categories).map((category, idx) => (
-                        <Tab key={idx} >
+                        <Tab className="cursor-pointer " key={idx} >
                             {category}
                         </Tab>
                     ))}
