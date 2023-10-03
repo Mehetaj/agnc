@@ -81,7 +81,7 @@ const BlogPage = () => {
               {/* // recent post */}
               <Recent_Post />
               {/* Tags */}
-              <div className="  bg-[#EBF2FF] dark:bg-[#0A1A33] lg:p-5 rounded-lg">
+              <div className="  bg-[#EBF2FF] dark:bg-[#0A1A33] lg:p-5 rounded-lg p-2">
                 <h2 className="text-[#202C4] text-[20px] font-semibold mb-2">
                   Tags
                 </h2>
@@ -105,8 +105,8 @@ const BlogPage = () => {
           </div>
           {/* mobile device */}
           <div >
-          <div className=" mb-5 text-center dark:bg-[#0A1A33] lg:p-5 rounded-lg md:hidden block">
-                <select className="select select-accent w-full max-w-xs" onChange={setCategory}>
+          <div className=" mb-5 text-center lg:p-5 rounded-lg md:hidden block">
+                <select className="select select-accent w-full max-w-xs dark:text-white dark:bg-[#0A1A33]" onChange={setCategory}>
                   <option value="All">
                     Select Categories 
                   </option>

@@ -50,7 +50,7 @@ const Portfolio = (props: Props) => {
                 {/* portfolio section */}
 
                 {Object.values(categories).map((data: any, idx) => (
-                    <TabPanel key={idx}>
+                    <TabPanel key={idx} className="flex flex-col justify-center">
                         <div className=" grid md:grid-cols-3 xl:grid-cols-4 grid-cols-1 md:gap-6 gap-3">
                             <SingleItem data={data} currentPage={currentPage} pageSize={pageSize} ></SingleItem>
                         </div>
