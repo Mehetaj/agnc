@@ -15,22 +15,22 @@ const Recent_Post = () => {
       {blogdata.slice(5, 10).map((post) => (
         <div
           key={post.id}
-          className="mt-3 flex justify-center items-center bg-[#D6E6FF] dark:bg-[#0A1A33] dark:shadow-lg rounded-md p-2 h-[110px] cursor-pointer"
+          className="mt-3 flex items-center bg-[#D6E6FF] dark:bg-[#0A1A33] dark:shadow-lg rounded-md p-2 h-[110px] cursor-pointer"
           onClick={()=>handleClick(post.id)}
         >
-          <div className="w-[100px] h-[100px] ">
+          <div className="w-[100px] h-[100px] sm:block md:hidden lg:block">
             <img
-              className="w-[100px] h-[100px] object-cover rounded-md "
+              className="w-[100px] h-[80px] rounded-md "
               src={post.image}
-              alt=""
+              alt={post.title}
             />
           </div>
 
-          <div className=" ml-2">
+          <div className="sm:ml-2 md:ml-0 lg:ml-2">
             <h6 className=" text-[#2D3D59] dark:text-white font-normal text-xs">
-              {post.category}-{post.publiched}
+              {/* {post.category}- */} {post.publiched}
             </h6>
-            <h1 className=" text-[#202C40] dark:text-white font-semibold text-base">
+            <h1 className=" text-[#202C40] dark:text-white font-semibold text-sm lg:text-sm">
               {post.title}
             </h1>
           </div>
