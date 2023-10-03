@@ -38,28 +38,39 @@ const Review = (Props: Items) => {
         breakpoints={{
           // when window width is >= 640px
           320: {
-            width: 320,
+            width: 300,
             slidesPerView: 1,
             spaceBetween: 130,
           },
           375: {
-            width: 385,
+            width: 358,
             slidesPerView: 1,
-            spaceBetween: 100,
+            spaceBetween: 20,
+          },
+          425: {
+            width: 410,
+            slidesPerView: 1,
+            spaceBetween: 20,
           },
           768: {
-            width: 770,
+            width: 750,
             slidesPerView: 2,
-            spaceBetween: 30
+            spaceBetween: 20
           },
           // when window width is >= 768px
           1024: {
-            width: 1024,
-            slidesPerView: 2,
-            spaceBetween: 0
+            width: 940,
+            slidesPerView: 3,
+            spaceBetween: 10
           },
           1440: {
-            width: 1440,
+            width: 1190,
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1520: {
+            width: 1080,
+
             slidesPerView: 3,
             spaceBetween: 20
           },
@@ -68,7 +79,7 @@ const Review = (Props: Items) => {
         {data.map((d: object | string | string[] | any, i) => (
           <SwiperSlide key={i}>
             <div>
-              <div className="review-slides  bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
+              <div className="review-slides bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
                 <p>{d.review}</p>
                 <hr className="my-4" />
                 <Image src={star} alt="" />

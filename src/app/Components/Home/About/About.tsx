@@ -10,9 +10,9 @@ const About = () => {
   return (
     <div className="dark:bg-[#030C1A] pt-10 pb-16">
       <Component>
-        <div className="about-content px mx-auto mt-20 flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center md:gap-20 gap-80">
+        <div className="about-content px mx-auto mt-20 flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center md:gap-20 lg:gap-80">
           <div className="">
-          <Image className="w-[1500px] h-[600px]" src={img} alt="" />
+          <Image className="lg:w-[1500px] lg:h-[600px]" src={img} alt="" />
           </div>
           <div>
             <Title>About</Title>

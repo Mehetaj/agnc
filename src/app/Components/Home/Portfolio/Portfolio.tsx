@@ -46,29 +46,40 @@ const Portfolio = () => {
             breakpoints={{
               // when window width is >= 640px
               320: {
-                width: 320,
+                width: 300,
                 slidesPerView: 1,
-                spaceBetween: 40
+                spaceBetween: 20
               },
               375: {
-                width: 375,
+                width: 358,
                 slidesPerView: 1,
                 spaceBetween: 20
               },
               425: {
-                width: 425,
+                width: 410,
                 slidesPerView: 1,
                 spaceBetween: 20
               },
               768: {
-                width: 770,
+                width: 750,
                 slidesPerView: 2,
-                spaceBetween: 0
+                spaceBetween: 20
               },
               // when window width is >= 768px
               1024: {
-                width: 1024,
-                slidesPerView: 2,
+                width: 940,
+                slidesPerView: 3,
+                spaceBetween: 20
+              },
+              1440: {
+                width: 1190,
+                slidesPerView: 3,
+                spaceBetween: 20
+              },
+              1520: {
+                width: 1440,
+                slidesPerView: 3,
+                spaceBetween: 20
               },
             }}
 
@@ -77,8 +88,8 @@ const Portfolio = () => {
               <SwiperSlide
                 key={i}>
                 <div>
-                  <div className="mt-7 portfolio-slides portfolio-content w-full lg:w-[379px] mb-10">
-                    <img className="w-full h-[280px]" src={d?.img} alt="" />
+                  <div className="mt-7 portfolio-slides portfolio-content w-full  mb-10">
+                    <img className="w-full" src={d?.img} alt="" />
                     <p className="text-[18px] my-4">{d.type}</p>
                     <h1 className="text-[24px] font-bold">{d.title}</h1>
                   </div>

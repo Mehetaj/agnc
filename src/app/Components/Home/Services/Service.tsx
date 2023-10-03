@@ -29,36 +29,46 @@ const Service = (props : any) => {
         breakpoints={{
           // when window width is >= 640px
           320: {
-            width: 320,
+            width: 300,
             slidesPerView: 1,
             spaceBetween: 10
           },
-          480: {
-            width: 480,
+          375: {
+            width: 358,
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          425: {
+            width: 410,
             slidesPerView: 1,
             spaceBetween: 100,
           },
           768: {
-            width: 770,
+            width: 750,
             slidesPerView: 2,
             spaceBetween: 10
           },
           // when window width is >= 768px
           1024: {
-            width: 1024,
+            width: 940,
             slidesPerView: 2,
-            spaceBetween: 2
+            spaceBetween: 20
           },
           1440: {
+            width: 1190,
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1520: {
             width: 1440,
             slidesPerView: 3,
-            spaceBetween: 50
+            spaceBetween: 20
           },
         }}
       >
         {data.map((d: object | string | string[] | any | Service, i : number) => (
           <SwiperSlide key={i}>
-            <div className="bg-[#EBF2FF] service-slides dark:bg-[#0A1A33] dark:text-white mt-3 p-8 mb-10 h-[380px] lg:h-[348px] rounded-lg">
+            <div className="bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white mt-3 p-8 mb-10 h-[380px] lg:h-[348px] rounded-lg">
               <img src={d?.logo} alt="" />
               <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
               <p>{d?.description}</p>
