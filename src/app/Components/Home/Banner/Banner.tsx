@@ -10,7 +10,7 @@ const Banner = () => {
       <div className=" mx-auto lg:flex justify-between items-center gap-5">
         <div>
           {/* Heading of Banners */}
-          <h1 className="text-center lg:text-left text-[45px] lg:text-[60px] font-bold">
+          <h1 className="text-center lg:text-left text-[32px] lg:text-[45px] xl:text-[60px] font-bold">
             Stand Out in the <br className="lg:flex hidden" /> Digital Crowd
             with <br className="lg:flex hidden" /> Creative Solutions
           </h1>
@@ -29,7 +29,7 @@ const Banner = () => {
         </div>
         {/* Banner image */}
         <div className="flex justify-center items-center">
-        <Image className="max-w-full banner-png mt-4 lg:mt-0" src={banner} alt="" />
+        <Image className="max-w-full banner-png mt-8 lg:mt-0" src={banner} alt="" />
         </div>
       </div>
     </Component>

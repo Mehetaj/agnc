@@ -3,11 +3,14 @@ import Image from "next/image";
 import menu from "../.././../asset/menu.png";
 import Link from "next/link";
 import { useState } from "react";
-import close from "../../../asset/close.png";
 import NavLink from '../Links/NavLinks'
 import Component from "../Component/Component";
+import logo from '../../../asset/Colorful Modern Elegant B Free Logo (280 x 120 px).png'
+import { FaBars } from "react-icons/fa";
+import { RxCross1 } from 'react-icons/rx'
 
 import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   const [Toggle, setToggle] = useState<boolean>(true);
@@ -15,7 +18,7 @@ const Navbar = () => {
   const navLinks = NavLink.map((d, i) => {
     return (
       <div key={i}>
-        <li className="pb-6 text-[18px] list-none nav-bar-links  py-2 lg:px-6 text-center border-b-2 lg:border-b-0  hover:text-blue-900  border-blue-900   lg:hover:bg-transparent">
+        <li className="pb-6 text-[18px] list-none nav-bar-links  py-1 lg:px-6 text-center   hover:text-blue-900 lg:hover:bg-transparent">
           <Link href={d.path}>
             {d.name}
           </Link>
@@ -25,40 +28,52 @@ const Navbar = () => {
   })
 
   return (
-    <div>
+    <div className="">
       <Component>
         <div className="">
-          <div className="flex justify-between items-center">
-            <h1 className="text-[24px] lg:text-[32px] text-primary font-bold ">Bytezenith</h1>
-            <div className="hidden lg:flex items-center">
+          <div className="flex justify-between items-center ">
+            <Image className="w-[140px] lg:w-[170px] xl:w-[280px]" src={logo} alt="Logo" />
+
+            {/* <h1 className="text-2xl font-bold text-blue-600">Bytezenith</h1> */}
+            <div className="hidden lg:flex items-center mt-5">
               {navLinks}
-              <button className="text-blue-600 flex lg:hidden border px-4 lg:px-[32px] py-[12px] lg:text-[18px] rounded-lg font-semibold border-blue-600">
-                Contact us
-              </button>
-            </div>
-              <div className="-mt-4">
-              <ThemeSwitcher />
+              <div className=" lg:hidden flex">
+                <Button>
+                  Contact us
+                </Button>
               </div>
+            </div>
+            <div className="-mt-3 lg:-mt-4 absolute right-8 lg:right-0 lg:relative">
+              <ThemeSwitcher />
+            </div>
             <div className="">
-              <button className="text-blue-600 hidden lg:flex border px-4 lg:px-[32px] py-[12px] lg:text-[18px] rounded-lg font-semibold border-blue-600">
-                Contact us
-              </button>
+              <div className="transition hidden lg:flex border rounded-xl border-[#5E17EB]  hover:bg-gradient-to-r from-[#5271FF] via-30% to-[#5E17EB] to-90%">
+                <button className="  flex items-center justify-center gap-2 text-lg py-3 px-5">
+                  Contact us
+                </button>
+              </div>
+              {/* small device */}
               {/* Toggle navbar */}
               <div className="grid lg:hidden">
                 {
                   Toggle
                     ?
-                    <Image onClick={() => setToggle(!Toggle)} src={menu} className="w-[20px] h-[20px]" alt="" />
+                    <FaBars onClick={() => setToggle(!Toggle)} className="text-xl text-[#5E17EB]" />
                     :
-                    <Image onClick={() => setToggle(!Toggle)} className="w-[20px] h-[20px]" alt="" src={close} />
+                    <RxCross1 onClick={() => setToggle(!Toggle)} className="text-xl text-[#5E17EB]" />
                 }
 
                 {
                   !Toggle
                     ?
-                    <div className="menu absolute right-4 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <div className="menu absolute right-4 menu-sm dropdown-content mt-6 z-[1] px-2 py-4 shadow bg-base-100 rounded-box w-52">
                       <div className="">
                         {navLinks}
+                        <div className="transition  border rounded-xl border-[#5E17EB]  hover:bg-gradient-to-r from-[#5271FF] via-30% to-[#5E17EB] to-90%">
+                          <button className="text-center px-3 py-2 mx-auto text-lg ">
+                            Contact us
+                          </button>
+                        </div>
                       </div>
                     </div> : ""
                 }

@@ -22,7 +22,7 @@ const BlogSection = () => {
       <div className="">
         <Component>
           <Title>blog</Title>
-          <h1 className="font-bold text-5xl text-center lg:text-left">Our Latest Articles</h1>
+          <h1 className="font-bold text-[32px] lg:text-5xl text-center lg:text-left">Our Latest Articles</h1>
           {/* Mapped blog section data on home page */}
           <div className="">
             <Swiper

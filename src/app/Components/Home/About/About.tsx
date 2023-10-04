@@ -10,13 +10,13 @@ const About = () => {
   return (
     <div className="dark:bg-[#030C1A] pt-10 pb-16">
       <Component>
-        <div className="about-content px mx-auto mt-20 flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center md:gap-20 lg:gap-80">
-          <div className="">
-          <Image className="lg:w-[1500px] lg:h-[600px]" src={img} alt="" />
+        <div className="about-content px mx-auto mt-20  flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center md:gap-20 lg:gap-80">
+          <div className="lg:w-1/2">
+          <Image className="w-full h-full mt-6 lg:mt-0" src={img} alt="" />
           </div>
-          <div>
+          <div className="lg:w-1/2">
             <Title>About</Title>
-            <h1 className=" text-[60px] text-center lg:text-left font-bold">
+            <h1 className="text-[32px] lg:text-[60px] text-center lg:text-left font-bold">
               We are design ninjas for your next project
             </h1>
             <p className=" text-[20px] text-center lg:text-left my-10">

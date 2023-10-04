@@ -33,7 +33,7 @@ const Portfolio = () => {
     <div className="my-16 res-sub-container">
       <Component>
         <Title>portfolio</Title>
-        <h1 className="text-[48px] text-center lg:text-left font-bold">Some of our work</h1>
+        <h1 className="text-[32px] lg:text-[48px] text-center lg:text-left font-bold">Some of our work</h1>
         <div className="">
           <Swiper
             slidesPerView={3}

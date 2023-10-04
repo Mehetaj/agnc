@@ -108,3 +108,8 @@
   height: 300px;
   width: 100%;
 }
+
+.transition:hover {
+  transition: all ease-in-out 0.2s;
+  color: white;
+}
