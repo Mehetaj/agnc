@@ -11,7 +11,7 @@ const Services = () => {
     <div className="my-10 dark:my-[200px]">
       <Component>
         <Title>Service</Title>
-        <h1 className="text-[48px] text-center lg:text-left font-bold">We offer creative solutions</h1>
+        <h1 className="text-[32px] lg:text-[48px] text-center lg:text-left font-bold">We offer creative solutions</h1>
         {/* mapped data */}
         <div>
           <Service data={data} />

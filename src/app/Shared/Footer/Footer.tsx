@@ -15,7 +15,7 @@ const Footer = () => {
 
     <footer className="dark:bg-[#030C1A] p-2">
       <Component>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10 gap-10">
           <div className="">
             {/* Company name */}
             <h1 className="text-[48px] lg:text-[32px] font-bold mb-8">
@@ -74,7 +74,7 @@ const Footer = () => {
               Career
             </Link>
           </div>
-          <div>
+          <div className="mb-4">
             {/* Social Links */}
             <h1 className="text-[24px] font-bold mb-8">Follow us</h1>
             <div className="flex gap-8">

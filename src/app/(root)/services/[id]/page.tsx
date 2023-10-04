@@ -21,7 +21,7 @@ const SingleServices = () => {
     return (
         <div>
             <Banner title={category} />
-            <div className='my-10 bg-[#F7FAFF] py-10 '>
+            <div className='my-10 bg-[#F7FAFF] dark:bg-[#061126] py-10 '>
                 <Component>
                     <div className='lg:flex justify-between px-7 gap-20'>
                         {/* description/ about */}
@@ -40,7 +40,7 @@ const SingleServices = () => {
                                 service_strategy?.map((item: Service_strategy, d: number) => (
                                     <div tabIndex={d + 1} className='collapse collapse-arrow' >
                                         <div className='collapse-title'>
-                                            <h1 className='text-[24px] font-bold  text-[#202C40]'>{item?.title}</h1>
+                                            <h1 className='text-[24px] font-bold  text-[#202C40] dark:text-white'>{item?.title}</h1>
                                         </div>
                                         <div className='collapse-content'>
                                             <p>{item?.description}</p>
@@ -59,7 +59,7 @@ const SingleServices = () => {
 
                     {/* FAQ/ Common asked question */}
 
-                    <div className='bg-[#F7FAFF] mt-16 py-10 px-10 flex justify-between'>
+                    <div className='bg-[#F7FAFF] dark:bg-[#061126] mt-16 py-10 px-10 flex justify-between'>
                         <div>
                             <h1 className='text-5xl w-[380px] font-bold mb-12'>
                                 Need To Know User Common  Questions
@@ -73,7 +73,7 @@ const SingleServices = () => {
                                 common_questions?.map((item: FAQ_data_type, d: number) => (
                                     <div tabIndex={d + 1} className='collapse collapse-arrow' >
                                         <div className='collapse-title'>
-                                            <h1 className='text-[24px] font-bold  text-[#202C40]'>{item?.question}</h1>
+                                            <h1 className='text-[24px] font-bold  text-[#202C40] dark:text-white'>{item?.question}</h1>
                                         </div>
                                         <div className='collapse-content'>
                                             <p>{item?.answer}</p>

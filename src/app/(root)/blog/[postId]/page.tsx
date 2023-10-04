@@ -1,7 +1,5 @@
 "use client"
 import BlogBanner from "@/app/Components/Blog/BlogBanner/BlogBanner";
-import { blogdata } from "../../../FakeData/blogdata";
-import { Blogs } from "../../../types/types";
 import Recent_Post from "@/app/Components/Blog/Recent_Post/Recent_Post";
 import Component from "@/app/Shared/Component/Component";
 import Image from "next/image";
@@ -15,11 +13,7 @@ import { BlogData } from "@/app/FakeData/blog";
 
 
 
-const SingleBlogPost = ({ params }: any) => {
-    const filteredPost: Blogs[] = blogdata.filter((post) => {
-        const matchesId = post.id.toString() === params.postId.toString();
-        return matchesId;
-    });
+const SingleBlogPost = () => {
 
     const path = usePathname();
     const id = path.split("/")[2]
@@ -30,7 +24,7 @@ const SingleBlogPost = ({ params }: any) => {
 
     return (
         <div className="">
-            <BlogBanner title={filteredPost[0].title} />
+            <BlogBanner title={singleData.title} />
             <Component>
                 <div className="md:flex mt-10 w-full">
                     <div className=" md:w-3/4 ">
