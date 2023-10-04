@@ -26,7 +26,7 @@ const SingleItem = ({data, currentPage, pageSize}:any) => {
                             {/* ----------- portfolio description */}
                             <div className='py-3'>
                                 <p className='font-light'>{data.category}</p>
-                                <p className='font-bold text-2xl'>{data.title}</p>
+                                <p className='font-bold text-xl lg:text-2xl'>{data.title}</p>
                             </div>
                         </div>
                     )
