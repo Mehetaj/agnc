@@ -9,8 +9,8 @@ import Services from "../Components/Home/Services/Services";
 
 const Home = () => {
   return (
-    <main className=" ">
-      <div className="bg-[#F7FAFF] dark:bg-[#061126] py-10">
+    <main className="main">
+      <div className="dark:bg-[#061126] py-10">
         <Banner />
         <Services />
       </div>

@@ -8,9 +8,9 @@ import Component from "@/app/Shared/Component/Component";
 const AboutPage = () => {
   return (
     <div>
+          <Banner title="About Us" />
       <Component>
         <div>
-          <Banner title="About Us" />
           <AboutHero />
         </div>
       </Component>

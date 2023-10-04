@@ -8,11 +8,9 @@ import Component from "../Component/Component";
 
 const Banner = ({ title }: any) => {
   return (
-    <Component>
-      <div className="bg-img">
+      <div className="flex items-center justify-center clip-path w-full h-[500px] bg-[#EBF2FF] dark:bg-[#10223F] dark:text-white text-[60px] font-bold">
         <h1 className="">{title}</h1>
       </div>
-    </Component>
   );
 };
 
