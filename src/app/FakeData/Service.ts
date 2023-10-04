@@ -63,7 +63,7 @@ export const servicesData = [
   {
     id: 2,
     logo: "https://i.ibb.co/Z2fwQ8R/Icon-Design.png",
-    category: "SEO and Digital Marketing",
+    category: "Web development",
     description:
       "Improve your online presence with our SEO and digital marketing services. We drive organic traffic and engage your target audience.",
     banner_description:
@@ -123,7 +123,7 @@ export const servicesData = [
   {
     id: 3,
     logo: "https://i.ibb.co/Ld6b9MT/Icon-app.png",
-    category: "E-commerce Solutions",
+    category: "Management system development",
     description:
       "Boost your online sales with our e-commerce solutions. We develop and optimize e-commerce platforms for maximum profitability.",
     banner_description:
@@ -182,7 +182,7 @@ export const servicesData = [
   {
     id: 4,
     logo: "https://i.ibb.co/Ld6b9MT/Icon-app.png",
-    category: "Content Writing",
+    category: "Api development",
     description:
       "Our expert writers create engaging and SEO-friendly content for your website, blog, and marketing campaigns.",
     banner_description:
@@ -241,7 +241,7 @@ export const servicesData = [
   {
     id: 5,
     logo: "https://i.ibb.co/Z2fwQ8R/Icon-Design.png",
-    category: "IT Consulting",
+    category: "Data analysis",
     description:
       "We offer strategic IT consulting services to help businesses streamline operations, improve efficiency, and reduce costs.",
     banner_description:

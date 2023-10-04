@@ -88,7 +88,7 @@ const Portfolio = () => {
               <SwiperSlide
                 key={i}>
                 <div>
-                  <div className="mt-7 portfolio-slides portfolio-content w-full  mb-10">
+                  <div className="mt-7 portfolio-slides portfolio-content w-full xl:w-[378px]  mb-10">
                     <img className="w-full" src={d?.img} alt="" />
                     <p className="text-[18px] my-4">{d.type}</p>
                     <h1 className="text-[24px] font-bold">{d.title}</h1>

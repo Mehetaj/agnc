@@ -76,12 +76,14 @@ const ChooseUs = () => {
                                 </p>
                             </div>
                         </div> */}
-                        <div className="choose-us-bg-img">
-                            <div>
+                        <div className="">
+                            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 mt-8 lg:grid-cols-3">
                                 {
                                     choose_us_data.map((d: data_type, i: number) => (
-                                        <div key={i}>
-
+                                        <div className="w-full mt-4 rounded-md lg:mt-0 lg:w-[300px] xl:w-[379px] bg-[#EBF2FF] dark:bg-[#0A1A33] p-8 " key={i}>
+                                            <img src={d.img} alt=""/>
+                                            <h1 className="my-4 text-[24px] font-bold">{d.title}</h1>
+                                            <p>{d.description}</p>
                                         </div>
                                     ))
                                 }

@@ -15,7 +15,7 @@ const Navbar = () => {
   const navLinks = NavLink.map((d, i) => {
     return (
       <div key={i}>
-        <li className="pb-6 text-[18px] list-none nav-bar-links  py-2 px-6 text-center border-b-2 lg:border-b-0  hover:text-blue-900  border-blue-900   lg:hover:bg-transparent">
+        <li className="pb-6 text-[18px] list-none nav-bar-links  py-2 lg:px-6 text-center border-b-2 lg:border-b-0  hover:text-blue-900  border-blue-900   lg:hover:bg-transparent">
           <Link href={d.path}>
             {d.name}
           </Link>
@@ -30,12 +30,15 @@ const Navbar = () => {
         <div className="">
           <div className="flex justify-between items-center">
             <h1 className="text-[24px] lg:text-[32px] text-primary font-bold ">Bytezenith</h1>
-            <div className="hidden lg:flex">
+            <div className="hidden lg:flex items-center">
               {navLinks}
               <button className="text-blue-600 flex lg:hidden border px-4 lg:px-[32px] py-[12px] lg:text-[18px] rounded-lg font-semibold border-blue-600">
                 Contact us
               </button>
             </div>
+              <div className="-mt-4">
+              <ThemeSwitcher />
+              </div>
             <div className="">
               <button className="text-blue-600 hidden lg:flex border px-4 lg:px-[32px] py-[12px] lg:text-[18px] rounded-lg font-semibold border-blue-600">
                 Contact us
@@ -53,8 +56,10 @@ const Navbar = () => {
                 {
                   !Toggle
                     ?
-                    <div className="absolute top-10 right-7 mb-20">
-                      {navLinks}
+                    <div className="menu absolute right-4 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <div className="">
+                        {navLinks}
+                      </div>
                     </div> : ""
                 }
               </div>
