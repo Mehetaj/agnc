@@ -1,41 +1,46 @@
 import mongoose from "mongoose";
 
-const blogSchema = new mongoose.Schema({
-  title: {
-    type: "string",
-    required: true,
-  },
+const portfolioSchema = new mongoose.Schema({
   category: {
     type: "string",
     required: true,
   },
-  tags: {
-    type: ["string"],
-    required: true,
-  },
-  status: {
+  user: {
     type: "string",
     required: true,
   },
-  image: {
+  img: {
     type: "string",
     required: true,
   },
-  author: {
+
+  title: {
     type: "string",
     required: true,
   },
-  content: {
+  company: {
     type: "string",
     required: true,
   },
-  publiched: {
+  description: {
+    type: "string",
+    required: true,
+  },
+  portfolio: {
+    type: "string",
+    required: true,
+  },
+  type: {
+    type: "string",
+    required: true,
+  },
+  createdAt: {
     type: Date,
     default: Date.now,
   },
 });
 
 // TODO: first delete the previous blog schema and then create a new one
-const Blog = mongoose.models.Blogs || mongoose.model("Blogs", blogSchema);
+const Portfolio = mongoose.models.Portfolios || mongoose.model("Portfolios", portfolioSchema);
 
-export default Blog;
+export default Portfolio;
