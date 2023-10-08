@@ -11,14 +11,17 @@ import { RxCross1 } from 'react-icons/rx'
 
 import { ThemeSwitcher } from "../themeSwitcher/ThemeSwitcher";
 import Button from "../Button/Button";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [Toggle, setToggle] = useState<boolean>(true);
 
   const navLinks = NavLink.map((d, i) => {
+    const isActiveLinks = pathname == d.path;
     return (
       <div key={i}>
-        <li className="pb-6 text-[18px] list-none nav-bar-links  py-1 lg:px-6 text-center   hover:text-blue-900 lg:hover:bg-transparent">
+        <li className={`pb-6 text-[18px] list-none nav-bar-links  py-1 lg:px-6 text-center   hover:text-blue-900 lg:hover:bg-transparent ${isActiveLinks ? "text-primary font-bold": ""}`}>
           <Link href={d.path}>
             {d.name}
           </Link>

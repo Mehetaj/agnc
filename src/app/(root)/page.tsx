@@ -6,6 +6,7 @@ import Contact from "../Components/Home/Contact/Contact";
 import Portfolio from "../Components/Home/Portfolio/Portfolio";
 import Reviews from "../Components/Home/Review/Reviews";
 import Services from "../Components/Home/Services/Services";
+import SubscribeUs from "../Components/Home/SubscribeUs/SubscribeUs";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Brand />
       <BlogSection />
       <Contact />
+      <SubscribeUs />
     </main>
   );
 };
