@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { blogdata } from "../../../FakeData/blogdata";
 import { useRouter } from "next/navigation";
 

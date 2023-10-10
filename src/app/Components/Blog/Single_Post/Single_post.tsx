@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -9,7 +10,7 @@ const Single_Post=({post}: any)=>{
     return(
         <div className="card bg-[#EBF2FF] dark:bg-[#0A1A33] h-[600px] lg:p-5 mx-2 md:mx-0">
                 <figure className="px-5 pt-5">
-                    <img src={post.image} alt={post.title} className="rounded-xl h-[270px] w-full md:w-[340px] "/>
+                    <img width={340} height={270} layout="fill" src={post.image} alt={post.title} className="rounded-xl h-[270px] w-full md:w-[340px] "/>
                 </figure>
                 <div className="card-body -mt-4 text-left ">
                     <p className=" text-[#2D3D59] dark:text-white text-[18px] font-normal">{post.publiched}</p>

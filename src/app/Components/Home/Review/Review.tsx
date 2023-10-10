@@ -82,7 +82,7 @@ const Review = (Props: Items) => {
               <div className="review-slides bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
                 <p>{d.review}</p>
                 <hr className="my-4" />
-                <Image src={star} alt="" />
+                <img src={star} alt="" />
               </div>
               <div className="p-2 flex gap-2 mb-7 items-center">
                 <div className="w-[50px] h-[50px] rounded-full bg-[#161623]">

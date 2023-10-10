@@ -72,7 +72,7 @@ const Service = (props : any) => {
               <img src={d?.logo} alt="" />
               <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
               <p>{d?.description}</p>
-              <Image className=" mt-6" src={arrow} alt="Details button"/>
+              <img className=" mt-6" src={arrow} alt="Details button"/>
             </div>
           </SwiperSlide>
         ))}

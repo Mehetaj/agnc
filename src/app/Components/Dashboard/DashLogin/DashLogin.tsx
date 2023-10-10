@@ -62,7 +62,7 @@ function DashLogin() {
       {/* a login system with 1/1 grid. one side with image and other with form */}
       <Component>
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <Image className="max-w-full " src={bgImage} alt="" />
+          <img className="max-w-full " src={bgImage} alt="" />
           <div className="w-full">
             <div className="flex flex-col justify-center items-center h-full">
               <div className="justify-center items-start">
