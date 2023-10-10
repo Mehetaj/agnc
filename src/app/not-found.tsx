@@ -18,7 +18,7 @@ export default function NotFound() {
         </Button>
 
       </div>
-      <img className='' src={notFound} alt='' />
+      <Image className='' src={notFound} alt='' />
     </div>
   );
 }
