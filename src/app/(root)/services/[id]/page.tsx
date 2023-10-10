@@ -6,6 +6,7 @@ import Button from '@/app/Shared/Button/Button';
 import Component from '@/app/Shared/Component/Component';
 import { usePathname } from 'next/navigation';
 import Contact from '@/app/Components/Home/Contact/Contact';
+import Image from 'next/image';
 
 interface Service_strategy { title: string; description: string }
 interface FAQ_data_type { question: string; answer: string }

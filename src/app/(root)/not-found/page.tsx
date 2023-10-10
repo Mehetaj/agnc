@@ -13,7 +13,7 @@ const NotFound = () => {
 
                 <Button>Go Back</Button>
             </div>
-            <Image className='h-[500px] object-contain' src={notfound} alt='' />
+            <img className='h-[500px] object-contain' src={notfound} alt='' />
         </div>
     );
 };

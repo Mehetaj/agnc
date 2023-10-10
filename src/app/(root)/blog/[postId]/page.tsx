@@ -29,7 +29,7 @@ const SingleBlogPost = () => {
                 <div className="md:flex mt-10 w-full">
                     <div className=" md:w-3/4 ">
                             <div key={singleData.id} className="lg:px-20 px-4 ">
-                                <img src={singleData.image} alt={`${singleData.title} img`} className=" md:h-[420px] h-[300px] w-11/12 md:w-full border-[#0A1A33] border-8 mx-auto" />
+                                <img src={singleData.image} width={760} height={400}  alt={`${singleData.title} img`} className=" md:h-[420px] h-[300px] w-11/12 md:w-full border-[#0A1A33] border-8 mx-auto" />
                                 <div className=" flex gap-2 font-normal text-base text-[#202C40] pt-3 pb-3">
                                     <h6 className=" border-[#226CE5] border-[1px] p-1 rounded dark:text-[#E7EBF2]">{singleData.category}</h6>
                                     <h6 className="p-1 dark:text-[#E7EBF2]">{singleData.publiched}</h6>

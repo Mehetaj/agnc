@@ -78,10 +78,10 @@ const Footer = () => {
             {/* Social Links */}
             <h1 className="text-[24px] font-bold mb-8">Follow us</h1>
             <div className="flex gap-8">
-              <Image src={icons1} alt="fb icons" />
-              <Image src={icons2} alt="fb icons" />
-              <Image src={icons3} alt="fb icons" />
-              <Image src={icons4} alt="fb icons" />
+              <img src={icons1} alt="fb icons" />
+              <img src={icons2} alt="fb icons" />
+              <img src={icons3} alt="fb icons" />
+              <img src={icons4} alt="fb icons" />
             </div>
           </div>
         </div>

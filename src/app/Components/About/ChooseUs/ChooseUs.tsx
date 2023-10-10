@@ -47,7 +47,7 @@ const ChooseUs = () => {
                         {/* <div style={{ marginTop: '30px' }} className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
                             <div id="chooseUs1" className='flex bg-[#EBF2FF] dark:bg-[#10223F]  lg:p-[40px] rounded-[5px] flex-col items-start'>
 
-                                <Image src={icon1} alt='' />
+                                <img src={icon1} alt='' />
                                 <h1 className='text-[26px] font-bold mt-3'>Fast Development</h1>
                                 <p
                                     className="mt-4"
@@ -57,7 +57,7 @@ const ChooseUs = () => {
                             </div>
                             <div id="chooseUs2" className='flex bg-[#EBF2FF] dark:bg-[#10223F]  lg:p-[40px] rounded-[5px] flex-col items-start'>
 
-                                <Image src={icon2} alt='' />
+                                <img src={icon2} alt='' />
                                 <h1 className='text-[26px] font-bold mt-3'>Full Flaxibility</h1>
                                 <p
                                     className="mt-4"
@@ -67,7 +67,7 @@ const ChooseUs = () => {
                             </div>
                             <div id="chooseUs3" className='flex bg-[#EBF2FF] dark:bg-[#10223F]  lg:p-[40px] rounded-[5px] flex-col items-start'>
 
-                                <Image src={icon3} alt='' />
+                                <img src={icon3} alt='' />
                                 <h1 className='text-[26px] font-bold mt-3'>Modern Design</h1>
                                 <p
                                     className="mt-4"

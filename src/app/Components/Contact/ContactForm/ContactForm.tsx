@@ -55,10 +55,10 @@ const ContactForm = () => {
                         <hr />
                         <h1 className="text-[24px] font-bold mt-8">Follow us</h1>
                         <div className="flex gap-9 mt-9">
-                            <Image src={icon1} alt="" />
-                            <Image src={icon2} alt="" />
-                            <Image src={icon3} alt="" />
-                            <Image src={icon4} alt="" />
+                            <img src={icon1} alt="" />
+                            <img src={icon2} alt="" />
+                            <img src={icon3} alt="" />
+                            <img src={icon4} alt="" />
                         </div>
                     </div>
                 </div>

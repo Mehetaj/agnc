@@ -14,11 +14,11 @@ const ServicesSection = () => {
                     {
                         data?.map((d: any, i: number) => (
                             <div key={i} className="bg-[#EBF2FF] relative  dark:bg-[#0A1A33] dark:text-white mt-3 p-8 mb-10 w-full lg:h-[420px] xl:w-[379px] h-full xl:h-[348px] rounded-lg">
-                                <img src={d?.logo} alt="" />
+                                <img  src={d?.logo} alt="" />
                                 <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
                                 <p>{d?.description}</p>
                                 <Link className='absolute left-9 inset-x-0 bottom-0 h-16' href={`/services/${d?.id}`}>
-                                    <Image className=" mt-6" src={arrow} alt="Details button" />
+                                    <img className=" mt-6" src={arrow} alt="Details button" />
                                 </Link>
                             </div>
                         ))
