@@ -1,20 +1,16 @@
-"use client"
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
-
 import ThemeProvider from "@/provider/ThemeProvider";
-import dynamic from "next/dynamic";
-import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
+// import Cursor from "../Shared/AnimatedCursor/AnimatedCursor";
 
-
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["greek"] });
 
 export const metadata: Metadata = {
   title: "Bytezenith",
-  description: "",
+  description: "This is bytezenith a software agency",
 };
 
 type Props = {
@@ -22,17 +18,15 @@ type Props = {
 };
 
 const RootLayout = ({ children }: Props) => {
-  
   return (
-    <html id="body" lang="en">
-      <body
-        className={`${inter.className}`}
-      >
+    <html lang="en">
+      <body data-theme="light" className={`${inter.className} main`}>
         <ThemeProvider attribute="class" enableSystem={false}>
+          <div className="gradient"></div>
           <div className="dark:bg-[#061126] dark:text-white">
             <Navbar />
             {children}
-            <Cursor />
+            {/* <Cursor /> */}
             <Footer />
           </div>
         </ThemeProvider>

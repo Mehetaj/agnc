@@ -1,6 +1,16 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+/* eslint-disable @next/next/no-img-element */
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import star from "../../../../asset/icon/Review.png";
+// import required modules
+import { FreeMode, Pagination } from "swiper/modules";
+import Image from "next/image";
+import './style.css'
 
 type Items = {
   data: {
@@ -14,27 +24,78 @@ type Items = {
 
 const Review = (Props: Items) => {
   const data = Props.data;
-  return (
-    <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {data.map((d, i) => {
-        return (
-          <div key={i} className="w-full lg:w-[379px]  lg:h-[256px]">
-            <div className="bg-[#EBF2FF] dark:bg-[#0A1A33] dark:border-[#3A4559] border border-gray-200 p-8 rounded-lg">
-              <p className="text-[20px]">{d.review}</p>
-              <div className="w-full h-[0.1px] divider dark:border my-6"></div>
-              
-            </div>
 
-            <div className="mt-8 flex gap-8 items-center">
-            <img src={d.reviewer_img} className="w-[60px] h-[60px] rounded-full" alt="" />
+  return (
+    <div className="res-sub-container">
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        breakpoints={{
+          // when window width is >= 640px
+          320: {
+            width: 300,
+            slidesPerView: 1,
+            spaceBetween: 130,
+          },
+          375: {
+            width: 358,
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          425: {
+            width: 410,
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            width: 750,
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 768px
+          1024: {
+            width: 940,
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          1440: {
+            width: 1190,
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1520: {
+            width: 1080,
+
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+        }}
+      >
+        {data.map((d: object | string | string[] | any, i) => (
+          <SwiperSlide key={i}>
             <div>
-                <h1>{d.reviewer_name}</h1>
-                <p>{d.reviewer_type}</p>
+              <div className="review-slides bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white p-8 my-7 rounded-lg">
+                <p>{d.review}</p>
+                <hr className="my-4" />
+                <Image src={star} alt="" />
+              </div>
+              <div className="p-2 flex gap-2 mb-7 items-center">
+                <div className="w-[50px] h-[50px] rounded-full bg-[#161623]">
+                </div>
+                <div>
+                  <h1 className="text-xl font-semibold">{d.reviewer_name}</h1>
+                  <h1>{d.reviewer_type}</h1>
+                </div>
+              </div>
             </div>
-            </div>
-          </div>
-        );
-      })}
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

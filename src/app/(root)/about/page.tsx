@@ -1,23 +1,20 @@
 import React from "react";
-import Banner from "@/app/Components/About/Banner/Banner";
+import Banner from "@/app/Shared/Banner/Banner"
 import AboutHero from "@/app/Components/About/AboutHero/AboutHero";
 import Contact from "@/app/Components/Home/Contact/Contact";
 import ChooseUs from "@/app/Components/About/ChooseUs/ChooseUs";
-import Component from "@/app/Shared/Component/Component";
+import Portfolio from "@/app/Components/Home/Portfolio/Portfolio";
 
-const page = () => {
+const AboutPage = () => {
   return (
     <div>
-      <Component>
-        <div>
-          <Banner />
+          <Banner title="About Us" />
           <AboutHero />
-        </div>
-      </Component>
           <ChooseUs />
-      <Contact />
+          <Portfolio />
+          <Contact />
     </div>
   );
 };
 
-export default page;
+export default AboutPage;

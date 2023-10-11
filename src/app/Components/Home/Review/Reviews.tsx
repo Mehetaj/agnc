@@ -12,7 +12,7 @@ const Reviews = () => {
     <div className="my-[140px]">
       <Component>
         <Title>Testimonials</Title>
-        <h1 className="text-5xl">What people says about us</h1>
+        <h1 className="text-[32px] lg:text-5xl text-center lg:text-left">What people says about us</h1>
         <Review data={data}/>
       </Component>
     </div>

@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import "./globals.css";
 import Button from "./Shared/Button/Button";
 import notFound from '../asset/error.png'
 import Link from "next/link";
