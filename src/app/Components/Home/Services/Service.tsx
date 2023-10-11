@@ -12,8 +12,9 @@ import star from "../../../../asset/icon/Review.png";
 import { FreeMode, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { Service } from "@/app/types/types";
+import Link from "next/link";
 
-const Service = (props : any) => {
+const Service = (props: any) => {
   // console.log(props);
   const data = props.data;
   return (
@@ -66,13 +67,15 @@ const Service = (props : any) => {
           },
         }}
       >
-        {data.map((d: object | string | string[] | any | Service, i : number) => (
+        {data.map((d: object | string | string[] | any | Service, i: number) => (
           <SwiperSlide key={i}>
             <div className="bg-[#EBF2FF] dark:bg-[#0A1A33] dark:text-white mt-3 p-8 mb-10 h-[380px] lg:h-[348px] rounded-lg">
               <img src={d?.logo} alt="" />
               <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
               <p>{d?.description}</p>
-              <img className=" mt-6" src={arrow} alt="Details button"/>
+              <Link className='absolute left-9 inset-x-0 bottom-4 h-16' href={`/services/${d?.id}`}>
+                <Image className="" src={arrow} alt="Details button" />
+              </Link>
             </div>
           </SwiperSlide>
         ))}

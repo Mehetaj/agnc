@@ -29,7 +29,7 @@ const Banner = () => {
         </div>
         {/* Banner image */}
         <div className="flex justify-center items-center">
-        <img className="max-w-full banner-png mt-8 lg:mt-0" src={banner} alt="" />
+        <Image className="max-w-full banner-png mt-8 lg:mt-0" src={banner} alt="" />
         </div>
       </div>
     </Component>

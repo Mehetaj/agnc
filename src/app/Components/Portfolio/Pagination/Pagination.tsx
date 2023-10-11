@@ -14,7 +14,7 @@ const Pagination =({item , pageSize, currentPage, onPageChange}:any)=>{
     return(
         <div className="join mt-5">
             
-            <button className="p-btn " disabled={currentPage===1} onClick={()=> onPageChange(currentPage-1)} ><img src={left} alt="arrow" /> </button>
+            <button className="p-btn " disabled={currentPage===1} onClick={()=> onPageChange(currentPage-1)} ><Image src={left} alt="arrow" /> </button>
             
             {
                 pages.map((page) =>(
@@ -22,7 +22,7 @@ const Pagination =({item , pageSize, currentPage, onPageChange}:any)=>{
                 ))
             }
 
-            <button className="p-btn" onClick={()=> onPageChange(currentPage+1)} disabled={currentPage===pages.length} ><img src={right} alt="arrow" /> </button>
+            <button className="p-btn" onClick={()=> onPageChange(currentPage+1)} disabled={currentPage===pages.length} ><Image src={right} alt="arrow" /> </button>
         </div>
     )
 }

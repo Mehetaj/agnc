@@ -18,7 +18,7 @@ const ServicesSection = () => {
                                 <h2 className="text-2xl font-bold my-6">{d?.category}</h2>
                                 <p>{d?.description}</p>
                                 <Link className='absolute left-9 inset-x-0 bottom-0 h-16' href={`/services/${d?.id}`}>
-                                    <img className=" mt-6" src={arrow} alt="Details button" />
+                                    <Image className=" mt-6" src={arrow} alt="Details button" />
                                 </Link>
                             </div>
                         ))

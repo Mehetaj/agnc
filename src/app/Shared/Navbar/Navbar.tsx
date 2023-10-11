@@ -35,7 +35,7 @@ const Navbar = () => {
       <Component>
         <div className="">
           <div className="flex justify-between items-center ">
-            <img className="w-[140px] lg:w-[170px] xl:w-[280px]" src={logo} alt="Logo" />
+            <Image className="w-[140px] lg:w-[170px] xl:w-[280px]" src={logo} alt="Logo" />
 
             {/* <h1 className="text-2xl font-bold text-blue-600">Bytezenith</h1> */}
             <div className="hidden lg:flex items-center mt-5">

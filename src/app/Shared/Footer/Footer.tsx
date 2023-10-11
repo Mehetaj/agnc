@@ -8,6 +8,9 @@ import top_arrow from "../../../asset/top_arrow.png";
 import Link from "next/link";
 import Component from "../Component/Component";
 import ScrollToTop from "react-scroll-to-top";
+import { BsFacebook } from 'react-icons/bs'
+import { BiLogoTwitter, BiLogoInstagramAlt } from 'react-icons/bi'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Footer = () => {
 
@@ -78,10 +81,18 @@ const Footer = () => {
             {/* Social Links */}
             <h1 className="text-[24px] font-bold mb-8">Follow us</h1>
             <div className="flex gap-8">
-              <img src={icons1} alt="fb icons" />
-              <img src={icons2} alt="fb icons" />
-              <img src={icons3} alt="fb icons" />
-              <img src={icons4} alt="fb icons" />
+              <div className="bg-[#D6E6FF] p-4 rounded-xl">
+                <BsFacebook className="text-2xl   text-[#226CE5]" />
+              </div>
+              <div className="bg-[#D6E6FF] p-4 rounded-xl">
+                <BiLogoTwitter className="text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
+              </div>
+              <div className="bg-[#D6E6FF] p-4 rounded-xl">
+                <BiLogoInstagramAlt className="text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
+              </div>
+              <div className="bg-[#D6E6FF] p-4 rounded-xl">
+                <IoLogoWhatsapp className="text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
+              </div>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const About = () => {
       <Component>
         <div className="about-content px mx-auto mt-20  flex flex-col-reverse lg:flex-row lg:p-10 lg:justify-between items-center md:gap-20 lg:gap-80">
           <div className="lg:w-1/2">
-          <img className="w-full h-full mt-6 lg:mt-0" src={img} alt="" />
+          <Image className="w-full h-full mt-6 lg:mt-0" src={img} alt="" />
           </div>
           <div className="lg:w-1/2">
             <Title>About</Title>

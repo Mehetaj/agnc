@@ -22,14 +22,14 @@ export default function Brand() {
         {/* create div with four column and three row as card */}
         {/* Brands static img from assets folder */}
         <div className="grid mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <img className=" w-full lg:w-[276px]" src={brand1} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand2} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand3} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand4} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand5} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand6} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand7} alt="" />
-          <img className=" w-full lg:w-[276px]" src={brand8} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand1} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand2} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand3} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand4} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand5} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand6} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand7} alt="" />
+          <Image className=" w-full lg:w-[276px]" src={brand8} alt="" />
         </div>
       </Component>
     </div>

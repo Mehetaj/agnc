@@ -87,7 +87,7 @@ const BlogSection = () => {
 
                     <div className="text-blue-600 flex gap-2 items-center">
                       <button>Read more</button>
-                      <img className="" src={arrow} alt="" />
+                      <Image className="" src={arrow} alt="" />
                     </div>
                   </div>
                 </SwiperSlide>
