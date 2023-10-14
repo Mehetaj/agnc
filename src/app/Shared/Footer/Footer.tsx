@@ -82,16 +82,16 @@ const Footer = () => {
             <h1 className="text-[24px] font-bold mb-8">Follow us</h1>
             <div className="flex gap-8">
               <div className="bg-[#D6E6FF] p-4 rounded-xl">
-                <BsFacebook className="text-2xl   text-[#226CE5]" />
+                <BsFacebook className="lg:text-2xl   text-[#226CE5]" />
               </div>
               <div className="bg-[#D6E6FF] p-4 rounded-xl">
-                <BiLogoTwitter className="text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
+                <BiLogoTwitter className="lg:text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
               </div>
               <div className="bg-[#D6E6FF] p-4 rounded-xl">
-                <BiLogoInstagramAlt className="text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
+                <BiLogoInstagramAlt className="lg:text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
               </div>
               <div className="bg-[#D6E6FF] p-4 rounded-xl">
-                <IoLogoWhatsapp className="text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
+                <IoLogoWhatsapp className="lg:text-2xl bg-[#D6E6FF]  text-[#226CE5]" />
               </div>
             </div>
           </div>

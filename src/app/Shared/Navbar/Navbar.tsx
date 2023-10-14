@@ -21,8 +21,8 @@ const Navbar = () => {
     const isActiveLinks = pathname == d.path;
     return (
       <div key={i}>
-        <li className={`pb-6 text-[18px] list-none nav-bar-links  py-1 lg:px-6 text-center   hover:text-blue-900 lg:hover:bg-transparent ${isActiveLinks ? "text-primary font-bold": ""}`}>
-          <Link href={d.path}>
+        <li className={`pb-6 text-[18px] list-none nav-bar-links  py-1 lg:px-6 text-center   hover:text-blue-900 lg:hover:bg-transparent ${isActiveLinks ? "text-primary font-bold" : ""}`}>
+          <Link className="text-right" href={d.path}>
             {d.name}
           </Link>
         </li>
@@ -69,12 +69,16 @@ const Navbar = () => {
                 {
                   !Toggle
                     ?
-                    <div className="menu absolute right-4 menu-sm dropdown-content mt-6 z-[1] px-2 py-4 shadow bg-base-100 rounded-box w-52">
+                    <div className=" absolute right-3 menu-sm dropdown-content mt-6 z-[1] px-2 py-4 shadow bg-base-100 rounded-box w-52">
                       <div className="">
+                        <p className="text-left">
                         {navLinks}
+                        </p>
                         <div className="transition  border rounded-xl border-[#5E17EB]  hover:bg-gradient-to-r from-[#5271FF] via-30% to-[#5E17EB] to-90%">
-                          <button className="text-center px-3 py-2 mx-auto text-lg ">
-                            Contact us
+                          <button className=" px-3 py-2 mx-auto text-lg ">
+                            <span className="ml-8">
+                              Contact us
+                            </span>
                           </button>
                         </div>
                       </div>
